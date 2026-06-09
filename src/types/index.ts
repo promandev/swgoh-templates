@@ -1,9 +1,9 @@
 export type { Alignment, Character } from "./character";
 export type {
-  Datacron,
-  DatacronBonus,
+  DatacronLevel,
   DatacronSet,
   DatacronTier,
+  MemberDatacron,
 } from "./datacron";
 export type {
   ModConfiguration,

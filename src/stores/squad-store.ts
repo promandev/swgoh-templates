@@ -41,6 +41,7 @@ interface SquadState {
   renameSquad: (id: string, name: string) => void;
   setActiveSquad: (id: string | null) => void;
   setSquadSize: (id: string, size: SquadSize) => void;
+  setSquadBackground: (id: string, background: string) => void;
 
   setMemberCharacter: (squadId: string, index: number, characterId: string | null) => void;
   setMemberDatacron: (squadId: string, index: number, notes: string) => void;
@@ -106,6 +107,14 @@ export const useSquadStore = create<SquadState>()(
         })),
 
       setActiveSquad: (id) => set({ activeSquadId: id }),
+
+      setSquadBackground: (id, background) =>
+        set((state) => ({
+          squads: patchSquad(state.squads, id, (squad) => ({
+            ...squad,
+            background,
+          })),
+        })),
 
       setSquadSize: (id, size) =>
         set((state) => ({

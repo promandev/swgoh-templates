@@ -1,13 +1,3 @@
-import {
-  CircleIcon,
-  DiamondIcon,
-  MoveUpIcon,
-  PlusIcon,
-  SquareIcon,
-  TriangleIcon,
-  type LucideIcon,
-} from "lucide-react";
-
 import type { ModSlotId, StatId } from "@/types";
 
 /**
@@ -20,7 +10,6 @@ export interface ModDefinition {
   id: ModSlotId;
   /** Canonical display order (square → cross). */
   order: number;
-  icon: LucideIcon;
   /** i18n key under the "Slots" namespace. */
   nameKey: `${ModSlotId}.name`;
   tooltipKey: `${ModSlotId}.tooltip`;
@@ -55,7 +44,6 @@ export const MOD_DEFINITIONS: Record<ModSlotId, ModDefinition> = {
   square: {
     id: "square",
     order: 0,
-    icon: SquareIcon,
     nameKey: "square.name",
     tooltipKey: "square.tooltip",
     fixedPrimary: "offensePct",
@@ -65,7 +53,6 @@ export const MOD_DEFINITIONS: Record<ModSlotId, ModDefinition> = {
   arrow: {
     id: "arrow",
     order: 1,
-    icon: MoveUpIcon,
     nameKey: "arrow.name",
     tooltipKey: "arrow.tooltip",
     fixedPrimary: null,
@@ -83,17 +70,15 @@ export const MOD_DEFINITIONS: Record<ModSlotId, ModDefinition> = {
   diamond: {
     id: "diamond",
     order: 2,
-    icon: DiamondIcon,
     nameKey: "diamond.name",
     tooltipKey: "diamond.tooltip",
-    fixedPrimary: "defense",
-    primaryOptions: ["defense"],
+    fixedPrimary: "defensePct",
+    primaryOptions: ["defensePct"],
     secondaryOptions: SECONDARY_STAT_POOL,
   },
   triangle: {
     id: "triangle",
     order: 3,
-    icon: TriangleIcon,
     nameKey: "triangle.name",
     tooltipKey: "triangle.tooltip",
     fixedPrimary: null,
@@ -110,7 +95,6 @@ export const MOD_DEFINITIONS: Record<ModSlotId, ModDefinition> = {
   circle: {
     id: "circle",
     order: 4,
-    icon: CircleIcon,
     nameKey: "circle.name",
     tooltipKey: "circle.tooltip",
     fixedPrimary: null,
@@ -120,7 +104,6 @@ export const MOD_DEFINITIONS: Record<ModSlotId, ModDefinition> = {
   cross: {
     id: "cross",
     order: 5,
-    icon: PlusIcon,
     nameKey: "cross.name",
     tooltipKey: "cross.tooltip",
     fixedPrimary: null,

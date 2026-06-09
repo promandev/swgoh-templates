@@ -39,8 +39,8 @@ export function SquadTable({ squad }: { squad: Squad }) {
                   />
                 }
               >
-                <SlotIcon slot={slot} className="size-3.5" />
-                <span>{tSlots(`${slot}.name`)}</span>
+                <SlotIcon slot={slot} className="size-10 text-primary" />
+                {/* <span>{tSlots(`${slot}.name`)}</span> */}
               </TooltipTrigger>
               <TooltipContent>{tSlots(`${slot}.tooltip`)}</TooltipContent>
             </Tooltip>

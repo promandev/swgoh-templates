@@ -10,10 +10,10 @@
     "languageLabel": "Language"
   },
   "Theme": {
-    "light": "Light",
-    "dark": "Dark",
+    "light": "Rebel",
+    "dark": "Empire",
     "system": "System",
-    "toggle": "Toggle theme"
+    "toggle": "Switch allegiance"
   },
   "Language": {
     "label": "Language",
@@ -60,7 +60,7 @@
   "Slots": {
     "square": { "name": "Square", "tooltip": "Primary fixed: Offense %" },
     "arrow": { "name": "Arrow", "tooltip": "Primary: Speed, Accuracy, Crit. Avoidance, Health %, Protection %, Offense %, Defense %" },
-    "diamond": { "name": "Diamond", "tooltip": "Primary fixed: Defense" },
+    "diamond": { "name": "Diamond", "tooltip": "Primary fixed: Defense %" },
     "triangle": { "name": "Triangle", "tooltip": "Primary: Crit. Damage, Crit. Chance, Health %, Protection %, Offense %, Defense %" },
     "circle": { "name": "Circle", "tooltip": "Primary: Health %, Protection %" },
     "cross": { "name": "Cross", "tooltip": "Primary: Potency, Tenacity, Health %, Protection %, Offense %, Defense %" }
@@ -92,11 +92,26 @@
     "previewTitle": "Export preview",
     "previewDescription": "Review your squad template before downloading it as an image.",
     "download": "Download PNG",
+    "generating": "Generating image…",
     "downloaded": "Image downloaded",
     "error": "Could not generate the image",
     "exportedOn": "Exported on {date}",
     "generatedWith": "Generated with {app}",
     "emptySlot": "Empty slot"
+  },
+  "Backgrounds": {
+    "label": "Background",
+    "deepSpace": "Deep Space",
+    "tatooine": "Tatooine",
+    "hoth": "Hoth",
+    "deathStar": "Death Star",
+    "endor": "Endor",
+    "bespin": "Bespin",
+    "mustafar": "Mustafar",
+    "coruscant": "Coruscant",
+    "dagobah": "Dagobah",
+    "yavin": "Yavin 4",
+    "starfield": "Starfield"
   },
   "Stats": {
     "speed": "Speed",
@@ -135,7 +150,8 @@
     "remove": "Remove",
     "done": "Done",
     "none": "None",
-    "optional": "Optional"
+    "optional": "Optional",
+    "loading": "Loading…"
   },
   "NotFound": {
     "title": "Page not found",

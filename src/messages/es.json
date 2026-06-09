@@ -10,10 +10,10 @@
     "languageLabel": "Idioma"
   },
   "Theme": {
-    "light": "Claro",
-    "dark": "Oscuro",
+    "light": "Rebelde",
+    "dark": "Imperio",
     "system": "Sistema",
-    "toggle": "Cambiar tema"
+    "toggle": "Cambiar bando"
   },
   "Language": {
     "label": "Idioma",
@@ -60,7 +60,7 @@
   "Slots": {
     "square": { "name": "Cuadrado", "tooltip": "Primaria fija: Ofensiva %" },
     "arrow": { "name": "Flecha", "tooltip": "Primaria: Velocidad, Precisión, Evitar crítico, Salud %, Protección %, Ofensiva %, Defensa %" },
-    "diamond": { "name": "Diamante", "tooltip": "Primaria fija: Defensa" },
+    "diamond": { "name": "Diamante", "tooltip": "Primaria fija: Defensa %" },
     "triangle": { "name": "Triángulo", "tooltip": "Primaria: Daño crítico, Prob. crítica, Salud %, Protección %, Ofensiva %, Defensa %" },
     "circle": { "name": "Círculo", "tooltip": "Primaria: Salud %, Protección %" },
     "cross": { "name": "Cruz", "tooltip": "Primaria: Potencia, Tenacidad, Salud %, Protección %, Ofensiva %, Defensa %" }
@@ -92,11 +92,26 @@
     "previewTitle": "Vista previa de exportación",
     "previewDescription": "Revisa la plantilla de tu squad antes de descargarla como imagen.",
     "download": "Descargar PNG",
+    "generating": "Generando imagen…",
     "downloaded": "Imagen descargada",
     "error": "No se pudo generar la imagen",
     "exportedOn": "Exportado el {date}",
     "generatedWith": "Generado con {app}",
     "emptySlot": "Posición vacía"
+  },
+  "Backgrounds": {
+    "label": "Fondo",
+    "deepSpace": "Espacio profundo",
+    "tatooine": "Tatooine",
+    "hoth": "Hoth",
+    "deathStar": "Estrella de la Muerte",
+    "endor": "Endor",
+    "bespin": "Bespin",
+    "mustafar": "Mustafar",
+    "coruscant": "Coruscant",
+    "dagobah": "Dagobah",
+    "yavin": "Yavin 4",
+    "starfield": "Campo estelar"
   },
   "Stats": {
     "speed": "Velocidad",
@@ -135,7 +150,8 @@
     "remove": "Quitar",
     "done": "Hecho",
     "none": "Ninguno",
-    "optional": "Opcional"
+    "optional": "Opcional",
+    "loading": "Cargando…"
   },
   "NotFound": {
     "title": "Página no encontrada",

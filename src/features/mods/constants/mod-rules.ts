@@ -10,6 +10,7 @@ import {
   MOD_DEFINITION_LIST,
   SECONDARY_STAT_POOL,
 } from "./mod-definitions";
+import { getPrimary6DotValue } from "./primary-values";
 
 /**
  * Behavioural rules for mods. All data comes from {@link MOD_DEFINITIONS}; this
@@ -78,8 +79,12 @@ function emptyLine(): StatLine {
 }
 
 function createSlot(slot: ModSlotId): ModSlotConfig {
+  const fixedPrimary = MOD_DEFINITIONS[slot].fixedPrimary;
   return {
-    primary: { stat: MOD_DEFINITIONS[slot].fixedPrimary, value: null },
+    primary: {
+      stat: fixedPrimary,
+      value: fixedPrimary ? getPrimary6DotValue(fixedPrimary) : null,
+    },
     secondaries: [],
   };
 }

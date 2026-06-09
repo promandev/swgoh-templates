@@ -7,12 +7,35 @@ import { SwordsIcon } from "lucide-react";
 import { CharacterAvatar } from "@/features/characters/components/character-avatar";
 import { SlotIcon } from "@/features/mods/components/slot-icon";
 import { MOD_DEFINITION_LIST } from "@/features/mods/constants/mod-definitions";
+import { getBackgroundPreset } from "@/features/export/constants/backgrounds";
 import { characterService } from "@/services/character-service";
+import { cn } from "@/lib/utils";
 import type { ModSlotConfig, Squad, SquadMember } from "@/types";
 import { formatStatValue } from "@/utils/format";
 
-/** Fixed export width — the card height grows with the number of members. */
-export const EXPORT_WIDTH = 1600;
+export type ExportLayout = "desktop" | "mobile";
+
+interface LayoutConfig {
+  /** Fixed render width; the height grows with the member count. */
+  width: number;
+  /** Tailwind class for the mod grid column count. */
+  modGridClass: string;
+  /** Stack the character identity above the mods (mobile) or beside (desktop). */
+  stackIdentity: boolean;
+}
+
+/**
+ * Two export layouts. Desktop is the wide, share-on-desktop sheet; mobile is a
+ * narrower, vertically-stacked sheet whose text stays legible on a phone screen
+ * instead of being shrunk into an unreadable 6-column row.
+ */
+export const EXPORT_LAYOUTS: Record<ExportLayout, LayoutConfig> = {
+  desktop: { width: 1600, modGridClass: "grid-cols-6", stackIdentity: false },
+  mobile: { width: 760, modGridClass: "grid-cols-2", stackIdentity: true },
+};
+
+/** Back-compat alias used by the preview's default scale math. */
+export const EXPORT_WIDTH = EXPORT_LAYOUTS.desktop.width;
 
 function MemberModTile({
   config,
@@ -27,9 +50,9 @@ function MemberModTile({
 
   return (
     <div className="flex flex-col gap-2 rounded-2xl bg-zinc-950/60 p-4 ring-1 ring-white/10">
-      <div className="flex items-center gap-2 text-zinc-400">
-        <SlotIcon slot={slotKey.id} className="size-4" />
-        <span className="text-xs font-semibold tracking-wide uppercase">
+      <div className="flex items-center gap-2 text-indigo-300">
+        <SlotIcon slot={slotKey.id} className="size-6" />
+        <span className="text-xs font-semibold tracking-wide text-zinc-400 uppercase">
           {tSlots(slotKey.nameKey)}
         </span>
       </div>
@@ -72,7 +95,13 @@ function MemberModTile({
   );
 }
 
-function MemberPanel({ member }: { member: SquadMember }) {
+function MemberPanel({
+  member,
+  layout,
+}: {
+  member: SquadMember;
+  layout: LayoutConfig;
+}) {
   const t = useTranslations("Export");
   const tDatacron = useTranslations("Datacron");
   const character = member.characterId
@@ -81,28 +110,40 @@ function MemberPanel({ member }: { member: SquadMember }) {
 
   return (
     <div className="flex flex-col gap-5 rounded-3xl bg-zinc-900/70 p-6 ring-1 ring-white/10">
-      <div className="flex gap-6">
+      <div className={cn("flex gap-6", layout.stackIdentity && "flex-col")}>
         {/* Identity */}
-        <div className="flex w-65 shrink-0 flex-col gap-3">
+        <div
+          className={cn(
+            "flex shrink-0 flex-col gap-3",
+            layout.stackIdentity ? "w-full" : "w-65",
+          )}
+        >
           {character ? (
             <>
-              <CharacterAvatar
-                character={character}
-                className="size-24 rounded-3xl ring-2 ring-white/10"
-              />
-              <div>
-                <p className="text-2xl leading-tight font-semibold text-white">
-                  {character.name}
-                </p>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {character.factions.slice(0, 3).map((faction) => (
-                    <span
-                      key={faction}
-                      className="rounded-md bg-white/5 px-2 py-0.5 text-xs text-zinc-400"
-                    >
-                      {faction}
-                    </span>
-                  ))}
+              <div
+                className={cn(
+                  "flex gap-3",
+                  layout.stackIdentity ? "flex-row items-center" : "flex-col",
+                )}
+              >
+                <CharacterAvatar
+                  character={character}
+                  className="size-28 shrink-0 rounded-3xl ring-2 ring-white/10"
+                />
+                <div>
+                  <p className="text-2xl leading-tight font-semibold text-white">
+                    {character.name}
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {character.factions.slice(0, 3).map((faction) => (
+                      <span
+                        key={faction}
+                        className="rounded-md bg-white/5 px-2 py-0.5 text-xs text-zinc-400"
+                      >
+                        {faction}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </>
@@ -114,7 +155,7 @@ function MemberPanel({ member }: { member: SquadMember }) {
         </div>
 
         {/* Mods */}
-        <div className="grid flex-1 grid-cols-6 gap-3">
+        <div className={cn("grid flex-1 gap-3", layout.modGridClass)}>
           {MOD_DEFINITION_LIST.map((definition) => (
             <MemberModTile
               key={definition.id}
@@ -139,19 +180,28 @@ function MemberPanel({ member }: { member: SquadMember }) {
   );
 }
 
-export const SquadExportCard = forwardRef<HTMLDivElement, { squad: Squad }>(
-  function SquadExportCard({ squad }, ref) {
-    const t = useTranslations("Export");
-    const tApp = useTranslations("App");
-    const tSquads = useTranslations("Squads");
-    const format = useFormatter();
+export const SquadExportCard = forwardRef<
+  HTMLDivElement,
+  { squad: Squad; layout?: ExportLayout }
+>(function SquadExportCard({ squad, layout = "desktop" }, ref) {
+  const t = useTranslations("Export");
+  const tApp = useTranslations("App");
+  const tSquads = useTranslations("Squads");
+  const format = useFormatter();
 
-    return (
-      <div
-        ref={ref}
-        style={{ width: EXPORT_WIDTH }}
-        className="flex flex-col gap-6 bg-linear-to-br from-zinc-950 via-zinc-900 to-zinc-950 p-12 font-sans text-white"
-      >
+  const config = EXPORT_LAYOUTS[layout];
+  const background = getBackgroundPreset(squad.background).gradient;
+
+  return (
+    <div
+      ref={ref}
+      style={{ width: config.width, background }}
+      className="relative font-sans text-white"
+    >
+      {/* Scrim keeps text legible over any background gradient. */}
+      <div className="absolute inset-0 bg-black/55" />
+
+      <div className="relative flex flex-col gap-6 p-12">
         {/* Header */}
         <div className="flex items-start justify-between gap-6 border-b border-white/10 pb-6">
           <div className="flex flex-col gap-3">
@@ -182,7 +232,7 @@ export const SquadExportCard = forwardRef<HTMLDivElement, { squad: Squad }>(
         {/* Members */}
         <div className="flex flex-col gap-5">
           {squad.members.map((member, index) => (
-            <MemberPanel key={index} member={member} />
+            <MemberPanel key={index} member={member} layout={config} />
           ))}
         </div>
 
@@ -192,6 +242,6 @@ export const SquadExportCard = forwardRef<HTMLDivElement, { squad: Squad }>(
           <span>{tApp("subtitle")}</span>
         </div>
       </div>
-    );
-  },
-);
+    </div>
+  );
+});

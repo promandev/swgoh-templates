@@ -4,10 +4,13 @@ import { useEffect, useState } from "react";
 import { flushSync } from "react-dom";
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
-import { MoonIcon, SunIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import {
+  EmpireEmblem,
+  RebelEmblem,
+} from "@/components/icons/faction-emblems";
 
 type DocumentWithViewTransition = Document & {
   startViewTransition?: (callback: () => void) => { ready: Promise<void> };
@@ -73,7 +76,15 @@ export function ThemeToggle() {
       title={t("toggle")}
       onClick={toggleTheme}
     >
-      {isDark ? <SunIcon className="size-4" /> : <MoonIcon className="size-4" />}
+      {isDark ? (
+        <EmpireEmblem
+          className="size-7 text-primary transition-transform duration-500 ease-out group-hover/button:rotate-90 group-hover/button:drop-shadow-[0_0_7px_var(--primary)] motion-reduce:transition-none motion-reduce:group-hover/button:rotate-0"
+        />
+      ) : (
+        <RebelEmblem
+          className="size-7 text-primary transition-transform duration-300 ease-out group-hover/button:scale-125 group-hover/button:drop-shadow-[0_0_7px_var(--primary)] motion-reduce:transition-none motion-reduce:group-hover/button:scale-100"
+        />
+      )}
     </Button>
   );
 }

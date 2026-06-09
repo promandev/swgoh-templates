@@ -13,6 +13,8 @@ export interface Squad {
   name: string;
   size: SquadSize;
   members: SquadMember[];
+  /** Id of the chosen export background preset; falls back to the default. */
+  background?: string;
   createdAt: number;
   updatedAt: number;
 }

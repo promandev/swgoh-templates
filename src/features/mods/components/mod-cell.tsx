@@ -18,6 +18,7 @@ import {
   getPrimaryOptions,
   isFixedPrimarySlot,
 } from "@/features/mods/constants/mod-rules";
+import { getPrimary6DotValue } from "@/features/mods/constants/primary-values";
 import type { ModSlotConfig, ModSlotId, StatId, StatLine } from "@/types";
 import { formatStatValue } from "@/utils/format";
 import { ModStatLine } from "./mod-stat-line";
@@ -128,7 +129,7 @@ export function ModCell({
           </div>
         ) : (
           <span className="flex w-full items-center gap-1.5 text-xs">
-            <SlotIcon slot={slot} className="size-3.5" />
+            <SlotIcon slot={slot} className="size-6 text-primary/70" />
             {t("emptySummary")}
           </span>
         )}
@@ -137,7 +138,7 @@ export function ModCell({
       <PopoverContent align="start" className="w-80 gap-3">
         <div className="flex items-center gap-2">
           <span className="flex size-7 items-center justify-center rounded-lg bg-primary/12 text-primary">
-            <SlotIcon slot={slot} className="size-4" />
+            <SlotIcon slot={slot} className="size-6" />
           </span>
           <p className="text-sm font-semibold">
             {t("editorTitle", { slot: slotName })}
@@ -165,7 +166,7 @@ export function ModCell({
                 : undefined
             }
             onStatChange={(stat) =>
-              patch({ primary: { ...config.primary, stat } })
+              patch({ primary: { stat, value: getPrimary6DotValue(stat) } })
             }
             onValueChange={(value) =>
               patch({ primary: { ...config.primary, value } })

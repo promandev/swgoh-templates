@@ -51,7 +51,7 @@ export function CharacterCombobox({
       >
         {selected ? (
           <>
-            <CharacterAvatar character={selected} className="size-7" />
+            <CharacterAvatar character={selected} className="size-9" />
             <span className="truncate text-sm font-medium">
               {selected.name}
             </span>
