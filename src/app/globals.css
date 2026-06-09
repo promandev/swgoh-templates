@@ -156,3 +156,11 @@
     }
   }
 }
+
+/* Theme switch via the View Transitions API: disable the default cross-fade so
+   the clip-path wipe (driven from the theme toggle) reads cleanly. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
