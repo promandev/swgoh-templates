@@ -1,0 +1,145 @@
+{
+  "App": {
+    "title": "SWGOH Squad Builder",
+    "subtitle": "Diseña y documenta tus plantillas de squads",
+    "metaDescription": "Crea y gestiona plantillas de squads de Star Wars: Galaxy of Heroes: composición, mods, estadísticas objetivo y notas de datacron."
+  },
+  "Header": {
+    "newSquad": "Nuevo squad",
+    "themeLabel": "Tema",
+    "languageLabel": "Idioma"
+  },
+  "Theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "toggle": "Cambiar tema"
+  },
+  "Language": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "Squads": {
+    "listTitle": "Squads",
+    "listCount": "{count, plural, =0 {Sin squads} one {# squad} other {# squads}}",
+    "newSquad": "Nuevo squad",
+    "defaultName": "Nuevo squad",
+    "untitled": "Squad sin título",
+    "members": "{count, plural, one {# personaje} other {# personajes}}",
+    "selectPrompt": "Selecciona un squad para empezar a editar.",
+    "rename": "Renombrar",
+    "renamePlaceholder": "Nombre del squad",
+    "delete": "Eliminar squad",
+    "deleteTitle": "¿Eliminar este squad?",
+    "deleteDescription": "«{name}» se eliminará de forma permanente. Esta acción no se puede deshacer.",
+    "sizeLabel": "Tamaño del squad",
+    "sizeThree": "3 personajes",
+    "sizeFive": "5 personajes",
+    "empty": {
+      "title": "Aún no hay squads",
+      "description": "Crea tu primera plantilla para empezar a documentar composición, mods y datacrons.",
+      "cta": "Crear tu primer squad"
+    }
+  },
+  "Builder": {
+    "columnCharacter": "Personaje",
+    "columnDatacron": "Datacron",
+    "memberLabel": "Posición {index}"
+  },
+  "Character": {
+    "select": "Seleccionar personaje",
+    "change": "Cambiar personaje",
+    "clear": "Quitar personaje",
+    "searchPlaceholder": "Buscar personajes…",
+    "noResults": "No se encontraron personajes",
+    "alignmentLight": "Lado luminoso",
+    "alignmentDark": "Lado oscuro",
+    "alignmentNeutral": "Neutral"
+  },
+  "Slots": {
+    "square": { "name": "Cuadrado", "tooltip": "Primaria fija: Ofensiva %" },
+    "arrow": { "name": "Flecha", "tooltip": "Primaria: Velocidad, Precisión, Evitar crítico, Salud %, Protección %, Ofensiva %, Defensa %" },
+    "diamond": { "name": "Diamante", "tooltip": "Primaria fija: Defensa" },
+    "triangle": { "name": "Triángulo", "tooltip": "Primaria: Daño crítico, Prob. crítica, Salud %, Protección %, Ofensiva %, Defensa %" },
+    "circle": { "name": "Círculo", "tooltip": "Primaria: Salud %, Protección %" },
+    "cross": { "name": "Cruz", "tooltip": "Primaria: Potencia, Tenacidad, Salud %, Protección %, Ofensiva %, Defensa %" }
+  },
+  "Mods": {
+    "editorTitle": "Mod {slot}",
+    "primary": "Primaria",
+    "primaryFixed": "Fija",
+    "secondaries": "Secundarias",
+    "addSecondary": "Añadir secundaria",
+    "removeSecondary": "Quitar secundaria",
+    "selectStat": "Elegir stat",
+    "value": "Valor",
+    "valuePlaceholder": "0",
+    "emptySummary": "Vacío",
+    "noSecondaries": "Aún no hay secundarias",
+    "maxReached": "Máximo de {max} secundarias alcanzado",
+    "done": "Hecho",
+    "primaryCount": "{count, plural, =0 {Sin primaria} other {Primaria definida}}"
+  },
+  "Datacron": {
+    "label": "Notas de datacron",
+    "placeholder": "Bonus, objetivos, estado…",
+    "tooltip": "Notas libres: bonus, objetivos y estado",
+    "empty": "Añadir notas"
+  },
+  "Export": {
+    "button": "Exportar plantilla",
+    "previewTitle": "Vista previa de exportación",
+    "previewDescription": "Revisa la plantilla de tu squad antes de descargarla como imagen.",
+    "download": "Descargar PNG",
+    "downloaded": "Imagen descargada",
+    "error": "No se pudo generar la imagen",
+    "exportedOn": "Exportado el {date}",
+    "generatedWith": "Generado con {app}",
+    "emptySlot": "Posición vacía"
+  },
+  "Stats": {
+    "speed": "Velocidad",
+    "health": "Salud",
+    "healthPct": "Salud %",
+    "protection": "Protección",
+    "protectionPct": "Protección %",
+    "offense": "Ofensiva",
+    "offensePct": "Ofensiva %",
+    "defense": "Defensa",
+    "defensePct": "Defensa %",
+    "potency": "Potencia",
+    "tenacity": "Tenacidad",
+    "criticalChance": "Prob. crítica",
+    "criticalDamage": "Daño crítico",
+    "criticalAvoidance": "Evitar crítico",
+    "accuracy": "Precisión"
+  },
+  "Toasts": {
+    "squadCreated": "Squad creado",
+    "squadDeleted": "Squad eliminado",
+    "squadRenamed": "Squad renombrado",
+    "sizeChanged": "Tamaño del squad actualizado",
+    "characterSet": "{name} añadido al squad",
+    "characterCleared": "Personaje eliminado"
+  },
+  "Common": {
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "close": "Cerrar",
+    "edit": "Editar",
+    "clear": "Limpiar",
+    "add": "Añadir",
+    "remove": "Quitar",
+    "done": "Hecho",
+    "none": "Ninguno",
+    "optional": "Opcional"
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe.",
+    "back": "Volver al builder"
+  }
+}

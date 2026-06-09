@@ -1,0 +1,3372 @@
+[
+  {
+    "id": "0-0-0",
+    "name": "0-0-0",
+    "avatar": "/assets/characters/0-0-0.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "4lom",
+    "name": "4-LOM",
+    "avatar": "/assets/characters/4lom.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_BOUNTYHUNTER_DESC_V2",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLESUPPORT_DESC",
+      "CATEGORY_SCOUNDREL_DESC",
+      "CATEGORY_SPECIESDROID_DESC"
+    ]
+  },
+  {
+    "id": "50r-t",
+    "name": "50R-T",
+    "avatar": "/assets/characters/50r-t.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Old Republic"
+    ]
+  },
+  {
+    "id": "aayla-secura",
+    "name": "Aayla Secura",
+    "avatar": "/assets/characters/aayla-secura.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "admiral-ackbar",
+    "name": "Admiral Ackbar",
+    "avatar": "/assets/characters/admiral-ackbar.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel"
+    ]
+  },
+  {
+    "id": "admiral-piett",
+    "name": "Admiral Piett",
+    "avatar": "/assets/characters/admiral-piett.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "admiral-raddus",
+    "name": "Admiral Raddus",
+    "avatar": "/assets/characters/admiral-raddus.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "admiral-trench",
+    "name": "Admiral Trench",
+    "avatar": "/assets/characters/admiral-trench.webp",
+    "alignment": "dark",
+    "factions": [
+      "Separatist"
+    ]
+  },
+  {
+    "id": "ahsoka-tano",
+    "name": "Ahsoka Tano",
+    "avatar": "/assets/characters/ahsoka-tano.webp",
+    "alignment": "light",
+    "factions": [
+      "501st",
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "glahsokatano",
+    "name": "Ahsoka Tano",
+    "avatar": "/assets/characters/glahsokatano.webp",
+    "alignment": "light",
+    "factions": [
+      "Spectre",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "ahsoka-tano-fulcrum",
+    "name": "Ahsoka Tano (Fulcrum)",
+    "avatar": "/assets/characters/ahsoka-tano-fulcrum.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "amilyn-holdo",
+    "name": "Amilyn Holdo",
+    "avatar": "/assets/characters/amilyn-holdo.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance"
+    ]
+  },
+  {
+    "id": "arc-trooper",
+    "name": "ARC Trooper",
+    "avatar": "/assets/characters/arc-trooper.webp",
+    "alignment": "light",
+    "factions": [
+      "501st",
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "asajj-ventress",
+    "name": "Asajj Ventress",
+    "avatar": "/assets/characters/asajj-ventress.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister",
+      "Separatist",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "asajjdarkdisciple",
+    "name": "Asajj Ventress (Dark Disciple)",
+    "avatar": "/assets/characters/asajjdarkdisciple.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_BOUNTYHUNTER_DESC_V2",
+      "CATEGORY_NIGHTSISTERS_DESC",
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+    ]
+  },
+  {
+    "id": "aurra-sing",
+    "name": "Aurra Sing",
+    "avatar": "/assets/characters/aurra-sing.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "b1-battle-droid",
+    "name": "B1 Battle Droid",
+    "avatar": "/assets/characters/b1-battle-droid.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "b2-super-battle-droid",
+    "name": "B2 Super Battle Droid",
+    "avatar": "/assets/characters/b2-super-battle-droid.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "barriss-offee",
+    "name": "Barriss Offee",
+    "avatar": "/assets/characters/barriss-offee.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "bastila-shan",
+    "name": "Bastila Shan",
+    "avatar": "/assets/characters/bastila-shan.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "Old Republic"
+    ]
+  },
+  {
+    "id": "bastila-shan-fallen",
+    "name": "Bastila Shan (Fallen)",
+    "avatar": "/assets/characters/bastila-shan-fallen.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith",
+      "Sith Empire"
+    ]
+  },
+  {
+    "id": "batchers3",
+    "name": "Batcher",
+    "avatar": "/assets/characters/batchers3.webp",
+    "alignment": "light",
+    "factions": [
+      "Bad Batch"
+    ]
+  },
+  {
+    "id": "baylanskoll",
+    "name": "Baylan Skoll",
+    "avatar": "/assets/characters/baylanskoll.webp",
+    "alignment": "dark",
+    "factions": [
+      "Mercenary",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "baze-malbus",
+    "name": "Baze Malbus",
+    "avatar": "/assets/characters/baze-malbus.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "bb-8",
+    "name": "BB-8",
+    "avatar": "/assets/characters/bb-8.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Resistance"
+    ]
+  },
+  {
+    "id": "ben-solo",
+    "name": "Ben Solo",
+    "avatar": "/assets/characters/ben-solo.webp",
+    "alignment": "light",
+    "factions": [
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "biggs-darklighter",
+    "name": "Biggs Darklighter",
+    "avatar": "/assets/characters/biggs-darklighter.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter"
+    ]
+  },
+  {
+    "id": "bistan",
+    "name": "Bistan",
+    "avatar": "/assets/characters/bistan.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "mandalorbokatan",
+    "name": "Bo-Katan (Mand'alor)",
+    "avatar": "/assets/characters/mandalorbokatan.webp",
+    "alignment": "light",
+    "factions": [
+      "Mandalorian"
+    ]
+  },
+  {
+    "id": "bo-katan-kryze",
+    "name": "Bo-Katan Kryze",
+    "avatar": "/assets/characters/bo-katan-kryze.webp",
+    "alignment": "light",
+    "factions": [
+      "Mandalorian",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "boba-fett",
+    "name": "Boba Fett",
+    "avatar": "/assets/characters/boba-fett.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "boba-fett-scion-of-jango",
+    "name": "Boba Fett, Scion of Jango",
+    "avatar": "/assets/characters/boba-fett-scion-of-jango.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "bodhi-rook",
+    "name": "Bodhi Rook",
+    "avatar": "/assets/characters/bodhi-rook.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "bossnass",
+    "name": "Boss Nass",
+    "avatar": "/assets/characters/bossnass.webp",
+    "alignment": "light",
+    "factions": [
+      "Gungan"
+    ]
+  },
+  {
+    "id": "bossk",
+    "name": "Bossk",
+    "avatar": "/assets/characters/bossk.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "boushh-leia-organa",
+    "name": "Boushh (Leia Organa)",
+    "avatar": "/assets/characters/boushh-leia-organa.webp",
+    "alignment": "light",
+    "factions": [
+      "Bounty Hunter",
+      "Hutt Cartel",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "brutus",
+    "name": "Brutus",
+    "avatar": "/assets/characters/brutus.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_PIRATE_DESC",
+      "CATEGORY_RAID_ORDER66_DESC",
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_SCOUNDREL_DESC"
+    ]
+  },
+  {
+    "id": "bt-1",
+    "name": "BT-1",
+    "avatar": "/assets/characters/bt-1.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "c-3po",
+    "name": "C-3PO",
+    "avatar": "/assets/characters/c-3po.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Galactic Republic",
+      "Rebel",
+      "Resistance"
+    ]
+  },
+  {
+    "id": "cad-bane",
+    "name": "Cad Bane",
+    "avatar": "/assets/characters/cad-bane.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "cal-kestis",
+    "name": "Cal Kestis",
+    "avatar": "/assets/characters/cal-kestis.webp",
+    "alignment": "light",
+    "factions": [
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "canderous-ordo",
+    "name": "Canderous Ordo",
+    "avatar": "/assets/characters/canderous-ordo.webp",
+    "alignment": "dark",
+    "factions": [
+      "Mandalorian",
+      "Old Republic",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "carsonteva",
+    "name": "Captain Carson Teva",
+    "avatar": "/assets/characters/carsonteva.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_CONSTABLE_DESC",
+      "CATEGORY_NEWREPUBLIC_DESC",
+      "CATEGORY_REBELS_DESC",
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_ROLELEADER_DESC"
+    ]
+  },
+  {
+    "id": "captaindrogan",
+    "name": "Captain Drogan",
+    "avatar": "/assets/characters/captaindrogan.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter"
+    ]
+  },
+  {
+    "id": "captainenoch",
+    "name": "Captain Enoch",
+    "avatar": "/assets/characters/captainenoch.webp",
+    "alignment": "dark",
+    "factions": [
+      "Imperial Remnant"
+    ]
+  },
+  {
+    "id": "captain-han-solo",
+    "name": "Captain Han Solo",
+    "avatar": "/assets/characters/captain-han-solo.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "ithano",
+    "name": "Captain Ithano",
+    "avatar": "/assets/characters/ithano.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_PIRATE_DESC",
+      "CATEGORY_RAID_ORDER66_DESC",
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_SCOUNDREL_DESC"
+    ]
+  },
+  {
+    "id": "captain-phasma",
+    "name": "Captain Phasma",
+    "avatar": "/assets/characters/captain-phasma.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order"
+    ]
+  },
+  {
+    "id": "captainrex",
+    "name": "Captain Rex",
+    "avatar": "/assets/characters/captainrex.webp",
+    "alignment": "light",
+    "factions": [
+      "Clone Trooper",
+      "Phoenix",
+      "Rebel Fighter",
+      "Rebels"
+    ]
+  },
+  {
+    "id": "captainsilvo",
+    "name": "Captain Silvo",
+    "avatar": "/assets/characters/captainsilvo.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_PIRATE_DESC",
+      "CATEGORY_RAID_ORDER66_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLESUPPORT_DESC",
+      "CATEGORY_SCOUNDREL_DESC",
+      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+    ]
+  },
+  {
+    "id": "captaintarpals",
+    "name": "Captain Tarpals",
+    "avatar": "/assets/characters/captaintarpals.webp",
+    "alignment": "light",
+    "factions": [
+      "Gungan"
+    ]
+  },
+  {
+    "id": "cara-dune",
+    "name": "Cara Dune",
+    "avatar": "/assets/characters/cara-dune.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "carth-onasi",
+    "name": "Carth Onasi",
+    "avatar": "/assets/characters/carth-onasi.webp",
+    "alignment": "light",
+    "factions": [
+      "Old Republic"
+    ]
+  },
+  {
+    "id": "cassian-andor",
+    "name": "Cassian Andor",
+    "avatar": "/assets/characters/cassian-andor.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "cassianundercover",
+    "name": "Cassian Andor (Undercover)",
+    "avatar": "/assets/characters/cassianundercover.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_REBELFIGHTER_DESC",
+      "CATEGORY_REBELS_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLESUPPORT_DESC"
+    ]
+  },
+  {
+    "id": "appo",
+    "name": "CC-1119 \"Appo\"",
+    "avatar": "/assets/characters/appo.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_CLONETROOPER_DESC",
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_ROLEATTACKER_DESC"
+    ]
+  },
+  {
+    "id": "cc-2224-cody",
+    "name": "CC-2224 \"Cody\"",
+    "avatar": "/assets/characters/cc-2224-cody.webp",
+    "alignment": "light",
+    "factions": [
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "cere-junda",
+    "name": "Cere Junda",
+    "avatar": "/assets/characters/cere-junda.webp",
+    "alignment": "light",
+    "factions": [
+      "Scoundrel",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "chewbacca",
+    "name": "Chewbacca",
+    "avatar": "/assets/characters/chewbacca.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "chief-chirpa",
+    "name": "Chief Chirpa",
+    "avatar": "/assets/characters/chief-chirpa.webp",
+    "alignment": "light",
+    "factions": [
+      "Ewok"
+    ]
+  },
+  {
+    "id": "chief-nebit",
+    "name": "Chief Nebit",
+    "avatar": "/assets/characters/chief-nebit.webp",
+    "alignment": "light",
+    "factions": [
+      "Jawa"
+    ]
+  },
+  {
+    "id": "chirrut-imwe",
+    "name": "Chirrut Îmwe",
+    "avatar": "/assets/characters/chirrut-imwe.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "chopper",
+    "name": "Chopper",
+    "avatar": "/assets/characters/chopper.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Phoenix",
+      "Rebel"
+    ]
+  },
+  {
+    "id": "cinta",
+    "name": "Cinta Kaz",
+    "avatar": "/assets/characters/cinta.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_REBELFIGHTER_DESC",
+      "CATEGORY_REBELS_DESC",
+      "CATEGORY_ROLEATTACKER_DESC"
+    ]
+  },
+  {
+    "id": "clone-sergeant-phase-i",
+    "name": "Clone Sergeant - Phase I",
+    "avatar": "/assets/characters/clone-sergeant-phase-i.webp",
+    "alignment": "light",
+    "factions": [
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "clone-wars-chewbacca",
+    "name": "Clone Wars Chewbacca",
+    "avatar": "/assets/characters/clone-wars-chewbacca.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "cobbvanth",
+    "name": "Cobb Vanth",
+    "avatar": "/assets/characters/cobbvanth.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_CONSTABLE_DESC",
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_ROLELEADER_DESC"
+    ]
+  },
+  {
+    "id": "colonel-starck",
+    "name": "Colonel Starck",
+    "avatar": "/assets/characters/colonel-starck.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "bishop",
+    "name": "Colonel Ward",
+    "avatar": "/assets/characters/bishop.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_NEWREPUBLIC_DESC",
+      "CATEGORY_ROLESUPPORT_DESC"
+    ]
+  },
+  {
+    "id": "commander-ahsoka-tano",
+    "name": "Commander Ahsoka Tano",
+    "avatar": "/assets/characters/commander-ahsoka-tano.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Scoundrel",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "commander-luke-skywalker",
+    "name": "Commander Luke Skywalker",
+    "avatar": "/assets/characters/commander-luke-skywalker.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "coruscant-underworld-police",
+    "name": "Coruscant Underworld Police",
+    "avatar": "/assets/characters/coruscant-underworld-police.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "count-dooku",
+    "name": "Count Dooku",
+    "avatar": "/assets/characters/count-dooku.webp",
+    "alignment": "dark",
+    "factions": [
+      "Separatist",
+      "Sith"
+    ]
+  },
+  {
+    "id": "crosshairs3",
+    "name": "Crosshair (Scarred)",
+    "avatar": "/assets/characters/crosshairs3.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_BADBATCH_DESC",
+      "CATEGORY_ROLEATTACKER_DESC"
+    ]
+  },
+  {
+    "id": "ct-21-0408-echo",
+    "name": "CT-21-0408 \"Echo\"",
+    "avatar": "/assets/characters/ct-21-0408-echo.webp",
+    "alignment": "light",
+    "factions": [
+      "501st",
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "ct-5555-fives",
+    "name": "CT-5555 \"Fives\"",
+    "avatar": "/assets/characters/ct-5555-fives.webp",
+    "alignment": "light",
+    "factions": [
+      "501st",
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "ct-7567-rex",
+    "name": "CT-7567 \"Rex\"",
+    "avatar": "/assets/characters/ct-7567-rex.webp",
+    "alignment": "light",
+    "factions": [
+      "501st",
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "operative",
+    "name": "CX-2",
+    "avatar": "/assets/characters/operative.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_CLONETROOPER_DESC",
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_ROLESUPPORT_DESC"
+    ]
+  },
+  {
+    "id": "dark-trooper",
+    "name": "Dark Trooper",
+    "avatar": "/assets/characters/dark-trooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Empire",
+      "Imperial Remnant",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "moffgideons3",
+    "name": "Dark Trooper Moff Gideon",
+    "avatar": "/assets/characters/moffgideons3.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Remnant"
+    ]
+  },
+  {
+    "id": "darthbane",
+    "name": "Darth Bane",
+    "avatar": "/assets/characters/darthbane.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
+    ]
+  },
+  {
+    "id": "darth-malak",
+    "name": "Darth Malak",
+    "avatar": "/assets/characters/darth-malak.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith",
+      "Sith Empire"
+    ]
+  },
+  {
+    "id": "darth-malgus",
+    "name": "Darth Malgus",
+    "avatar": "/assets/characters/darth-malgus.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith",
+      "Sith Empire"
+    ]
+  },
+  {
+    "id": "darth-maul",
+    "name": "Darth Maul",
+    "avatar": "/assets/characters/darth-maul.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
+    ]
+  },
+  {
+    "id": "darth-nihilus",
+    "name": "Darth Nihilus",
+    "avatar": "/assets/characters/darth-nihilus.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
+    ]
+  },
+  {
+    "id": "darth-revan",
+    "name": "Darth Revan",
+    "avatar": "/assets/characters/darth-revan.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith",
+      "Sith Empire"
+    ]
+  },
+  {
+    "id": "darth-sidious",
+    "name": "Darth Sidious",
+    "avatar": "/assets/characters/darth-sidious.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
+    ]
+  },
+  {
+    "id": "darth-sion",
+    "name": "Darth Sion",
+    "avatar": "/assets/characters/darth-sion.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
+    ]
+  },
+  {
+    "id": "darth-talon",
+    "name": "Darth Talon",
+    "avatar": "/assets/characters/darth-talon.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
+    ]
+  },
+  {
+    "id": "darth-traya",
+    "name": "Darth Traya",
+    "avatar": "/assets/characters/darth-traya.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
+    ]
+  },
+  {
+    "id": "darth-vader",
+    "name": "Darth Vader",
+    "avatar": "/assets/characters/darth-vader.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Sith"
+    ]
+  },
+  {
+    "id": "vaderduelsend",
+    "name": "Darth Vader (Duel's End)",
+    "avatar": "/assets/characters/vaderduelsend.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_SITH_DESC"
+    ]
+  },
+  {
+    "id": "dash-rendar",
+    "name": "Dash Rendar",
+    "avatar": "/assets/characters/dash-rendar.webp",
+    "alignment": "light",
+    "factions": [
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "dathcha",
+    "name": "Dathcha",
+    "avatar": "/assets/characters/dathcha.webp",
+    "alignment": "light",
+    "factions": [
+      "Jawa"
+    ]
+  },
+  {
+    "id": "death-trooper",
+    "name": "Death Trooper",
+    "avatar": "/assets/characters/death-trooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Remnant",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "deathtrooperperidea",
+    "name": "Death Trooper (Peridea)",
+    "avatar": "/assets/characters/deathtrooperperidea.webp",
+    "alignment": "dark",
+    "factions": [
+      "Imperial Remnant",
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "dedrameero",
+    "name": "Dedra Meero",
+    "avatar": "/assets/characters/dedrameero.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_IMPERIALSECURITYBUREAU",
+      "CATEGORY_ROLESUPPORT_DESC"
+    ]
+  },
+  {
+    "id": "dengar",
+    "name": "Dengar",
+    "avatar": "/assets/characters/dengar.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "depabillaba",
+    "name": "Depa Billaba",
+    "avatar": "/assets/characters/depabillaba.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_GALACTICREPUBLIC_DESC",
+      "CATEGORY_JEDI_DESC",
+      "CATEGORY_JEDIVANGUARD_DESC",
+      "CATEGORY_ROLEATTACKER_DESC"
+    ]
+  },
+  {
+    "id": "director-krennic",
+    "name": "Director Krennic",
+    "avatar": "/assets/characters/director-krennic.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire"
+    ]
+  },
+  {
+    "id": "disguisedclonetrooper",
+    "name": "Disguised Clone Trooper",
+    "avatar": "/assets/characters/disguisedclonetrooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_CLONETROOPER_DESC",
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_ROLESUPPORT_DESC"
+    ]
+  },
+  {
+    "id": "doctor-aphra",
+    "name": "Doctor Aphra",
+    "avatar": "/assets/characters/doctor-aphra.webp",
+    "alignment": "dark",
+    "factions": [
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "droideka",
+    "name": "Droideka",
+    "avatar": "/assets/characters/droideka.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "echo",
+    "name": "Echo",
+    "avatar": "/assets/characters/echo.webp",
+    "alignment": "light",
+    "factions": [
+      "Bad Batch",
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "eeth-koth",
+    "name": "Eeth Koth",
+    "avatar": "/assets/characters/eeth-koth.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "eighth-brother",
+    "name": "Eighth Brother",
+    "avatar": "/assets/characters/eighth-brother.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Inquisitorius",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "embo",
+    "name": "Embo",
+    "avatar": "/assets/characters/embo.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "emperor-palpatine",
+    "name": "Emperor Palpatine",
+    "avatar": "/assets/characters/emperor-palpatine.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Sith"
+    ]
+  },
+  {
+    "id": "enfys-nest",
+    "name": "Enfys Nest",
+    "avatar": "/assets/characters/enfys-nest.webp",
+    "alignment": "light",
+    "factions": [
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "ewok-elder",
+    "name": "Ewok Elder",
+    "avatar": "/assets/characters/ewok-elder.webp",
+    "alignment": "light",
+    "factions": [
+      "Ewok"
+    ]
+  },
+  {
+    "id": "ewok-scout",
+    "name": "Ewok Scout",
+    "avatar": "/assets/characters/ewok-scout.webp",
+    "alignment": "light",
+    "factions": [
+      "Ewok"
+    ]
+  },
+  {
+    "id": "ezra-bridger",
+    "name": "Ezra Bridger",
+    "avatar": "/assets/characters/ezra-bridger.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "Phoenix",
+      "Rebel"
+    ]
+  },
+  {
+    "id": "ezraexile",
+    "name": "Ezra Bridger (Exile)",
+    "avatar": "/assets/characters/ezraexile.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "Spectre"
+    ]
+  },
+  {
+    "id": "fennec-shand",
+    "name": "Fennec Shand",
+    "avatar": "/assets/characters/fennec-shand.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "fifth-brother",
+    "name": "Fifth Brother",
+    "avatar": "/assets/characters/fifth-brother.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Inquisitorius",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "finn",
+    "name": "Finn",
+    "avatar": "/assets/characters/finn.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance"
+    ]
+  },
+  {
+    "id": "first-order-executioner",
+    "name": "First Order Executioner",
+    "avatar": "/assets/characters/first-order-executioner.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order"
+    ]
+  },
+  {
+    "id": "first-order-officer",
+    "name": "First Order Officer",
+    "avatar": "/assets/characters/first-order-officer.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order"
+    ]
+  },
+  {
+    "id": "first-order-sf-tie-pilot",
+    "name": "First Order SF TIE Pilot",
+    "avatar": "/assets/characters/first-order-sf-tie-pilot.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order"
+    ]
+  },
+  {
+    "id": "first-order-stormtrooper",
+    "name": "First Order Stormtrooper",
+    "avatar": "/assets/characters/first-order-stormtrooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order"
+    ]
+  },
+  {
+    "id": "first-order-tie-pilot",
+    "name": "First Order TIE Pilot",
+    "avatar": "/assets/characters/first-order-tie-pilot.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order"
+    ]
+  },
+  {
+    "id": "gamorrean-guard",
+    "name": "Gamorrean Guard",
+    "avatar": "/assets/characters/gamorrean-guard.webp",
+    "alignment": "dark",
+    "factions": [
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "gar-saxon",
+    "name": "Gar Saxon",
+    "avatar": "/assets/characters/gar-saxon.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Mandalorian"
+    ]
+  },
+  {
+    "id": "garazeb-zeb-orrelios",
+    "name": "Garazeb \"Zeb\" Orrelios",
+    "avatar": "/assets/characters/garazeb-zeb-orrelios.webp",
+    "alignment": "light",
+    "factions": [
+      "Phoenix",
+      "Rebel"
+    ]
+  },
+  {
+    "id": "general-grievous",
+    "name": "General Grievous",
+    "avatar": "/assets/characters/general-grievous.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "general-hux",
+    "name": "General Hux",
+    "avatar": "/assets/characters/general-hux.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order"
+    ]
+  },
+  {
+    "id": "general-kenobi",
+    "name": "General Kenobi",
+    "avatar": "/assets/characters/general-kenobi.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "general-skywalker",
+    "name": "General Skywalker",
+    "avatar": "/assets/characters/general-skywalker.webp",
+    "alignment": "light",
+    "factions": [
+      "501st",
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "generalsyndulla",
+    "name": "General Syndulla",
+    "avatar": "/assets/characters/generalsyndulla.webp",
+    "alignment": "light",
+    "factions": [
+      "Spectre"
+    ]
+  },
+  {
+    "id": "general-veers",
+    "name": "General Veers",
+    "avatar": "/assets/characters/general-veers.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "geonosian-brood-alpha",
+    "name": "Geonosian Brood Alpha",
+    "avatar": "/assets/characters/geonosian-brood-alpha.webp",
+    "alignment": "dark",
+    "factions": [
+      "Geonosian",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "geonosian-soldier",
+    "name": "Geonosian Soldier",
+    "avatar": "/assets/characters/geonosian-soldier.webp",
+    "alignment": "dark",
+    "factions": [
+      "Geonosian",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "geonosian-spy",
+    "name": "Geonosian Spy",
+    "avatar": "/assets/characters/geonosian-spy.webp",
+    "alignment": "dark",
+    "factions": [
+      "Geonosian",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "grand-admiral-thrawn",
+    "name": "Grand Admiral Thrawn",
+    "avatar": "/assets/characters/grand-admiral-thrawn.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire"
+    ]
+  },
+  {
+    "id": "grand-inquisitor",
+    "name": "Grand Inquisitor",
+    "avatar": "/assets/characters/grand-inquisitor.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Inquisitorius",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "grand-master-yoda",
+    "name": "Grand Master Yoda",
+    "avatar": "/assets/characters/grand-master-yoda.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "grand-moff-tarkin",
+    "name": "Grand Moff Tarkin",
+    "avatar": "/assets/characters/grand-moff-tarkin.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire"
+    ]
+  },
+  {
+    "id": "greatmothers",
+    "name": "Great Mothers",
+    "avatar": "/assets/characters/greatmothers.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "greedo",
+    "name": "Greedo",
+    "avatar": "/assets/characters/greedo.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "greef-karga",
+    "name": "Greef Karga",
+    "avatar": "/assets/characters/greef-karga.webp",
+    "alignment": "light",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "gopherants",
+    "name": "Grogu & Anzellans",
+    "avatar": "",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_MANDALORIAN_DESC",
+      "CATEGORY_NEWREPUBLIC_DESC",
+      "CATEGORY_ROLEHEALER_DESC",
+      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+    ]
+  },
+  {
+    "id": "boomadier",
+    "name": "Gungan Boomadier",
+    "avatar": "/assets/characters/boomadier.webp",
+    "alignment": "light",
+    "factions": [
+      "Gungan"
+    ]
+  },
+  {
+    "id": "gunganphalanx",
+    "name": "Gungan Phalanx",
+    "avatar": "/assets/characters/gunganphalanx.webp",
+    "alignment": "light",
+    "factions": [
+      "Gungan"
+    ]
+  },
+  {
+    "id": "han-solo",
+    "name": "Han Solo",
+    "avatar": "/assets/characters/han-solo.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "hera-syndulla",
+    "name": "Hera Syndulla",
+    "avatar": "/assets/characters/hera-syndulla.webp",
+    "alignment": "light",
+    "factions": [
+      "Phoenix",
+      "Rebel"
+    ]
+  },
+  {
+    "id": "hermit-yoda",
+    "name": "Hermit Yoda",
+    "avatar": "/assets/characters/hermit-yoda.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi"
+    ]
+  },
+  {
+    "id": "hk-47",
+    "name": "HK-47",
+    "avatar": "/assets/characters/hk-47.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Sith Empire"
+    ]
+  },
+  {
+    "id": "hondo-ohnaka",
+    "name": "Hondo Ohnaka",
+    "avatar": "/assets/characters/hondo-ohnaka.webp",
+    "alignment": "dark",
+    "factions": [
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "hoth-rebel-scout",
+    "name": "Hoth Rebel Scout",
+    "avatar": "/assets/characters/hoth-rebel-scout.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter"
+    ]
+  },
+  {
+    "id": "hoth-rebel-soldier",
+    "name": "Hoth Rebel Soldier",
+    "avatar": "/assets/characters/hoth-rebel-soldier.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter"
+    ]
+  },
+  {
+    "id": "hunter",
+    "name": "Hunter",
+    "avatar": "/assets/characters/hunter.webp",
+    "alignment": "light",
+    "factions": [
+      "Bad Batch",
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "hunters3",
+    "name": "Hunter (Mercenary)",
+    "avatar": "/assets/characters/hunters3.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_BADBATCH_DESC",
+      "CATEGORY_MERCENARY_DESC",
+      "CATEGORY_ROLESUPPORT_DESC"
+    ]
+  },
+  {
+    "id": "huyang",
+    "name": "Huyang",
+    "avatar": "/assets/characters/huyang.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Spectre"
+    ]
+  },
+  {
+    "id": "iden-versio",
+    "name": "Iden Versio",
+    "avatar": "/assets/characters/iden-versio.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "ig-100-magnaguard",
+    "name": "IG-100 MagnaGuard",
+    "avatar": "/assets/characters/ig-100-magnaguard.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "ig-11",
+    "name": "IG-11",
+    "avatar": "/assets/characters/ig-11.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "ig12",
+    "name": "IG-12 & Grogu",
+    "avatar": "/assets/characters/ig12.webp",
+    "alignment": "light",
+    "factions": [
+      "Mandalorian"
+    ]
+  },
+  {
+    "id": "ig-86-sentinel-droid",
+    "name": "IG-86 Sentinel Droid",
+    "avatar": "/assets/characters/ig-86-sentinel-droid.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid"
+    ]
+  },
+  {
+    "id": "ig-88",
+    "name": "IG-88",
+    "avatar": "/assets/characters/ig-88.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Droid",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "ig90",
+    "name": "IG-90",
+    "avatar": "/assets/characters/ig90.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_BOUNTYHUNTER_DESC_V2",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLESUPPORT_DESC",
+      "CATEGORY_SCOUNDREL_DESC",
+      "CATEGORY_SPECIESDROID_DESC"
+    ]
+  },
+  {
+    "id": "ima-gun-di",
+    "name": "Ima-Gun Di",
+    "avatar": "/assets/characters/ima-gun-di.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "imperial-probe-droid",
+    "name": "Imperial Probe Droid",
+    "avatar": "/assets/characters/imperial-probe-droid.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Empire"
+    ]
+  },
+  {
+    "id": "imperial-super-commando",
+    "name": "Imperial Super Commando",
+    "avatar": "/assets/characters/imperial-super-commando.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Mandalorian"
+    ]
+  },
+  {
+    "id": "inquisitorbarriss",
+    "name": "Inquisitor Barriss",
+    "avatar": "/assets/characters/inquisitorbarriss.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_INQUISITORIUS_DESC",
+      "CATEGORY_ROLEHEALER_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+    ]
+  },
+  {
+    "id": "jabba-the-hutt",
+    "name": "Jabba the Hutt",
+    "avatar": "/assets/characters/jabba-the-hutt.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Hutt Cartel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "jango-fett",
+    "name": "Jango Fett",
+    "avatar": "/assets/characters/jango-fett.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Mandalorian",
+      "Scoundrel",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "jarjarbinks",
+    "name": "Jar Jar Binks",
+    "avatar": "/assets/characters/jarjarbinks.webp",
+    "alignment": "light",
+    "factions": [
+      "Gungan"
+    ]
+  },
+  {
+    "id": "jawa",
+    "name": "Jawa",
+    "avatar": "/assets/characters/jawa.webp",
+    "alignment": "light",
+    "factions": [
+      "Jawa"
+    ]
+  },
+  {
+    "id": "jawa-engineer",
+    "name": "Jawa Engineer",
+    "avatar": "/assets/characters/jawa-engineer.webp",
+    "alignment": "light",
+    "factions": [
+      "Jawa"
+    ]
+  },
+  {
+    "id": "jawa-scavenger",
+    "name": "Jawa Scavenger",
+    "avatar": "/assets/characters/jawa-scavenger.webp",
+    "alignment": "light",
+    "factions": [
+      "Jawa"
+    ]
+  },
+  {
+    "id": "jedi-consular",
+    "name": "Jedi Consular",
+    "avatar": "/assets/characters/jedi-consular.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "jedi-knight-anakin",
+    "name": "Jedi Knight Anakin",
+    "avatar": "/assets/characters/jedi-knight-anakin.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "jediknightcal",
+    "name": "Jedi Knight Cal Kestis",
+    "avatar": "/assets/characters/jediknightcal.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi"
+    ]
+  },
+  {
+    "id": "jedi-knight-guardian",
+    "name": "Jedi Knight Guardian",
+    "avatar": "/assets/characters/jedi-knight-guardian.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "jedi-knight-luke-skywalker",
+    "name": "Jedi Knight Luke Skywalker",
+    "avatar": "/assets/characters/jedi-knight-luke-skywalker.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi"
+    ]
+  },
+  {
+    "id": "jedi-knight-revan",
+    "name": "Jedi Knight Revan",
+    "avatar": "/assets/characters/jedi-knight-revan.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "Old Republic"
+    ]
+  },
+  {
+    "id": "jedi-master-kenobi",
+    "name": "Jedi Master Kenobi",
+    "avatar": "/assets/characters/jedi-master-kenobi.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "jedi-master-luke-skywalker",
+    "name": "Jedi Master Luke Skywalker",
+    "avatar": "/assets/characters/jedi-master-luke-skywalker.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi"
+    ]
+  },
+  {
+    "id": "jedimastermacewindu",
+    "name": "Jedi Master Mace Windu",
+    "avatar": "/assets/characters/jedimastermacewindu.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_GALACTICREPUBLIC_DESC",
+      "CATEGORY_JEDI_DESC",
+      "CATEGORY_JEDIVANGUARD_DESC",
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_ROLELEADER_DESC"
+    ]
+  },
+  {
+    "id": "jocastanu",
+    "name": "Jocasta Nu",
+    "avatar": "/assets/characters/jocastanu.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_GALACTICREPUBLIC_DESC",
+      "CATEGORY_JEDI_DESC",
+      "CATEGORY_JEDIVANGUARD_DESC",
+      "CATEGORY_ROLEATTACKER_DESC"
+    ]
+  },
+  {
+    "id": "jolee-bindo",
+    "name": "Jolee Bindo",
+    "avatar": "/assets/characters/jolee-bindo.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "Old Republic"
+    ]
+  },
+  {
+    "id": "juhani",
+    "name": "Juhani",
+    "avatar": "/assets/characters/juhani.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "Old Republic"
+    ]
+  },
+  {
+    "id": "jyn-erso",
+    "name": "Jyn Erso",
+    "avatar": "/assets/characters/jyn-erso.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "k-2so",
+    "name": "K-2SO",
+    "avatar": "/assets/characters/k-2so.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Rebel",
+      "Rebel Fighter",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "kanan-jarrus",
+    "name": "Kanan Jarrus",
+    "avatar": "/assets/characters/kanan-jarrus.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "Phoenix",
+      "Rebel"
+    ]
+  },
+  {
+    "id": "kelleranbeq",
+    "name": "Kelleran Beq",
+    "avatar": "/assets/characters/kelleranbeq.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "ki-adi-mundi",
+    "name": "Ki-Adi-Mundi",
+    "avatar": "/assets/characters/ki-adi-mundi.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "kit-fisto",
+    "name": "Kit Fisto",
+    "avatar": "/assets/characters/kit-fisto.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "kix",
+    "name": "Kix",
+    "avatar": "/assets/characters/kix.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_CLONETROOPER_DESC",
+      "CATEGORY_PIRATE_DESC",
+      "CATEGORY_RAID_ORDER66_DESC",
+      "CATEGORY_ROLEHEALER_DESC",
+      "CATEGORY_SCOUNDREL_DESC"
+    ]
+  },
+  {
+    "id": "kleya",
+    "name": "Kleya Marki",
+    "avatar": "/assets/characters/kleya.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_REBELFIGHTER_DESC",
+      "CATEGORY_REBELS_DESC",
+      "CATEGORY_ROLEATTACKER_DESC"
+    ]
+  },
+  {
+    "id": "krrsantan",
+    "name": "Krrsantan",
+    "avatar": "/assets/characters/krrsantan.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Hutt Cartel",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "kuiil",
+    "name": "Kuiil",
+    "avatar": "/assets/characters/kuiil.webp",
+    "alignment": "light",
+    "factions": [
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "kxsecuritydroid",
+    "name": "KX Security Droid",
+    "avatar": "/assets/characters/kxsecuritydroid.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_IMPERIALSECURITYBUREAU",
+      "CATEGORY_ROLETANK_DESC",
+      "CATEGORY_SPECIESDROID_DESC"
+    ]
+  },
+  {
+    "id": "kyle-katarn",
+    "name": "Kyle Katarn",
+    "avatar": "/assets/characters/kyle-katarn.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "Rebel",
+      "Rebel Fighter"
+    ]
+  },
+  {
+    "id": "kylo-ren",
+    "name": "Kylo Ren",
+    "avatar": "/assets/characters/kylo-ren.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "kylo-ren-unmasked",
+    "name": "Kylo Ren (Unmasked)",
+    "avatar": "/assets/characters/kylo-ren-unmasked.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "l3-37",
+    "name": "L3-37",
+    "avatar": "/assets/characters/l3-37.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "lando-calrissian",
+    "name": "Lando Calrissian",
+    "avatar": "/assets/characters/lando-calrissian.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "glleia",
+    "name": "Leia Organa",
+    "avatar": "/assets/characters/glleia.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel"
+    ]
+  },
+  {
+    "id": "lobot",
+    "name": "Lobot",
+    "avatar": "/assets/characters/lobot.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel"
+    ]
+  },
+  {
+    "id": "logray",
+    "name": "Logray",
+    "avatar": "/assets/characters/logray.webp",
+    "alignment": "light",
+    "factions": [
+      "Ewok"
+    ]
+  },
+  {
+    "id": "lord-vader",
+    "name": "Lord Vader",
+    "avatar": "/assets/characters/lord-vader.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Sith"
+    ]
+  },
+  {
+    "id": "luke-skywalker-farmboy",
+    "name": "Luke Skywalker (Farmboy)",
+    "avatar": "/assets/characters/luke-skywalker-farmboy.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel"
+    ]
+  },
+  {
+    "id": "luminara-unduli",
+    "name": "Luminara Unduli",
+    "avatar": "/assets/characters/luminara-unduli.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "luthenrael",
+    "name": "Luthen Rael",
+    "avatar": "/assets/characters/luthenrael.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel Fighter",
+      "Rebels"
+    ]
+  },
+  {
+    "id": "mace-windu",
+    "name": "Mace Windu",
+    "avatar": "/assets/characters/mace-windu.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "magmatrooper",
+    "name": "Magmatrooper",
+    "avatar": "/assets/characters/magmatrooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "majorpartagaz",
+    "name": "Major Partagaz",
+    "avatar": "/assets/characters/majorpartagaz.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_IMPERIALSECURITYBUREAU",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLESUPPORT_DESC"
+    ]
+  },
+  {
+    "id": "mara-jade-the-emperors-hand",
+    "name": "Mara Jade, The Emperor's Hand",
+    "avatar": "/assets/characters/mara-jade-the-emperors-hand.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "marrok",
+    "name": "Marrok",
+    "avatar": "/assets/characters/marrok.webp",
+    "alignment": "dark",
+    "factions": [
+      "Inquisitorius",
+      "Mercenary",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "masterquigon",
+    "name": "Master Qui-Gon",
+    "avatar": "/assets/characters/masterquigon.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "maul",
+    "name": "Maul",
+    "avatar": "/assets/characters/maul.webp",
+    "alignment": "dark",
+    "factions": [
+      "Mandalorian",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "maulhatefueled",
+    "name": "Maul (Hate-Fueled)",
+    "avatar": "/assets/characters/maulhatefueled.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+    ]
+  },
+  {
+    "id": "mazkanata",
+    "name": "Maz Kanata",
+    "avatar": "/assets/characters/mazkanata.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_PIRATE_DESC",
+      "CATEGORY_RAID_ORDER66_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLESUPPORT_DESC",
+      "CATEGORY_SCOUNDREL_DESC",
+      "CATEGORY_SMUGGLER_DESC",
+      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+    ]
+  },
+  {
+    "id": "merrin",
+    "name": "Merrin",
+    "avatar": "/assets/characters/merrin.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "mission-vao",
+    "name": "Mission Vao",
+    "avatar": "/assets/characters/mission-vao.webp",
+    "alignment": "light",
+    "factions": [
+      "Old Republic",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "mob-enforcer",
+    "name": "Mob Enforcer",
+    "avatar": "/assets/characters/mob-enforcer.webp",
+    "alignment": "dark",
+    "factions": [
+      "Hutt Cartel",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "moff-gideon",
+    "name": "Moff Gideon",
+    "avatar": "/assets/characters/moff-gideon.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Remnant",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "mon-mothma",
+    "name": "Mon Mothma",
+    "avatar": "/assets/characters/mon-mothma.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel"
+    ]
+  },
+  {
+    "id": "morganelsbeth",
+    "name": "Morgan Elsbeth",
+    "avatar": "/assets/characters/morganelsbeth.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "mother-talzin",
+    "name": "Mother Talzin",
+    "avatar": "/assets/characters/mother-talzin.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "nighttrooper",
+    "name": "Night Trooper",
+    "avatar": "/assets/characters/nighttrooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "Imperial Remnant",
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "nightsister-acolyte",
+    "name": "Nightsister Acolyte",
+    "avatar": "/assets/characters/nightsister-acolyte.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "nightsister-initiate",
+    "name": "Nightsister Initiate",
+    "avatar": "/assets/characters/nightsister-initiate.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "nightsister-spirit",
+    "name": "Nightsister Spirit",
+    "avatar": "/assets/characters/nightsister-spirit.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "nightsister-zombie",
+    "name": "Nightsister Zombie",
+    "avatar": "/assets/characters/nightsister-zombie.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "ninth-sister",
+    "name": "Ninth Sister",
+    "avatar": "/assets/characters/ninth-sister.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Inquisitorius",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "nute-gunray",
+    "name": "Nute Gunray",
+    "avatar": "/assets/characters/nute-gunray.webp",
+    "alignment": "dark",
+    "factions": [
+      "Scoundrel",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "obi-wan-kenobi-old-ben",
+    "name": "Obi-Wan Kenobi (Old Ben)",
+    "avatar": "/assets/characters/obi-wan-kenobi-old-ben.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "Rebel"
+    ]
+  },
+  {
+    "id": "old-daka",
+    "name": "Old Daka",
+    "avatar": "/assets/characters/old-daka.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "omega",
+    "name": "Omega",
+    "avatar": "/assets/characters/omega.webp",
+    "alignment": "light",
+    "factions": [
+      "Bad Batch",
+      "Clone Trooper"
+    ]
+  },
+  {
+    "id": "omegas3",
+    "name": "Omega (Fugitive)",
+    "avatar": "/assets/characters/omegas3.webp",
+    "alignment": "light",
+    "factions": [
+      "Bad Batch"
+    ]
+  },
+  {
+    "id": "padawanobiwan",
+    "name": "Padawan Obi-Wan",
+    "avatar": "/assets/characters/padawanobiwan.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "padawansabine",
+    "name": "Padawan Sabine Wren",
+    "avatar": "/assets/characters/padawansabine.webp",
+    "alignment": "light",
+    "factions": [
+      "Mandalorian",
+      "Spectre",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "padme-amidala",
+    "name": "Padmé Amidala",
+    "avatar": "/assets/characters/padme-amidala.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "pao",
+    "name": "Pao",
+    "avatar": "/assets/characters/pao.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "paploo",
+    "name": "Paploo",
+    "avatar": "/assets/characters/paploo.webp",
+    "alignment": "light",
+    "factions": [
+      "Ewok"
+    ]
+  },
+  {
+    "id": "pazvizsla",
+    "name": "Paz Vizsla",
+    "avatar": "/assets/characters/pazvizsla.webp",
+    "alignment": "light",
+    "factions": [
+      "Mandalorian"
+    ]
+  },
+  {
+    "id": "glhondo",
+    "name": "Pirate King Hondo Ohnaka",
+    "avatar": "/assets/characters/glhondo.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_GALACTIC_LEGEND_DESC",
+      "CATEGORY_PIRATE_DESC",
+      "CATEGORY_RAID_ORDER66_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLESUPPORT_DESC",
+      "CATEGORY_SCOUNDREL_DESC",
+      "CATEGORY_SMUGGLER_DESC"
+    ]
+  },
+  {
+    "id": "plo-koon",
+    "name": "Plo Koon",
+    "avatar": "/assets/characters/plo-koon.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "poe-dameron",
+    "name": "Poe Dameron",
+    "avatar": "/assets/characters/poe-dameron.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance"
+    ]
+  },
+  {
+    "id": "poggle-the-lesser",
+    "name": "Poggle the Lesser",
+    "avatar": "/assets/characters/poggle-the-lesser.webp",
+    "alignment": "dark",
+    "factions": [
+      "Geonosian",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "princesskneesaa",
+    "name": "Princess Kneesaa",
+    "avatar": "/assets/characters/princesskneesaa.webp",
+    "alignment": "light",
+    "factions": [
+      "Ewok"
+    ]
+  },
+  {
+    "id": "princess-leia",
+    "name": "Princess Leia",
+    "avatar": "/assets/characters/princess-leia.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel"
+    ]
+  },
+  {
+    "id": "qira",
+    "name": "Qi'ra",
+    "avatar": "/assets/characters/qira.webp",
+    "alignment": "light",
+    "factions": [
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "queenamidala",
+    "name": "Queen Amidala",
+    "avatar": "/assets/characters/queenamidala.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "qui-gon-jinn",
+    "name": "Qui-Gon Jinn",
+    "avatar": "/assets/characters/qui-gon-jinn.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "quiggold",
+    "name": "Quiggold",
+    "avatar": "/assets/characters/quiggold.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_PIRATE_DESC",
+      "CATEGORY_RAID_ORDER66_DESC",
+      "CATEGORY_ROLETANK_DESC",
+      "CATEGORY_SCOUNDREL_DESC"
+    ]
+  },
+  {
+    "id": "r2-d2",
+    "name": "R2-D2",
+    "avatar": "/assets/characters/r2-d2.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Galactic Republic",
+      "Rebel",
+      "Resistance"
+    ]
+  },
+  {
+    "id": "r5d4",
+    "name": "R5-D4",
+    "avatar": "/assets/characters/r5d4.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_NEWREPUBLIC_DESC",
+      "CATEGORY_REBELFIGHTER_DESC",
+      "CATEGORY_REBELS_DESC",
+      "CATEGORY_ROLESUPPORT_DESC",
+      "CATEGORY_SPECIESDROID_DESC"
+    ]
+  },
+  {
+    "id": "range-trooper",
+    "name": "Range Trooper",
+    "avatar": "/assets/characters/range-trooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "scorch",
+    "name": "RC-1262 \"Scorch\"",
+    "avatar": "/assets/characters/scorch.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_CLONETROOPER_DESC",
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_ROLETANK_DESC"
+    ]
+  },
+  {
+    "id": "rebel-officer-leia-organa",
+    "name": "Rebel Officer Leia Organa",
+    "avatar": "/assets/characters/rebel-officer-leia-organa.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel"
+    ]
+  },
+  {
+    "id": "resistance-hero-finn",
+    "name": "Resistance Hero Finn",
+    "avatar": "/assets/characters/resistance-hero-finn.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance"
+    ]
+  },
+  {
+    "id": "resistance-hero-poe",
+    "name": "Resistance Hero Poe",
+    "avatar": "/assets/characters/resistance-hero-poe.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance"
+    ]
+  },
+  {
+    "id": "resistance-pilot",
+    "name": "Resistance Pilot",
+    "avatar": "/assets/characters/resistance-pilot.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance"
+    ]
+  },
+  {
+    "id": "resistance-trooper",
+    "name": "Resistance Trooper",
+    "avatar": "/assets/characters/resistance-trooper.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance"
+    ]
+  },
+  {
+    "id": "rey",
+    "name": "Rey",
+    "avatar": "/assets/characters/rey.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "darkrey",
+    "name": "Rey (Dark Side Vision)",
+    "avatar": "/assets/characters/darkrey.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order",
+      "Sith"
+    ]
+  },
+  {
+    "id": "rey-jedi-training",
+    "name": "Rey (Jedi Training)",
+    "avatar": "/assets/characters/rey-jedi-training.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "rey-scavenger",
+    "name": "Rey (Scavenger)",
+    "avatar": "/assets/characters/rey-scavenger.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "rose-tico",
+    "name": "Rose Tico",
+    "avatar": "/assets/characters/rose-tico.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance"
+    ]
+  },
+  {
+    "id": "raccoon",
+    "name": "Rotta the Hutt",
+    "avatar": "/assets/characters/raccoon.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_HUTTCARTEL_DESC",
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_ROLELEADER_DESC"
+    ]
+  },
+  {
+    "id": "royal-guard",
+    "name": "Royal Guard",
+    "avatar": "/assets/characters/royal-guard.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire"
+    ]
+  },
+  {
+    "id": "sabine-wren",
+    "name": "Sabine Wren",
+    "avatar": "/assets/characters/sabine-wren.webp",
+    "alignment": "light",
+    "factions": [
+      "Mandalorian",
+      "Phoenix",
+      "Rebel"
+    ]
+  },
+  {
+    "id": "sana-starros",
+    "name": "Sana Starros",
+    "avatar": "/assets/characters/sana-starros.webp",
+    "alignment": "light",
+    "factions": [
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "sateleshan",
+    "name": "Satele Shan",
+    "avatar": "/assets/characters/sateleshan.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_JEDI_DESC",
+      "CATEGORY_OLDREPUBLIC_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLETANK_DESC"
+    ]
+  },
+  {
+    "id": "savage-opress",
+    "name": "Savage Opress",
+    "avatar": "/assets/characters/savage-opress.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
+    ]
+  },
+  {
+    "id": "saw-gerrera",
+    "name": "Saw Gerrera",
+    "avatar": "/assets/characters/saw-gerrera.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter"
+    ]
+  },
+  {
+    "id": "scarif-rebel-pathfinder",
+    "name": "Scarif Rebel Pathfinder",
+    "avatar": "/assets/characters/scarif-rebel-pathfinder.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter",
+      "Rogue One"
+    ]
+  },
+  {
+    "id": "scouttrooper-v3",
+    "name": "Scout Trooper",
+    "avatar": "/assets/characters/scouttrooper-v3.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Remnant",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "second-sister",
+    "name": "Second Sister",
+    "avatar": "/assets/characters/second-sister.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Inquisitorius",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "seventh-sister",
+    "name": "Seventh Sister",
+    "avatar": "/assets/characters/seventh-sister.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Inquisitorius",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "shaak-ti",
+    "name": "Shaak Ti",
+    "avatar": "/assets/characters/shaak-ti.webp",
+    "alignment": "light",
+    "factions": [
+      "Galactic Republic",
+      "Jedi"
+    ]
+  },
+  {
+    "id": "shinhati",
+    "name": "Shin Hati",
+    "avatar": "/assets/characters/shinhati.webp",
+    "alignment": "dark",
+    "factions": [
+      "Mercenary",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "shoretrooper",
+    "name": "Shoretrooper",
+    "avatar": "/assets/characters/shoretrooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "sith-assassin",
+    "name": "Sith Assassin",
+    "avatar": "/assets/characters/sith-assassin.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith",
+      "Sith Empire"
+    ]
+  },
+  {
+    "id": "sith-empire-trooper",
+    "name": "Sith Empire Trooper",
+    "avatar": "/assets/characters/sith-empire-trooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith",
+      "Sith Empire"
+    ]
+  },
+  {
+    "id": "sith-eternal-emperor",
+    "name": "Sith Eternal Emperor",
+    "avatar": "/assets/characters/sith-eternal-emperor.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
+    ]
+  },
+  {
+    "id": "sith-marauder",
+    "name": "Sith Marauder",
+    "avatar": "/assets/characters/sith-marauder.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith",
+      "Sith Empire"
+    ]
+  },
+  {
+    "id": "sith-trooper",
+    "name": "Sith Trooper",
+    "avatar": "/assets/characters/sith-trooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order",
+      "Sith"
+    ]
+  },
+  {
+    "id": "skiff-guard-lando-calrissian",
+    "name": "Skiff Guard (Lando Calrissian)",
+    "avatar": "/assets/characters/skiff-guard-lando-calrissian.webp",
+    "alignment": "light",
+    "factions": [
+      "Hutt Cartel",
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "sm33",
+    "name": "SM-33",
+    "avatar": "/assets/characters/sm33.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_PIRATE_DESC",
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_SCOUNDREL_DESC",
+      "CATEGORY_SPECIESDROID_DESC"
+    ]
+  },
+  {
+    "id": "snowtrooper",
+    "name": "Snowtrooper",
+    "avatar": "/assets/characters/snowtrooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "remnantsnowcommander",
+    "name": "Snowtrooper Commander",
+    "avatar": "/assets/characters/remnantsnowcommander.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_EMPIRE_DESC",
+      "CATEGORY_IMPERIALREMNANT_DESC",
+      "CATEGORY_IMPERIALTROOPER_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLETANK_DESC"
+    ]
+  },
+  {
+    "id": "stap",
+    "name": "STAP",
+    "avatar": "/assets/characters/stap.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "starkiller",
+    "name": "Starkiller",
+    "avatar": "/assets/characters/starkiller.webp",
+    "alignment": "dark",
+    "factions": [
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "stormtrooper",
+    "name": "Stormtrooper",
+    "avatar": "/assets/characters/stormtrooper.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Imperial Remnant",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "stormtrooper-han",
+    "name": "Stormtrooper Han",
+    "avatar": "/assets/characters/stormtrooper-han.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "stormtrooperluke",
+    "name": "Stormtrooper Luke",
+    "avatar": "/assets/characters/stormtrooperluke.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_REBELS_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLESUPPORT_DESC"
+    ]
+  },
+  {
+    "id": "sun-fac",
+    "name": "Sun Fac",
+    "avatar": "/assets/characters/sun-fac.webp",
+    "alignment": "dark",
+    "factions": [
+      "Geonosian",
+      "Separatist"
+    ]
+  },
+  {
+    "id": "supreme-leader-kylo-ren",
+    "name": "Supreme Leader Kylo Ren",
+    "avatar": "/assets/characters/supreme-leader-kylo-ren.webp",
+    "alignment": "dark",
+    "factions": [
+      "First Order",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "t3-m4",
+    "name": "T3-M4",
+    "avatar": "/assets/characters/t3-m4.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Old Republic"
+    ]
+  },
+  {
+    "id": "talia",
+    "name": "Talia",
+    "avatar": "/assets/characters/talia.webp",
+    "alignment": "dark",
+    "factions": [
+      "Nightsister"
+    ]
+  },
+  {
+    "id": "tarfful",
+    "name": "Tarfful",
+    "avatar": "/assets/characters/tarfful.webp",
+    "alignment": "light",
+    "factions": [
+      "Wookiee"
+    ]
+  },
+  {
+    "id": "taronmalicos",
+    "name": "Taron Malicos",
+    "avatar": "/assets/characters/taronmalicos.webp",
+    "alignment": "dark",
+    "factions": [
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "tech",
+    "name": "Tech",
+    "avatar": "/assets/characters/tech.webp",
+    "alignment": "light",
+    "factions": [
+      "Bad Batch",
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "teebo",
+    "name": "Teebo",
+    "avatar": "/assets/characters/teebo.webp",
+    "alignment": "light",
+    "factions": [
+      "Ewok"
+    ]
+  },
+  {
+    "id": "vanguardtempleguard",
+    "name": "Temple Guard",
+    "avatar": "/assets/characters/vanguardtempleguard.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_GALACTICREPUBLIC_DESC",
+      "CATEGORY_JEDI_DESC",
+      "CATEGORY_JEDIVANGUARD_DESC",
+      "CATEGORY_ROLETANK_DESC"
+    ]
+  },
+  {
+    "id": "the-armorer",
+    "name": "The Armorer",
+    "avatar": "/assets/characters/the-armorer.webp",
+    "alignment": "light",
+    "factions": [
+      "Mandalorian"
+    ]
+  },
+  {
+    "id": "the-mandalorian",
+    "name": "The Mandalorian",
+    "avatar": "/assets/characters/the-mandalorian.webp",
+    "alignment": "light",
+    "factions": [
+      "Bounty Hunter",
+      "Mandalorian",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "the-mandalorian-beskar-armor",
+    "name": "The Mandalorian (Beskar Armor)",
+    "avatar": "/assets/characters/the-mandalorian-beskar-armor.webp",
+    "alignment": "light",
+    "factions": [
+      "Mandalorian",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "stranger",
+    "name": "The Stranger",
+    "avatar": "/assets/characters/stranger.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_ROLEATTACKER_DESC",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_SITH_DESC"
+    ]
+  },
+  {
+    "id": "third-sister",
+    "name": "Third Sister",
+    "avatar": "/assets/characters/third-sister.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
+      "Inquisitorius",
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "threepio-chewie",
+    "name": "Threepio & Chewie",
+    "avatar": "/assets/characters/threepio-chewie.webp",
+    "alignment": "light",
+    "factions": [
+      "Droid",
+      "Rebel"
+    ]
+  },
+  {
+    "id": "tie-fighter-pilot",
+    "name": "TIE Fighter Pilot",
+    "avatar": "/assets/characters/tie-fighter-pilot.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire"
+    ]
+  },
+  {
+    "id": "tusken-chieftain",
+    "name": "Tusken Chieftain",
+    "avatar": "/assets/characters/tusken-chieftain.webp",
+    "alignment": "dark",
+    "factions": [
+      "Tusken"
+    ]
+  },
+  {
+    "id": "tusken-raider",
+    "name": "Tusken Raider",
+    "avatar": "/assets/characters/tusken-raider.webp",
+    "alignment": "dark",
+    "factions": [
+      "Tusken"
+    ]
+  },
+  {
+    "id": "tusken-shaman",
+    "name": "Tusken Shaman",
+    "avatar": "/assets/characters/tusken-shaman.webp",
+    "alignment": "dark",
+    "factions": [
+      "Tusken"
+    ]
+  },
+  {
+    "id": "tusken-warrior",
+    "name": "Tusken Warrior",
+    "avatar": "/assets/characters/tusken-warrior.webp",
+    "alignment": "dark",
+    "factions": [
+      "Tusken"
+    ]
+  },
+  {
+    "id": "ugnaught",
+    "name": "Ugnaught",
+    "avatar": "/assets/characters/ugnaught.webp",
+    "alignment": "light",
+    "factions": []
+  },
+  {
+    "id": "urorrurrr",
+    "name": "URoRRuR'R'R",
+    "avatar": "/assets/characters/urorrurrr.webp",
+    "alignment": "dark",
+    "factions": [
+      "Tusken"
+    ]
+  },
+  {
+    "id": "vandor-chewbacca",
+    "name": "Vandor Chewbacca",
+    "avatar": "/assets/characters/vandor-chewbacca.webp",
+    "alignment": "light",
+    "factions": [
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "vane",
+    "name": "Vane",
+    "avatar": "/assets/characters/vane.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_PIRATE_DESC",
+      "CATEGORY_RAID_ORDER66_DESC",
+      "CATEGORY_ROLETANK_DESC",
+      "CATEGORY_SCOUNDREL_DESC"
+    ]
+  },
+  {
+    "id": "vel",
+    "name": "Vel Sartha",
+    "avatar": "/assets/characters/vel.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_REBELFIGHTER_DESC",
+      "CATEGORY_REBELS_DESC",
+      "CATEGORY_ROLESUPPORT_DESC"
+    ]
+  },
+  {
+    "id": "veteran-smuggler-chewbacca",
+    "name": "Veteran Smuggler Chewbacca",
+    "avatar": "/assets/characters/veteran-smuggler-chewbacca.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance",
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "veteran-smuggler-han-solo",
+    "name": "Veteran Smuggler Han Solo",
+    "avatar": "/assets/characters/veteran-smuggler-han-solo.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance",
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "visas-marr",
+    "name": "Visas Marr",
+    "avatar": "/assets/characters/visas-marr.webp",
+    "alignment": "light",
+    "factions": [
+      "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "wampa",
+    "name": "Wampa",
+    "avatar": "/assets/characters/wampa.webp",
+    "alignment": "dark",
+    "factions": []
+  },
+  {
+    "id": "wat-tambor",
+    "name": "Wat Tambor",
+    "avatar": "/assets/characters/wat-tambor.webp",
+    "alignment": "dark",
+    "factions": [
+      "Separatist"
+    ]
+  },
+  {
+    "id": "wedge-antilles",
+    "name": "Wedge Antilles",
+    "avatar": "/assets/characters/wedge-antilles.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Rebel Fighter"
+    ]
+  },
+  {
+    "id": "wicket",
+    "name": "Wicket",
+    "avatar": "/assets/characters/wicket.webp",
+    "alignment": "light",
+    "factions": [
+      "Ewok"
+    ]
+  },
+  {
+    "id": "wrecker",
+    "name": "Wrecker",
+    "avatar": "/assets/characters/wrecker.webp",
+    "alignment": "light",
+    "factions": [
+      "Bad Batch",
+      "Clone Trooper",
+      "Galactic Republic"
+    ]
+  },
+  {
+    "id": "wreckers3",
+    "name": "Wrecker (Mercenary)",
+    "avatar": "/assets/characters/wreckers3.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_BADBATCH_DESC",
+      "CATEGORY_MERCENARY_DESC",
+      "CATEGORY_ROLETANK_DESC"
+    ]
+  },
+  {
+    "id": "yodachewbacca",
+    "name": "Yoda & Chewie",
+    "avatar": "/assets/characters/yodachewbacca.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_GALACTICREPUBLIC_DESC",
+      "CATEGORY_JEDI_DESC",
+      "CATEGORY_ROLESUPPORT_DESC",
+      "CATEGORY_WOOKIEE_DESC"
+    ]
+  },
+  {
+    "id": "young-han-solo",
+    "name": "Young Han Solo",
+    "avatar": "/assets/characters/young-han-solo.webp",
+    "alignment": "light",
+    "factions": [
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "young-lando-calrissian",
+    "name": "Young Lando Calrissian",
+    "avatar": "/assets/characters/young-lando-calrissian.webp",
+    "alignment": "light",
+    "factions": [
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "zaalbar",
+    "name": "Zaalbar",
+    "avatar": "/assets/characters/zaalbar.webp",
+    "alignment": "light",
+    "factions": [
+      "Old Republic",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "zam-wesell",
+    "name": "Zam Wesell",
+    "avatar": "/assets/characters/zam-wesell.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Scoundrel"
+    ]
+  },
+  {
+    "id": "rangerzeb",
+    "name": "Zeb Orrelios (New Republic Pilot)",
+    "avatar": "/assets/characters/rangerzeb.webp",
+    "alignment": "light",
+    "factions": [
+      "CATEGORY_NEWREPUBLIC_DESC",
+      "CATEGORY_ROLETANK_DESC"
+    ]
+  },
+  {
+    "id": "zorii-bliss",
+    "name": "Zorii Bliss",
+    "avatar": "/assets/characters/zorii-bliss.webp",
+    "alignment": "light",
+    "factions": [
+      "Resistance",
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
+    "id": "zuckuss",
+    "name": "Zuckuss",
+    "avatar": "/assets/characters/zuckuss.webp",
+    "alignment": "dark",
+    "factions": [
+      "CATEGORY_BOUNTYHUNTER_DESC_V2",
+      "CATEGORY_ROLELEADER_DESC",
+      "CATEGORY_ROLETANK_DESC",
+      "CATEGORY_SCOUNDREL_DESC",
+      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+    ]
+  }
+]
