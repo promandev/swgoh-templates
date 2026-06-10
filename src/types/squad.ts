@@ -1,3 +1,4 @@
+import type { MemberDatacron } from "./datacron";
 import type { ModConfiguration } from "./mods";
 
 export type SquadSize = 3 | 5;
@@ -5,7 +6,7 @@ export type SquadSize = 3 | 5;
 export interface SquadMember {
   characterId: string | null;
   mods: ModConfiguration;
-  datacronNotes: string;
+  datacron: MemberDatacron;
 }
 
 export interface Squad {

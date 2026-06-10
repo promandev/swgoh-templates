@@ -1,12 +1,43 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
+import { createEmptyDatacron } from "@/features/datacrons/domain/datacron";
 import { createEmptyMods } from "@/features/mods/constants/mod-rules";
-import type { ModSlotConfig, ModSlotId, Squad, SquadMember, SquadSize } from "@/types";
+import type {
+  MemberDatacron,
+  ModConfiguration,
+  ModSlotConfig,
+  ModSlotId,
+  Squad,
+  SquadMember,
+  SquadSize,
+} from "@/types";
 import { createId } from "@/utils/id";
 
+/** Legacy persisted shapes, used only by the v1 → v2 migration. */
+type PersistedMember = {
+  characterId: string | null;
+  mods: ModConfiguration;
+  datacronNotes?: string;
+  datacron?: MemberDatacron;
+};
+
+type PersistedSquad = {
+  id: string;
+  name: string;
+  size: SquadSize;
+  members: PersistedMember[];
+  background?: string;
+  createdAt: number;
+  updatedAt: number;
+};
+
 function createMember(): SquadMember {
-  return { characterId: null, mods: createEmptyMods(), datacronNotes: "" };
+  return {
+    characterId: null,
+    mods: createEmptyMods(),
+    datacron: createEmptyDatacron(),
+  };
 }
 
 function createSquad(name: string, size: SquadSize): Squad {
@@ -44,7 +75,7 @@ interface SquadState {
   setSquadBackground: (id: string, background: string) => void;
 
   setMemberCharacter: (squadId: string, index: number, characterId: string | null) => void;
-  setMemberDatacron: (squadId: string, index: number, notes: string) => void;
+  setMemberDatacron: (squadId: string, index: number, datacron: MemberDatacron) => void;
   setMemberMod: (squadId: string, index: number, slot: ModSlotId, config: ModSlotConfig) => void;
 
   setHasHydrated: (value: boolean) => void;
@@ -132,13 +163,10 @@ export const useSquadStore = create<SquadState>()(
           ),
         })),
 
-      setMemberDatacron: (squadId, index, notes) =>
+      setMemberDatacron: (squadId, index, datacron) =>
         set((state) => ({
           squads: patchSquad(state.squads, squadId, (squad) =>
-            patchMember(squad, index, (member) => ({
-              ...member,
-              datacronNotes: notes,
-            })),
+            patchMember(squad, index, (member) => ({ ...member, datacron })),
           ),
         })),
 
@@ -156,12 +184,37 @@ export const useSquadStore = create<SquadState>()(
     }),
     {
       name: "swgoh-squad-builder",
-      version: 1,
+      version: 2,
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         squads: state.squads,
         activeSquadId: state.activeSquadId,
       }),
+      // v1 → v2: free-text `datacronNotes` becomes a structured `datacron`.
+      migrate: (persisted, version) => {
+        const state = persisted as {
+          squads?: PersistedSquad[];
+          activeSquadId?: string | null;
+        };
+        if (version < 2 && state?.squads) {
+          state.squads = state.squads.map((squad) => ({
+            ...squad,
+            members: (squad.members ?? []).map((member) =>
+              member.datacron
+                ? member
+                : {
+                    characterId: member.characterId,
+                    mods: member.mods,
+                    datacron: {
+                      ...createEmptyDatacron(),
+                      notes: member.datacronNotes ?? "",
+                    },
+                  },
+            ),
+          }));
+        }
+        return state as unknown as SquadState;
+      },
       onRehydrateStorage: () => (state) => {
         state?.setHasHydrated(true);
       },

@@ -5,6 +5,11 @@ import { useFormatter, useTranslations } from "next-intl";
 import { SwordsIcon } from "lucide-react";
 
 import { CharacterAvatar } from "@/features/characters/components/character-avatar";
+import {
+  activeLevels,
+  getTier,
+  hasDatacronContent,
+} from "@/features/datacrons/domain/datacron";
 import { SlotIcon } from "@/features/mods/components/slot-icon";
 import { MOD_DEFINITION_LIST } from "@/features/mods/constants/mod-definitions";
 import { getBackgroundPreset } from "@/features/export/constants/backgrounds";
@@ -166,14 +171,57 @@ function MemberPanel({
         </div>
       </div>
 
-      {member.datacronNotes.trim() ? (
+      {hasDatacronContent(member.datacron) ? (
         <div className="rounded-2xl bg-indigo-500/5 px-5 py-3 ring-1 ring-indigo-400/20">
-          <p className="text-xs font-semibold tracking-wide text-indigo-300/80 uppercase">
-            {tDatacron("label")}
-          </p>
-          <p className="mt-1 text-sm whitespace-pre-wrap text-zinc-300">
-            {member.datacronNotes}
-          </p>
+          <div className="flex flex-wrap items-center gap-2">
+            <p className="text-xs font-semibold tracking-wide text-indigo-300/80 uppercase">
+              {tDatacron("label")}
+            </p>
+            {member.datacron.setName ? (
+              <span className="text-sm font-medium text-white">
+                {member.datacron.setName}
+              </span>
+            ) : null}
+            {activeLevels(member.datacron).length > 0 ? (
+              <span className="rounded bg-white/10 px-1.5 py-0.5 text-xs text-zinc-300 tabular-nums">
+                {activeLevels(member.datacron).join(" · ")}
+              </span>
+            ) : null}
+            {member.datacron.focused ? (
+              <span className="rounded bg-indigo-500/20 px-1.5 py-0.5 text-xs font-medium text-indigo-200">
+                {tDatacron("focused")}
+                {member.datacron.focusedLevel
+                  ? ` ${member.datacron.focusedLevel}`
+                  : ""}
+              </span>
+            ) : null}
+          </div>
+
+          {activeLevels(member.datacron).some((level) =>
+            getTier(member.datacron, level)?.recommendedSecondaries.trim(),
+          ) ? (
+            <div className="mt-2 flex flex-col gap-0.5">
+              {activeLevels(member.datacron).map((level) => {
+                const recommended = getTier(
+                  member.datacron,
+                  level,
+                )?.recommendedSecondaries.trim();
+                if (!recommended) return null;
+                return (
+                  <p key={level} className="text-sm text-zinc-300">
+                    <span className="text-zinc-500 tabular-nums">{level}: </span>
+                    {recommended}
+                  </p>
+                );
+              })}
+            </div>
+          ) : null}
+
+          {member.datacron.notes.trim() ? (
+            <p className="mt-2 text-sm whitespace-pre-wrap text-zinc-400">
+              {member.datacron.notes}
+            </p>
+          ) : null}
         </div>
       ) : null}
     </div>

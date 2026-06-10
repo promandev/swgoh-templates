@@ -82,10 +82,21 @@
     "primaryCount": "{count, plural, =0 {No primary} other {Primary set}}"
   },
   "Datacron": {
-    "label": "Datacron notes",
+    "label": "Datacron",
+    "title": "Datacron",
+    "description": "Document the set, levels and recommended secondaries.",
+    "add": "Add datacron",
+    "setLabel": "Set",
+    "setPlaceholder": "Set name or number",
+    "setPick": "Choose a set",
+    "levels": "Levels (3 / 6 / 9)",
+    "recommendedSecondaries": "Recommended secondaries",
+    "secondariesPlaceholder": "e.g. Speed, Potency, Health %",
+    "focused": "Focused",
+    "focusedLevel": "Target level",
+    "notes": "Notes",
     "placeholder": "Bonuses, targets, status…",
-    "tooltip": "Free notes: bonuses, goals and status",
-    "empty": "Add notes"
+    "levelShort": "Lv {level}"
   },
   "Export": {
     "button": "Export Template",

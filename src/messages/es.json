@@ -82,10 +82,21 @@
     "primaryCount": "{count, plural, =0 {Sin primaria} other {Primaria definida}}"
   },
   "Datacron": {
-    "label": "Notas de datacron",
+    "label": "Datacron",
+    "title": "Datacron",
+    "description": "Documenta el set, los niveles y las secundarias recomendadas.",
+    "add": "Añadir datacron",
+    "setLabel": "Set",
+    "setPlaceholder": "Nombre o número del set",
+    "setPick": "Elegir set",
+    "levels": "Niveles (3 / 6 / 9)",
+    "recommendedSecondaries": "Secundarias recomendadas",
+    "secondariesPlaceholder": "p. ej. Velocidad, Potencia, Salud %",
+    "focused": "Focused",
+    "focusedLevel": "Nivel objetivo",
+    "notes": "Notas",
     "placeholder": "Bonus, objetivos, estado…",
-    "tooltip": "Notas libres: bonus, objetivos y estado",
-    "empty": "Añadir notas"
+    "levelShort": "Nv {level}"
   },
   "Export": {
     "button": "Exportar plantilla",

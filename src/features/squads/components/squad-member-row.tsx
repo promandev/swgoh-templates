@@ -113,8 +113,8 @@ export function SquadMemberRow({
         </span>
         <DatacronField
           fieldId={`datacron-${squadId}-${index}`}
-          value={member.datacronNotes}
-          onChange={(value) => setMemberDatacron(squadId, index, value)}
+          value={member.datacron}
+          onChange={(datacron) => setMemberDatacron(squadId, index, datacron)}
         />
       </div>
     </motion.div>
