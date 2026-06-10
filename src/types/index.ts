@@ -12,5 +12,6 @@ export type {
   StatId,
   StatLine,
 } from "./mods";
+export type { ModSetId, StatTarget } from "./mod-sets";
 export type { Squad, SquadMember, SquadSize } from "./squad";
 export type { CharacterStats, RelicStat } from "./stats";

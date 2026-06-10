@@ -10,8 +10,10 @@ import {
   getTier,
   hasDatacronContent,
 } from "@/features/datacrons/domain/datacron";
+import { SetChip } from "@/features/mods/components/set-chip";
 import { SlotIcon } from "@/features/mods/components/slot-icon";
 import { MOD_DEFINITION_LIST } from "@/features/mods/constants/mod-definitions";
+import { isPercentStat } from "@/features/mods/constants/mod-rules";
 import { getBackgroundPreset } from "@/features/export/constants/backgrounds";
 import { characterService } from "@/services/character-service";
 import { cn } from "@/lib/utils";
@@ -109,9 +111,17 @@ function MemberPanel({
 }) {
   const t = useTranslations("Export");
   const tDatacron = useTranslations("Datacron");
+  const tSets = useTranslations("Sets");
+  const tTargets = useTranslations("TargetStats");
+  const tStats = useTranslations("Stats");
   const character = member.characterId
     ? characterService.getById(member.characterId)
     : undefined;
+
+  const targetStats = member.targetStats.filter(
+    (line) => line.stat && line.value !== null,
+  );
+  const hasGoals = member.sets.length > 0 || targetStats.length > 0;
 
   return (
     <div className="flex flex-col gap-5 rounded-3xl bg-zinc-900/70 p-6 ring-1 ring-white/10">
@@ -170,6 +180,52 @@ function MemberPanel({
           ))}
         </div>
       </div>
+
+      {hasGoals ? (
+        <div className="flex flex-wrap items-start gap-x-10 gap-y-3 rounded-2xl bg-white/5 px-5 py-3 ring-1 ring-white/10">
+          {member.sets.length > 0 ? (
+            <div className="flex flex-col gap-1.5">
+              <p className="text-xs font-semibold tracking-wide text-zinc-400 uppercase">
+                {tSets("label")}
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {member.sets.map((set, index) => (
+                  <SetChip
+                    key={`${set}-${index}`}
+                    set={set}
+                    variant="export"
+                    className="px-2.5 py-1 text-sm"
+                  />
+                ))}
+              </div>
+            </div>
+          ) : null}
+
+          {targetStats.length > 0 ? (
+            <div className="flex flex-col gap-1.5">
+              <p className="text-xs font-semibold tracking-wide text-zinc-400 uppercase">
+                {tTargets("label")}
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {targetStats.map((line, index) => (
+                  <span
+                    key={`${line.stat}-${index}`}
+                    className="inline-flex items-center gap-1.5 rounded-md bg-zinc-950/50 px-2.5 py-1 text-sm ring-1 ring-white/10"
+                  >
+                    <span className="text-zinc-400">
+                      {line.stat ? tStats(line.stat) : ""}
+                    </span>
+                    <span className="font-semibold text-zinc-100 tabular-nums">
+                      {line.value}
+                      {line.stat && isPercentStat(line.stat) ? "%" : ""}
+                    </span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          ) : null}
+        </div>
+      ) : null}
 
       {hasDatacronContent(member.datacron) ? (
         <div className="rounded-2xl bg-indigo-500/5 px-5 py-3 ring-1 ring-indigo-400/20">

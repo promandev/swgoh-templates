@@ -81,6 +81,29 @@
     "done": "Hecho",
     "primaryCount": "{count, plural, =0 {Sin primaria} other {Primaria definida}}"
   },
+  "Sets": {
+    "label": "Conjuntos",
+    "empty": "Sin conjuntos",
+    "add": "Añadir conjunto",
+    "remove": "Quitar conjunto",
+    "pick": "Elegir conjunto",
+    "pieces": "{count} mods",
+    "names": {
+      "speed": "Velocidad",
+      "health": "Salud",
+      "defense": "Defensa",
+      "offense": "Ofensiva",
+      "criticalChance": "Prob. crítica",
+      "criticalDamage": "Daño crítico",
+      "potency": "Potencia",
+      "tenacity": "Tenacidad"
+    }
+  },
+  "TargetStats": {
+    "label": "Estadísticas objetivo",
+    "add": "Añadir estadística",
+    "maxReached": "Máximo de {max} estadísticas alcanzado"
+  },
   "Datacron": {
     "label": "Datacron",
     "title": "Datacron",

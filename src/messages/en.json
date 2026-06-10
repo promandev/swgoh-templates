@@ -81,6 +81,29 @@
     "done": "Done",
     "primaryCount": "{count, plural, =0 {No primary} other {Primary set}}"
   },
+  "Sets": {
+    "label": "Mod sets",
+    "empty": "No sets",
+    "add": "Add set",
+    "remove": "Remove set",
+    "pick": "Choose a set",
+    "pieces": "{count}-mod",
+    "names": {
+      "speed": "Speed",
+      "health": "Health",
+      "defense": "Defense",
+      "offense": "Offense",
+      "criticalChance": "Critical Chance",
+      "criticalDamage": "Critical Damage",
+      "potency": "Potency",
+      "tenacity": "Tenacity"
+    }
+  },
+  "TargetStats": {
+    "label": "Target stats",
+    "add": "Add target stat",
+    "maxReached": "Maximum of {max} target stats reached"
+  },
   "Datacron": {
     "label": "Datacron",
     "title": "Datacron",

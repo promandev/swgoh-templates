@@ -9,7 +9,9 @@ import { Button } from "@/components/ui/button";
 import { CharacterCombobox } from "@/features/characters/components/character-combobox";
 import { DatacronField } from "@/features/datacrons/components/datacron-field";
 import { ModCell } from "@/features/mods/components/mod-cell";
+import { SetSelector } from "@/features/mods/components/set-selector";
 import { SlotIcon } from "@/features/mods/components/slot-icon";
+import { TargetStatsField } from "@/features/mods/components/target-stats-field";
 import { MOD_SLOT_IDS } from "@/features/mods/constants/mod-rules";
 import { characterService } from "@/services/character-service";
 import { useSquadStore } from "@/stores/squad-store";
@@ -32,6 +34,8 @@ export function SquadMemberRow({
   const setMemberCharacter = useSquadStore((s) => s.setMemberCharacter);
   const setMemberMod = useSquadStore((s) => s.setMemberMod);
   const setMemberDatacron = useSquadStore((s) => s.setMemberDatacron);
+  const setMemberSets = useSquadStore((s) => s.setMemberSets);
+  const setMemberTargetStats = useSquadStore((s) => s.setMemberTargetStats);
 
   const characterInputId = `character-${squadId}-${index}`;
 
@@ -116,6 +120,22 @@ export function SquadMemberRow({
           value={member.datacron}
           onChange={(datacron) => setMemberDatacron(squadId, index, datacron)}
         />
+      </div>
+
+      {/* Sets + target stats — spans the full table width below the row */}
+      <div className="flex flex-col gap-3 sm:flex-row sm:gap-8 md:col-span-full md:mt-1 md:border-t md:border-border/30 md:pt-2.5">
+        <SetSelector
+          value={member.sets}
+          onChange={(sets) => setMemberSets(squadId, index, sets)}
+        />
+        <div className="sm:max-w-xs sm:flex-1">
+          <TargetStatsField
+            value={member.targetStats}
+            onChange={(targetStats) =>
+              setMemberTargetStats(squadId, index, targetStats)
+            }
+          />
+        </div>
       </div>
     </motion.div>
   );

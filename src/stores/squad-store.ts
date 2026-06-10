@@ -6,11 +6,13 @@ import { createEmptyMods } from "@/features/mods/constants/mod-rules";
 import type {
   MemberDatacron,
   ModConfiguration,
+  ModSetId,
   ModSlotConfig,
   ModSlotId,
   Squad,
   SquadMember,
   SquadSize,
+  StatTarget,
 } from "@/types";
 import { createId } from "@/utils/id";
 
@@ -18,6 +20,8 @@ import { createId } from "@/utils/id";
 type PersistedMember = {
   characterId: string | null;
   mods: ModConfiguration;
+  sets?: ModSetId[];
+  targetStats?: StatTarget[];
   datacronNotes?: string;
   datacron?: MemberDatacron;
 };
@@ -36,6 +40,8 @@ function createMember(): SquadMember {
   return {
     characterId: null,
     mods: createEmptyMods(),
+    sets: [],
+    targetStats: [],
     datacron: createEmptyDatacron(),
   };
 }
@@ -77,6 +83,8 @@ interface SquadState {
   setMemberCharacter: (squadId: string, index: number, characterId: string | null) => void;
   setMemberDatacron: (squadId: string, index: number, datacron: MemberDatacron) => void;
   setMemberMod: (squadId: string, index: number, slot: ModSlotId, config: ModSlotConfig) => void;
+  setMemberSets: (squadId: string, index: number, sets: ModSetId[]) => void;
+  setMemberTargetStats: (squadId: string, index: number, targetStats: StatTarget[]) => void;
 
   setHasHydrated: (value: boolean) => void;
 }
@@ -180,17 +188,32 @@ export const useSquadStore = create<SquadState>()(
           ),
         })),
 
+      setMemberSets: (squadId, index, sets) =>
+        set((state) => ({
+          squads: patchSquad(state.squads, squadId, (squad) =>
+            patchMember(squad, index, (member) => ({ ...member, sets })),
+          ),
+        })),
+
+      setMemberTargetStats: (squadId, index, targetStats) =>
+        set((state) => ({
+          squads: patchSquad(state.squads, squadId, (squad) =>
+            patchMember(squad, index, (member) => ({ ...member, targetStats })),
+          ),
+        })),
+
       setHasHydrated: (value) => set({ hasHydrated: value }),
     }),
     {
       name: "swgoh-squad-builder",
-      version: 2,
+      version: 3,
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         squads: state.squads,
         activeSquadId: state.activeSquadId,
       }),
       // v1 → v2: free-text `datacronNotes` becomes a structured `datacron`.
+      // v2 → v3: members gain `sets` and `targetStats` (default empty).
       migrate: (persisted, version) => {
         const state = persisted as {
           squads?: PersistedSquad[];
@@ -211,6 +234,16 @@ export const useSquadStore = create<SquadState>()(
                     },
                   },
             ),
+          }));
+        }
+        if (version < 3 && state?.squads) {
+          state.squads = state.squads.map((squad) => ({
+            ...squad,
+            members: (squad.members ?? []).map((member) => ({
+              ...member,
+              sets: member.sets ?? [],
+              targetStats: member.targetStats ?? [],
+            })),
           }));
         }
         return state as unknown as SquadState;
