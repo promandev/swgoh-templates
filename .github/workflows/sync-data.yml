@@ -25,19 +25,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # pnpm must be set up BEFORE setup-node so its `cache: pnpm` can locate
-      # the store. This replaces the manual store-path + actions/cache dance
-      # (which left STORE_PATH empty and failed the cache step).
       - name: Install pnpm
         uses: pnpm/action-setup@v3
         with:
           version: 9
 
+      # No `cache: pnpm` on setup-node: it shells out to `pnpm store path`,
+      # which is the step that has been failing. Dependency caching is a pure
+      # speed optimisation and this is a weekly cron, so we skip it entirely
+      # and let `pnpm install` fetch from the registry.
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
