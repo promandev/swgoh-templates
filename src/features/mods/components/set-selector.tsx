@@ -11,7 +11,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import {
-  MAX_SETS,
+  MAX_MOD_PIECES,
   MOD_SET_DEFINITIONS,
   MOD_SET_IDS,
 } from "@/features/mods/constants/set-definitions";
@@ -32,7 +32,13 @@ export function SetSelector({
 }) {
   const [open, setOpen] = useState(false);
   const t = useTranslations("Sets");
-  const canAdd = value.length < MAX_SETS;
+  const usedPieces = value.reduce(
+    (sum, id) => sum + MOD_SET_DEFINITIONS[id].pieces,
+    0,
+  );
+  const remainingPieces = MAX_MOD_PIECES - usedPieces;
+  // The smallest set is two pieces, so two free slots are needed to add another.
+  const canAdd = remainingPieces >= 2;
 
   function addSet(id: ModSetId) {
     onChange([...value, id]);
@@ -86,22 +92,27 @@ export function SetSelector({
               {t("pick")}
             </p>
             <div className="grid grid-cols-2 gap-1.5">
-              {MOD_SET_IDS.map((id) => (
-                <button
-                  key={id}
-                  type="button"
-                  onClick={() => addSet(id)}
-                  className={cn(
-                    "flex items-center justify-between gap-1 rounded-md px-2 py-1 text-left text-xs ring-1 transition hover:opacity-80",
-                    MOD_SET_DEFINITIONS[id].chipClass,
-                  )}
-                >
-                  <span className="truncate">{t(`names.${id}`)}</span>
-                  <span className="shrink-0 opacity-70 tabular-nums">
-                    {t("pieces", { count: MOD_SET_DEFINITIONS[id].pieces })}
-                  </span>
-                </button>
-              ))}
+              {MOD_SET_IDS.map((id) => {
+                const fits = MOD_SET_DEFINITIONS[id].pieces <= remainingPieces;
+                return (
+                  <button
+                    key={id}
+                    type="button"
+                    disabled={!fits}
+                    onClick={() => addSet(id)}
+                    className={cn(
+                      "flex items-center justify-between gap-1 rounded-md px-2 py-1 text-left text-xs ring-1 transition hover:opacity-80",
+                      MOD_SET_DEFINITIONS[id].chipClass,
+                      !fits && "cursor-not-allowed opacity-30 hover:opacity-30",
+                    )}
+                  >
+                    <span className="truncate">{t(`names.${id}`)}</span>
+                    <span className="shrink-0 opacity-70 tabular-nums">
+                      {t("pieces", { count: MOD_SET_DEFINITIONS[id].pieces })}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
           </PopoverContent>
         </Popover>

@@ -25,20 +25,20 @@ export type ExportLayout = "desktop" | "mobile";
 interface LayoutConfig {
   /** Fixed render width; the height grows with the member count. */
   width: number;
-  /** Tailwind class for the mod grid column count. */
+  /** Tailwind class for the card grid (how many character cards per row). */
+  memberGridClass: string;
+  /** Tailwind class for the mod grid column count inside a card. */
   modGridClass: string;
-  /** Stack the character identity above the mods (mobile) or beside (desktop). */
-  stackIdentity: boolean;
 }
 
 /**
- * Two export layouts. Desktop is the wide, share-on-desktop sheet; mobile is a
- * narrower, vertically-stacked sheet whose text stays legible on a phone screen
- * instead of being shrunk into an unreadable 6-column row.
+ * Two export layouts for the infographic. Each member is a self-contained card;
+ * desktop tiles two cards per row at full share width, mobile stacks one per row
+ * so text stays legible on a phone screen.
  */
 export const EXPORT_LAYOUTS: Record<ExportLayout, LayoutConfig> = {
-  desktop: { width: 1600, modGridClass: "grid-cols-6", stackIdentity: false },
-  mobile: { width: 760, modGridClass: "grid-cols-2", stackIdentity: true },
+  desktop: { width: 1600, memberGridClass: "grid-cols-2", modGridClass: "grid-cols-3" },
+  mobile: { width: 760, memberGridClass: "grid-cols-1", modGridClass: "grid-cols-2" },
 };
 
 /** Back-compat alias used by the preview's default scale math. */
@@ -124,61 +124,47 @@ function MemberPanel({
   const hasGoals = member.sets.length > 0 || targetStats.length > 0;
 
   return (
-    <div className="flex flex-col gap-5 rounded-3xl bg-zinc-900/70 p-6 ring-1 ring-white/10">
-      <div className={cn("flex gap-6", layout.stackIdentity && "flex-col")}>
-        {/* Identity */}
-        <div
-          className={cn(
-            "flex shrink-0 flex-col gap-3",
-            layout.stackIdentity ? "w-full" : "w-65",
-          )}
-        >
-          {character ? (
-            <>
-              <div
-                className={cn(
-                  "flex gap-3",
-                  layout.stackIdentity ? "flex-row items-center" : "flex-col",
-                )}
-              >
-                <CharacterAvatar
-                  character={character}
-                  className="size-28 shrink-0 rounded-3xl ring-2 ring-white/10"
-                />
-                <div>
-                  <p className="text-2xl leading-tight font-semibold text-white">
-                    {character.name}
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-1.5">
-                    {character.factions.slice(0, 3).map((faction) => (
-                      <span
-                        key={faction}
-                        className="rounded-md bg-white/5 px-2 py-0.5 text-xs text-zinc-400"
-                      >
-                        {faction}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </>
-          ) : (
-            <div className="flex h-24 items-center text-xl font-medium text-zinc-600">
-              {t("emptySlot")}
-            </div>
-          )}
-        </div>
-
-        {/* Mods */}
-        <div className={cn("grid flex-1 gap-3", layout.modGridClass)}>
-          {MOD_DEFINITION_LIST.map((definition) => (
-            <MemberModTile
-              key={definition.id}
-              slotKey={definition}
-              config={member.mods[definition.id]}
+    <div className="flex h-full flex-col gap-5 rounded-3xl bg-zinc-900/70 p-6 ring-1 ring-white/10">
+      {/* Identity — banner across the top of the card */}
+      <div className="flex items-center gap-4 border-b border-white/10 pb-4">
+        {character ? (
+          <>
+            <CharacterAvatar
+              character={character}
+              className="size-20 shrink-0 rounded-3xl ring-2 ring-indigo-400/30"
             />
-          ))}
-        </div>
+            <div className="min-w-0">
+              <p className="text-2xl leading-tight font-semibold text-white">
+                {character.name}
+              </p>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {character.factions.slice(0, 3).map((faction) => (
+                  <span
+                    key={faction}
+                    className="rounded-md bg-white/5 px-2 py-0.5 text-xs text-zinc-400"
+                  >
+                    {faction}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </>
+        ) : (
+          <div className="flex h-20 items-center text-xl font-medium text-zinc-600">
+            {t("emptySlot")}
+          </div>
+        )}
+      </div>
+
+      {/* Mods */}
+      <div className={cn("grid gap-3", layout.modGridClass)}>
+        {MOD_DEFINITION_LIST.map((definition) => (
+          <MemberModTile
+            key={definition.id}
+            slotKey={definition}
+            config={member.mods[definition.id]}
+          />
+        ))}
       </div>
 
       {hasGoals ? (
@@ -252,6 +238,19 @@ function MemberPanel({
               </span>
             ) : null}
           </div>
+
+          {(member.datacron.perks?.length ?? 0) > 0 ? (
+            <div className="mt-2 flex flex-col gap-0.5">
+              {(member.datacron.perks ?? []).map((perk, index) => (
+                <p key={`${perk.level}-${index}`} className="text-sm text-zinc-300">
+                  <span className="text-zinc-500 tabular-nums">
+                    {tDatacron("levelShort", { level: perk.level })}:{" "}
+                  </span>
+                  {perk.text}
+                </p>
+              ))}
+            </div>
+          ) : null}
 
           {activeLevels(member.datacron).some((level) =>
             getTier(member.datacron, level)?.recommendedSecondaries.trim(),
@@ -333,8 +332,8 @@ export const SquadExportCard = forwardRef<
           </div>
         </div>
 
-        {/* Members */}
-        <div className="flex flex-col gap-5">
+        {/* Members — infographic card grid */}
+        <div className={cn("grid items-stretch gap-5", config.memberGridClass)}>
           {squad.members.map((member, index) => (
             <MemberPanel key={index} member={member} layout={config} />
           ))}

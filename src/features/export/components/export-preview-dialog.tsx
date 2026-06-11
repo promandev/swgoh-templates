@@ -65,6 +65,9 @@ export function ExportPreviewDialog({
   const [naturalHeight, setNaturalHeight] = useState(0);
 
   // Fit the full-size card into the preview viewport for the active layout.
+  // A ResizeObserver keeps the scale/height in sync as the card's real height
+  // settles (late-loading avatars, added sets/target stats) and as the dialog
+  // resizes, so the absolutely-positioned card never spills out of its frame.
   useEffect(() => {
     if (!open) return;
     const measure = () => {
@@ -72,13 +75,17 @@ export function ExportPreviewDialog({
       const card = cardRef.current;
       if (!viewport || !card) return;
       const available = viewport.clientWidth - 24;
-      setScale(Math.min(1, available / layoutWidth));
+      if (available > 0) setScale(Math.min(1, available / layoutWidth));
       setNaturalHeight(card.scrollHeight);
     };
     const frame = requestAnimationFrame(measure);
+    const observer = new ResizeObserver(measure);
+    if (viewportRef.current) observer.observe(viewportRef.current);
+    if (cardRef.current) observer.observe(cardRef.current);
     window.addEventListener("resize", measure);
     return () => {
       cancelAnimationFrame(frame);
+      observer.disconnect();
       window.removeEventListener("resize", measure);
     };
   }, [open, squad, layoutWidth]);
@@ -100,7 +107,7 @@ export function ExportPreviewDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-5xl">
+      <DialogContent className="w-[min(64rem,calc(100vw-2rem))] max-w-[min(64rem,calc(100vw-2rem))] sm:max-w-[min(64rem,calc(100vw-2rem))]">
         <DialogHeader>
           <DialogTitle>{t("previewTitle")}</DialogTitle>
           <DialogDescription>{t("previewDescription")}</DialogDescription>
@@ -142,10 +149,10 @@ export function ExportPreviewDialog({
         <div className="relative">
           <div
             ref={viewportRef}
-            className="max-h-[56vh] overflow-auto rounded-xl bg-zinc-950 p-3"
+            className="max-h-[56vh] overflow-x-hidden overflow-y-auto rounded-xl bg-zinc-950 p-3"
           >
             <div
-              className="relative mx-auto"
+              className="relative mx-auto overflow-hidden"
               style={{
                 width: layoutWidth * scale,
                 height: naturalHeight * scale || undefined,

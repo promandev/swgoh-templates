@@ -104,6 +104,20 @@
     "add": "Añadir estadística",
     "maxReached": "Máximo de {max} estadísticas alcanzado"
   },
+  "Recommendations": {
+    "open": "Recomendaciones",
+    "title": "Mods recomendados · {name}",
+    "step1Label": "Sets",
+    "step2Label": "Primarios",
+    "step1Description": "Combinaciones de sets más usadas entre los mejores jugadores. Elige una.",
+    "step2Description": "Primario más común por slot. Elige uno en cada uno.",
+    "usage": "{percent}% uso",
+    "noSets": "No hay datos de sets para este personaje.",
+    "skip": "Omitir",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "apply": "Aplicar"
+  },
   "Datacron": {
     "label": "Datacron",
     "title": "Datacron",
@@ -119,7 +133,13 @@
     "focusedLevel": "Nivel objetivo",
     "notes": "Notas",
     "placeholder": "Bonus, objetivos, estado…",
-    "levelShort": "Nv {level}"
+    "levelShort": "Nv {level}",
+    "reference": "Referencia del set",
+    "pickHint": "Clic para añadir por nivel",
+    "abilities": "Habilidades",
+    "statPool": "Pool de stats",
+    "noResults": "Sin sets",
+    "useCustom": "Usar «{name}»"
   },
   "Export": {
     "button": "Exportar plantilla",
@@ -170,6 +190,7 @@
     "squadRenamed": "Squad renombrado",
     "sizeChanged": "Tamaño del squad actualizado",
     "characterSet": "{name} añadido al squad",
+    "recommendationsApplied": "Mods recomendados aplicados a {name}",
     "characterCleared": "Personaje eliminado"
   },
   "Common": {

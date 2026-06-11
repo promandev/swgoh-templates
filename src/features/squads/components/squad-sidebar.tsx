@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { PlusIcon } from "lucide-react";
+import { ChevronRightIcon, PlusIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -28,14 +28,15 @@ export function SquadSidebar({ onCreate }: { onCreate: () => void }) {
         </Button>
       </div>
 
-      <ul
-        className="flex gap-2 overflow-x-auto pb-1 lg:flex-col lg:overflow-x-visible lg:pb-0"
-        aria-label={t("listTitle")}
-      >
-        {squads.map((squad) => {
-          const isActive = squad.id === activeSquadId;
-          return (
-            <li key={squad.id} className="min-w-[12rem] lg:min-w-0">
+      <div className="relative lg:contents">
+        <ul
+          className="flex gap-2 overflow-x-auto pb-1 lg:flex-col lg:overflow-x-visible lg:pb-0"
+          aria-label={t("listTitle")}
+        >
+          {squads.map((squad) => {
+            const isActive = squad.id === activeSquadId;
+            return (
+              <li key={squad.id} className="min-w-48 lg:min-w-0">
               <button
                 type="button"
                 onClick={() => setActiveSquad(squad.id)}
@@ -61,9 +62,20 @@ export function SquadSidebar({ onCreate }: { onCreate: () => void }) {
                 </span>
               </button>
             </li>
-          );
-        })}
-      </ul>
+            );
+          })}
+        </ul>
+        {squads.length > 1 ? (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 right-0 flex items-center lg:hidden"
+          >
+            <span className="flex h-full w-12 items-center justify-end bg-linear-to-l from-background via-background/80 to-transparent pr-0.5 pb-1">
+              <ChevronRightIcon className="size-4 animate-pulse text-muted-foreground" />
+            </span>
+          </div>
+        ) : null}
+      </div>
     </aside>
   );
 }

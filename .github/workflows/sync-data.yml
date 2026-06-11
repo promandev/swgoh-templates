@@ -1,0 +1,74 @@
+name: Weekly data sync
+
+# Keeps the committed datasets fresh without a manual `npm run sync`. Runs every
+# Monday, regenerates characters / datacrons / mod recommendations from their
+# providers, and commits any changes. On Vercel that commit triggers a redeploy,
+# so the app picks up new data automatically (local-first: the app still ships
+# static JSON, no runtime fetching).
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC (~weekly)
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+# Avoid overlapping runs racing to push.
+concurrency:
+  group: sync-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Network-dependent syncs hit public GitHub datasets (reachable from CI).
+      # continue-on-error keeps a transient upstream hiccup from blocking the
+      # rest of the run and the commit of whatever did update.
+      - name: Sync characters
+        continue-on-error: true
+        run: npm run sync
+
+      - name: Sync datacrons
+        continue-on-error: true
+        run: npm run sync:datacrons
+
+      # Offline baseline; also backfills recommendations for any new characters.
+      # Set the COMLINK_URL secret to pull real Kyber stats instead.
+      - name: Sync mod recommendations
+        continue-on-error: true
+        env:
+          COMLINK_URL: ${{ secrets.COMLINK_URL }}
+        run: npm run sync:mods
+
+      # Gate the commit on a clean lint + typecheck so freshly-synced data can
+      # never push a state that breaks the build. A failure here stops the job
+      # before committing.
+      - name: Validate (lint + typecheck)
+        run: |
+          npm run lint
+          npx tsc --noEmit
+
+      - name: Commit data changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data public/assets/characters
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore(data): weekly sync"
+            git push origin HEAD:${{ github.ref_name }}
+          fi

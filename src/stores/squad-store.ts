@@ -3,6 +3,10 @@ import { createJSONStorage, persist } from "zustand/middleware";
 
 import { createEmptyDatacron } from "@/features/datacrons/domain/datacron";
 import { createEmptyMods } from "@/features/mods/constants/mod-rules";
+import {
+  buildRecommendedMods,
+  type ChosenPrimaries,
+} from "@/features/mods/domain/recommendation";
 import type {
   MemberDatacron,
   ModConfiguration,
@@ -81,6 +85,12 @@ interface SquadState {
   setSquadBackground: (id: string, background: string) => void;
 
   setMemberCharacter: (squadId: string, index: number, characterId: string | null) => void;
+  /** Applies a recommendation wizard result: sets + chosen primaries, in one update. */
+  applyRecommendation: (
+    squadId: string,
+    index: number,
+    payload: { sets?: ModSetId[]; primaries?: ChosenPrimaries },
+  ) => void;
   setMemberDatacron: (squadId: string, index: number, datacron: MemberDatacron) => void;
   setMemberMod: (squadId: string, index: number, slot: ModSlotId, config: ModSlotConfig) => void;
   setMemberSets: (squadId: string, index: number, sets: ModSetId[]) => void;
@@ -171,6 +181,19 @@ export const useSquadStore = create<SquadState>()(
           ),
         })),
 
+      applyRecommendation: (squadId, index, { sets, primaries }) =>
+        set((state) => ({
+          squads: patchSquad(state.squads, squadId, (squad) =>
+            patchMember(squad, index, (member) => ({
+              ...member,
+              sets: sets ?? member.sets,
+              mods: primaries
+                ? buildRecommendedMods(member.mods, primaries)
+                : member.mods,
+            })),
+          ),
+        })),
+
       setMemberDatacron: (squadId, index, datacron) =>
         set((state) => ({
           squads: patchSquad(state.squads, squadId, (squad) =>
@@ -206,7 +229,7 @@ export const useSquadStore = create<SquadState>()(
     }),
     {
       name: "swgoh-squad-builder",
-      version: 3,
+      version: 5,
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         squads: state.squads,
@@ -214,6 +237,7 @@ export const useSquadStore = create<SquadState>()(
       }),
       // v1 → v2: free-text `datacronNotes` becomes a structured `datacron`.
       // v2 → v3: members gain `sets` and `targetStats` (default empty).
+      // v4 → v5: datacron gains `perks` array (backfill empty).
       migrate: (persisted, version) => {
         const state = persisted as {
           squads?: PersistedSquad[];
@@ -243,6 +267,17 @@ export const useSquadStore = create<SquadState>()(
               ...member,
               sets: member.sets ?? [],
               targetStats: member.targetStats ?? [],
+            })),
+          }));
+        }
+        if (version < 5 && state?.squads) {
+          state.squads = state.squads.map((squad) => ({
+            ...squad,
+            members: (squad.members ?? []).map((member) => ({
+              ...member,
+              datacron: member.datacron
+                ? { ...member.datacron, perks: member.datacron.perks ?? [] }
+                : member.datacron,
             })),
           }));
         }

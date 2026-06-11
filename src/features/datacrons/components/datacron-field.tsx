@@ -17,13 +17,6 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import {
@@ -32,11 +25,14 @@ import {
   hasDatacronContent,
   isLevelActive,
   setTierSecondaries,
+  togglePerk,
   toggleTier,
 } from "@/features/datacrons/domain/datacron";
 import { datacronService } from "@/services/datacron-service";
 import { DATACRON_LEVELS } from "@/types/datacron";
-import type { MemberDatacron } from "@/types";
+import type { DatacronPerk, MemberDatacron } from "@/types";
+import { DatacronReference } from "./datacron-reference";
+import { DatacronSetCombobox } from "./datacron-set-combobox";
 
 export function DatacronField({
   value,
@@ -54,9 +50,16 @@ export function DatacronField({
 
   const hasContent = hasDatacronContent(value);
   const levels = activeLevels(value);
+  const selectedSet = value.setId
+    ? sets.find((set) => set.id === value.setId)
+    : undefined;
 
   function update(partial: Partial<MemberDatacron>) {
     onChange({ ...value, ...partial });
+  }
+
+  function handleTogglePerk(perk: DatacronPerk) {
+    update({ perks: togglePerk(value, perk) });
   }
 
   return (
@@ -110,39 +113,23 @@ export function DatacronField({
             <Label htmlFor={`${fieldId}-set`} className="text-xs text-muted-foreground">
               {t("setLabel")}
             </Label>
-            <div className="flex gap-2">
-              <Input
-                id={`${fieldId}-set`}
-                value={value.setName}
-                placeholder={t("setPlaceholder")}
-                onChange={(event) =>
-                  update({ setName: event.target.value, setId: "" })
-                }
-                className="h-9"
-              />
-              {sets.length > 0 ? (
-                <Select
-                  value={value.setId || null}
-                  items={Object.fromEntries(sets.map((s) => [s.id, s.name]))}
-                  onValueChange={(id) => {
-                    const set = sets.find((s) => s.id === id);
-                    if (set) update({ setId: set.id, setName: set.name });
-                  }}
-                >
-                  <SelectTrigger aria-label={t("setPick")} className="h-9 w-40 shrink-0">
-                    <SelectValue placeholder={t("setPick")} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {sets.map((set) => (
-                      <SelectItem key={set.id} value={set.id}>
-                        {set.name}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              ) : null}
-            </div>
+            <DatacronSetCombobox
+              id={`${fieldId}-set`}
+              sets={sets}
+              setId={value.setId}
+              setName={value.setName}
+              onChange={(next) => update(next)}
+            />
           </div>
+
+          {/* Reference panel — abilities + stat pool for the selected set */}
+          {selectedSet ? (
+            <DatacronReference
+              set={selectedSet}
+              selected={value.perks ?? []}
+              onToggle={handleTogglePerk}
+            />
+          ) : null}
 
           {/* Levels */}
           <div className="flex flex-col gap-1.5">

@@ -3,8 +3,10 @@
  * datacron modal offers as a dropdown). The modal also works without this, via
  * manual set entry.
  *
- * Provider selection (default: swgoh.gg):
+ * Provider selection (default: github — reachable from restricted networks and
+ * the only source that carries the enriched abilities + stat pool):
  *   npm run sync:datacrons
+ *   npm run sync:datacrons -- --provider=swgoh.gg
  *   COMLINK_URL=http://localhost:3200 npm run sync:datacrons -- --provider=comlink
  */
 import { mkdir, writeFile } from "node:fs/promises";
@@ -12,6 +14,7 @@ import path from "node:path";
 
 import type { DatacronProvider } from "../src/features/datacrons/domain/datacron-provider";
 import { ComlinkDatacronProvider } from "../src/features/sync/providers/comlink-datacron-provider";
+import { GithubDatacronProvider } from "../src/features/sync/providers/github-datacron-provider";
 import { SwgohGgDatacronProvider } from "../src/features/sync/providers/swgoh-gg-datacron-provider";
 
 function getArg(name: string): string | undefined {
@@ -21,6 +24,8 @@ function getArg(name: string): string | undefined {
 
 function createProvider(name: string): DatacronProvider {
   switch (name) {
+    case "github":
+      return new GithubDatacronProvider();
     case "comlink": {
       const url = process.env.COMLINK_URL;
       if (!url) {
@@ -36,7 +41,7 @@ function createProvider(name: string): DatacronProvider {
 }
 
 async function main(): Promise<void> {
-  const provider = createProvider(getArg("provider") ?? "swgoh.gg");
+  const provider = createProvider(getArg("provider") ?? "github");
   console.log(`Provider: ${provider.name}`);
 
   const sets = await provider.getSets();

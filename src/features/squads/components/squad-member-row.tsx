@@ -1,19 +1,22 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
-import { XIcon } from "lucide-react";
+import { SparklesIcon, XIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { CharacterCombobox } from "@/features/characters/components/character-combobox";
 import { DatacronField } from "@/features/datacrons/components/datacron-field";
 import { ModCell } from "@/features/mods/components/mod-cell";
+import { ModRecommendationWizard } from "@/features/mods/components/mod-recommendation-wizard";
 import { SetSelector } from "@/features/mods/components/set-selector";
 import { SlotIcon } from "@/features/mods/components/slot-icon";
 import { TargetStatsField } from "@/features/mods/components/target-stats-field";
 import { MOD_SLOT_IDS } from "@/features/mods/constants/mod-rules";
 import { characterService } from "@/services/character-service";
+import { modRecommendationService } from "@/services/mod-recommendation-service";
 import { useSquadStore } from "@/stores/squad-store";
 import type { SquadMember } from "@/types";
 
@@ -30,6 +33,15 @@ export function SquadMemberRow({
   const tSlots = useTranslations("Slots");
   const tCharacter = useTranslations("Character");
   const tToasts = useTranslations("Toasts");
+  const tRecommendations = useTranslations("Recommendations");
+
+  const [wizardOpen, setWizardOpen] = useState(false);
+  const character = member.characterId
+    ? characterService.getById(member.characterId)
+    : undefined;
+  const hasRecommendation = modRecommendationService.hasRecommendation(
+    member.characterId,
+  );
 
   const setMemberCharacter = useSquadStore((s) => s.setMemberCharacter);
   const setMemberMod = useSquadStore((s) => s.setMemberMod);
@@ -61,12 +73,15 @@ export function SquadMemberRow({
               value={member.characterId}
               onChange={(characterId) => {
                 setMemberCharacter(squadId, index, characterId);
-                const character = characterService.getById(characterId);
-                if (character) {
-                  toast.success(
-                    tToasts("characterSet", { name: character.name }),
-                  );
+                const next = characterService.getById(characterId);
+                if (next) {
+                  toast.success(tToasts("characterSet", { name: next.name }));
                 }
+                // Open the wizard automatically when the new character has a
+                // recommendation meta; otherwise it stays closed for manual entry.
+                setWizardOpen(
+                  modRecommendationService.hasRecommendation(characterId),
+                );
               }}
             />
           </div>
@@ -87,6 +102,31 @@ export function SquadMemberRow({
             </Button>
           ) : null}
         </div>
+
+        {member.characterId && hasRecommendation ? (
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="h-7 gap-1.5 self-start border-dashed text-xs text-muted-foreground"
+            onClick={() => setWizardOpen(true)}
+          >
+            <SparklesIcon className="size-3.5" />
+            {tRecommendations("open")}
+          </Button>
+        ) : null}
+
+        {member.characterId && character ? (
+          <ModRecommendationWizard
+            key={member.characterId}
+            squadId={squadId}
+            index={index}
+            characterId={member.characterId}
+            characterName={character.name}
+            open={wizardOpen}
+            onOpenChange={setWizardOpen}
+          />
+        ) : null}
       </div>
 
       {/* Mods — children flow into the table grid on desktop via md:contents */}

@@ -80,5 +80,5 @@ export const MOD_SET_IDS: readonly ModSetId[] = Object.values(MOD_SET_DEFINITION
   .sort((a, b) => b.pieces - a.pieces)
   .map((definition) => definition.id);
 
-/** Maximum number of set bonuses a loadout can hold (three 2-piece sets). */
-export const MAX_SETS = 3;
+/** A character equips six mods, so set pieces must total at most six. */
+export const MAX_MOD_PIECES = 6;

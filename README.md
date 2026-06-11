@@ -27,14 +27,47 @@ Then open http://localhost:3000 (it redirects to your locale, e.g. `/en`).
 
 ### Scripts
 
-| Script               | Description                                          |
-| -------------------- | ---------------------------------------------------- |
-| `npm run dev`        | Start the dev server                                 |
-| `npm run build`      | Production build                                     |
-| `npm run start`      | Serve the production build                           |
-| `npm run lint`       | Run ESLint                                           |
-| `npm run sync`       | Sync characters + avatars from swgoh.gg (incremental)|
-| `npm run sync:force` | Re-download avatars and rewrite all data             |
+| Script                   | Description                                              |
+| ------------------------ | ------------------------------------------------------- |
+| `npm run dev`            | Start the dev server                                    |
+| `npm run build`          | Production build                                        |
+| `npm run start`          | Serve the production build                              |
+| `npm run lint`           | Run ESLint                                              |
+| `npm run sync`           | Sync characters + avatars (incremental)                 |
+| `npm run sync:force`     | Re-download avatars and rewrite all data                |
+| `npm run sync:datacrons` | Sync datacron sets/abilities                            |
+| `npm run sync:mods`      | Sync mod recommendations (powers the recommendation wizard) — see [docs/sync-mods.md](docs/sync-mods.md) |
+
+## Data source: swgoh-comlink
+
+For richer game data (full rosters, mod usage metas, leaderboards) the project
+uses **[swgoh-comlink](https://github.com/swgoh-utils/swgoh-comlink)** — a
+**self-hosted** proxy to the official Capital Games game API. Point the syncs at
+it via the **`COMLINK_URL`** env var:
+
+```bash
+COMLINK_URL=http://localhost:3200 npm run sync -- --provider=comlink   # characters
+COMLINK_URL=http://localhost:3200 npm run sync:mods                    # mod metas
+```
+
+Comlink returns **raw** data (no pre-aggregated "usage %"), so the mod sync
+fetches the Kyber leaderboard, pulls those players' rosters and aggregates the
+stats locally. swgoh.gg remains a best-effort fallback (it sits behind Cloudflare
+and may return `403`; the exact "top 1000 Kyber" cut is a premium slice).
+
+## Automated weekly sync (no manual step)
+
+The data stays local-first (no runtime fetching — `unstable_cache` would not even
+apply, since the app ships the JSON statically), but the syncs run **themselves**
+via a scheduled GitHub Action ([.github/workflows/sync-data.yml](.github/workflows/sync-data.yml)):
+every Monday it runs `sync` + `sync:datacrons` + `sync:mods` and commits any
+changes. On Vercel that commit triggers a redeploy, so the app picks up fresh
+data automatically. Trigger it on demand from the **Actions** tab too.
+
+- Character / datacron data comes from public GitHub datasets (reachable on CI).
+- Mod recommendations default to the offline **baseline** (covers the whole
+  roster). Add a **`COMLINK_URL`** repository secret to upgrade them to real
+  Kyber stats during the weekly run.
 
 ## Architecture
 

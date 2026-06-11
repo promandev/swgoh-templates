@@ -104,6 +104,20 @@
     "add": "Add target stat",
     "maxReached": "Maximum of {max} target stats reached"
   },
+  "Recommendations": {
+    "open": "Recommendations",
+    "title": "Recommended mods · {name}",
+    "step1Label": "Sets",
+    "step2Label": "Primaries",
+    "step1Description": "Most-used set loadouts among top players. Pick one.",
+    "step2Description": "Most common primary per slot. Pick one each.",
+    "usage": "{percent}% use",
+    "noSets": "No set data for this character.",
+    "skip": "Skip",
+    "back": "Back",
+    "next": "Next",
+    "apply": "Apply"
+  },
   "Datacron": {
     "label": "Datacron",
     "title": "Datacron",
@@ -119,7 +133,13 @@
     "focusedLevel": "Target level",
     "notes": "Notes",
     "placeholder": "Bonuses, targets, status…",
-    "levelShort": "Lv {level}"
+    "levelShort": "Lv {level}",
+    "reference": "Set reference",
+    "pickHint": "Click to add by level",
+    "abilities": "Abilities",
+    "statPool": "Stat pool",
+    "noResults": "No sets found",
+    "useCustom": "Use “{name}”"
   },
   "Export": {
     "button": "Export Template",
@@ -170,6 +190,7 @@
     "squadRenamed": "Squad renamed",
     "sizeChanged": "Squad size updated",
     "characterSet": "{name} added to the squad",
+    "recommendationsApplied": "Recommended mods applied to {name}",
     "characterCleared": "Character removed"
   },
   "Common": {

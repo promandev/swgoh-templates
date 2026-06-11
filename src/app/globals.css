@@ -144,6 +144,33 @@
   @apply border border-border/60 bg-card/60 backdrop-blur-xl;
 }
 
+/* Themed scrollbars — tinted with the active allegiance's primary (Rebel orange
+   / Empire red). Driven by the theme CSS variables, so they follow the toggle. */
+@layer base {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in oklch, var(--primary) 40%, var(--muted))
+      transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-track,
+  *::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    background-color: color-mix(in oklch, var(--primary) 38%, var(--muted));
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in oklch, var(--primary) 62%, var(--muted));
+  }
+}
+
 @layer base {
   /* Respect users who prefer reduced motion. */
   @media (prefers-reduced-motion: reduce) {
