@@ -4,6 +4,9 @@
 /node_modules
 /.pnp
 .pnp.*
+
+# this is a pnpm project — pnpm-lock.yaml is the source of truth
+package-lock.json
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
