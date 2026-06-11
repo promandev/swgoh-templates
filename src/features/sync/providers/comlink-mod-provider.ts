@@ -1,6 +1,8 @@
+import charactersData from "@/data/characters.json";
 import { buildHmacHeaders } from "./comlink-hmac";
 import type { ModRecommendationProvider } from "@/features/mods/domain/mod-recommendation-provider";
 import type {
+  Character,
   ModRecommendation,
   ModRecommendationMap,
   ModSetId,
@@ -9,7 +11,11 @@ import type {
   SetLoadoutOption,
   StatId,
 } from "@/types";
-import { slugify } from "./provider-utils";
+
+/** Strips case and punctuation so different id/name conventions can be matched. */
+function normalizeKey(value: string): string {
+  return value.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
 
 /**
  * Builds per-character mod recommendations from a self-hosted **swgoh-comlink**
@@ -207,7 +213,15 @@ export class ComlinkModProvider implements ModRecommendationProvider {
     return (await response.json()) as T;
   }
 
-  /** Maps in-game baseId (e.g. AAYLASECURA) → our slug (aayla-secura). */
+  /**
+   * Maps in-game baseId (e.g. CAPTAINREX) → our character id (captainrex).
+   *
+   * Our characters.json uses an inconsistent id scheme — sometimes the
+   * lowercased baseId (`captainrex`), sometimes a name slug (`general-skywalker`)
+   * — so we match on a normalized key (lowercase, alphanumerics only) tried
+   * against both the unit's baseId and its localized name. That collapses both
+   * conventions onto the real app id, which is what the wizard looks up.
+   */
   private async buildBaseIdToSlug(): Promise<Map<string, string>> {
     const metadata = await this.post<ComlinkMetadata>("/metadata", {});
     const data = await this.post<{ units: ComlinkUnitDef[] }>("/data", {
@@ -224,11 +238,20 @@ export class ComlinkModProvider implements ModRecommendationProvider {
     );
     const strings = parseLocalization(localization["Loc_ENG_US.txt"]);
 
+    // normalized id/name -> real app character id
+    const lookup = new Map<string, string>();
+    for (const character of charactersData as Character[]) {
+      lookup.set(normalizeKey(character.id), character.id);
+      lookup.set(normalizeKey(character.name), character.id);
+    }
+
     const map = new Map<string, string>();
     for (const unit of data.units ?? []) {
       if (unit.combatType !== 1 || map.has(unit.baseId)) continue;
       const name = strings[unit.nameKey] ?? unit.baseId;
-      map.set(unit.baseId, slugify(name));
+      const appId =
+        lookup.get(normalizeKey(unit.baseId)) ?? lookup.get(normalizeKey(name));
+      if (appId) map.set(unit.baseId, appId);
     }
     return map;
   }
