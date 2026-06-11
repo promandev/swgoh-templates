@@ -24,8 +24,8 @@ the entries below into a dated, versioned section, and pushes.
 
 ### Changed
 
-- `COMLINK_URL` updated to `https://comlink.avyra-online.com` (self-hosted on
-  Raspberry Pi 4, exposed via a dedicated Cloudflare Tunnel).
+- `COMLINK_URL` now points at a self-hosted comlink instance exposed through a
+  dedicated Cloudflare Tunnel; the URL and HMAC keys live only in CI secrets.
 
 ## [0.1.1] - 2026-06-11
 
