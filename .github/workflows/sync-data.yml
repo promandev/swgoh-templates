@@ -39,10 +39,18 @@ jobs:
       # rest of the run and the commit of whatever did update.
       - name: Sync characters
         continue-on-error: true
+        env:
+          COMLINK_URL: ${{ secrets.COMLINK_URL }}
+          COMLINK_ACCESS_KEY: ${{ secrets.COMLINK_ACCESS_KEY }}
+          COMLINK_SECRET_KEY: ${{ secrets.COMLINK_SECRET_KEY }}
         run: npm run sync
 
       - name: Sync datacrons
         continue-on-error: true
+        env:
+          COMLINK_URL: ${{ secrets.COMLINK_URL }}
+          COMLINK_ACCESS_KEY: ${{ secrets.COMLINK_ACCESS_KEY }}
+          COMLINK_SECRET_KEY: ${{ secrets.COMLINK_SECRET_KEY }}
         run: npm run sync:datacrons
 
       # Offline baseline; also backfills recommendations for any new characters.
@@ -51,6 +59,8 @@ jobs:
         continue-on-error: true
         env:
           COMLINK_URL: ${{ secrets.COMLINK_URL }}
+          COMLINK_ACCESS_KEY: ${{ secrets.COMLINK_ACCESS_KEY }}
+          COMLINK_SECRET_KEY: ${{ secrets.COMLINK_SECRET_KEY }}
         run: npm run sync:mods
 
       # Gate the commit on a clean lint + typecheck so freshly-synced data can

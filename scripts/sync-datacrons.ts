@@ -31,7 +31,11 @@ function createProvider(name: string): DatacronProvider {
       if (!url) {
         throw new Error("Set COMLINK_URL to use the comlink provider.");
       }
-      return new ComlinkDatacronProvider(url.replace(/\/$/, ""));
+      return new ComlinkDatacronProvider(
+        url.replace(/\/$/, ""),
+        process.env.COMLINK_ACCESS_KEY,
+        process.env.COMLINK_SECRET_KEY,
+      );
     }
     case "swgoh.gg":
       return new SwgohGgDatacronProvider();

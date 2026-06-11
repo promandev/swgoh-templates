@@ -1,3 +1,4 @@
+import { buildHmacHeaders } from "./comlink-hmac";
 import type { ModRecommendationProvider } from "@/features/mods/domain/mod-recommendation-provider";
 import type {
   ModRecommendation,
@@ -143,6 +144,8 @@ export class ComlinkModProvider implements ModRecommendationProvider {
   constructor(
     private readonly baseUrl: string,
     private readonly sample = 200,
+    private readonly accessKey?: string,
+    private readonly secretKey?: string,
   ) {}
 
   async getRecommendations(): Promise<ModRecommendationMap> {
@@ -169,10 +172,15 @@ export class ComlinkModProvider implements ModRecommendationProvider {
   }
 
   private async post<T>(path: string, body: unknown): Promise<T> {
+    const bodyStr = JSON.stringify(body);
+    const headers: Record<string, string> = { "Content-Type": "application/json" };
+    if (this.accessKey && this.secretKey) {
+      Object.assign(headers, buildHmacHeaders("POST", path, bodyStr, this.accessKey, this.secretKey));
+    }
     const response = await fetch(`${this.baseUrl}${path}`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
+      headers,
+      body: bodyStr,
     });
     if (!response.ok) {
       throw new Error(`comlink ${path} responded with ${response.status}`);

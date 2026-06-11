@@ -1,3 +1,4 @@
+import { buildHmacHeaders } from "./comlink-hmac";
 import type { DatacronProvider } from "@/features/datacrons/domain/datacron-provider";
 import type { DatacronSet } from "@/types";
 
@@ -37,13 +38,22 @@ function parseLocalization(raw: unknown): Record<string, string> {
 export class ComlinkDatacronProvider implements DatacronProvider {
   readonly name = "swgoh-comlink";
 
-  constructor(private readonly baseUrl: string) {}
+  constructor(
+    private readonly baseUrl: string,
+    private readonly accessKey?: string,
+    private readonly secretKey?: string,
+  ) {}
 
   private async post<T>(path: string, body: unknown): Promise<T> {
+    const bodyStr = JSON.stringify(body);
+    const headers: Record<string, string> = { "Content-Type": "application/json" };
+    if (this.accessKey && this.secretKey) {
+      Object.assign(headers, buildHmacHeaders("POST", path, bodyStr, this.accessKey, this.secretKey));
+    }
     const response = await fetch(`${this.baseUrl}${path}`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
+      headers,
+      body: bodyStr,
     });
     if (!response.ok) {
       throw new Error(`comlink ${path} responded with ${response.status}`);

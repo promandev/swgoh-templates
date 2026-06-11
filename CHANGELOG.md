@@ -9,6 +9,24 @@ the entries below into a dated, versioned section, and pushes.
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-06-11
+
+### Added
+
+- **HMAC-SHA256 authentication** for swgoh-comlink: all three providers
+  (`ComlinkProvider`, `ComlinkDatacronProvider`, `ComlinkModProvider`) now sign
+  requests when `COMLINK_ACCESS_KEY` + `COMLINK_SECRET_KEY` are set, preventing
+  unauthorised use of the hosted instance.
+- Shared `comlink-hmac.ts` utility implementing the comlink signing spec
+  (timestamp · method · path · MD5(body)).
+- GitHub Actions workflow passes `COMLINK_ACCESS_KEY` and `COMLINK_SECRET_KEY`
+  secrets to all three sync steps.
+
+### Changed
+
+- `COMLINK_URL` updated to `https://comlink.avyra-online.com` (self-hosted on
+  Raspberry Pi 4, exposed via a dedicated Cloudflare Tunnel).
+
 ## [0.1.1] - 2026-06-11
 
 ### Added

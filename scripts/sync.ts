@@ -37,7 +37,11 @@ function createProvider(name: string): CharacterProvider {
           "Set COMLINK_URL to use the comlink provider (self-hosted swgoh-comlink).",
         );
       }
-      return new ComlinkProvider(url.replace(/\/$/, ""));
+      return new ComlinkProvider(
+        url.replace(/\/$/, ""),
+        process.env.COMLINK_ACCESS_KEY,
+        process.env.COMLINK_SECRET_KEY,
+      );
     }
     case "github":
       return new SwgohBotDataProvider();

@@ -38,7 +38,12 @@ function createProvider(): ModRecommendationProvider {
       throw new Error("COMLINK_URL is required for --provider=comlink");
     }
     const sample = Number(getArg("sample") ?? 200);
-    return new ComlinkModProvider(comlinkUrl, sample);
+    return new ComlinkModProvider(
+      comlinkUrl,
+      sample,
+      process.env.COMLINK_ACCESS_KEY,
+      process.env.COMLINK_SECRET_KEY,
+    );
   }
   if (provider === "swgoh.gg") {
     return new SwgohGgModProvider(getArg("filter") ?? "all");
