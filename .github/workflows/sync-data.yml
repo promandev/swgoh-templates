@@ -28,13 +28,17 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          # Match the local toolchain (node 24 / npm 11) that generated
-          # package-lock.json, so `npm ci` resolves the tree identically.
           node-version: 24
           cache: npm
 
+      # `npm install` (not `npm ci`): the committed lockfile is generated on
+      # Windows and omits the Linux-only optional dep subtree (e.g.
+      # @next/swc-linux-x64-gnu → @swc/helpers@0.5.23) that the runner needs,
+      # so the strict `npm ci` sync check fails. `npm install` resolves the
+      # missing platform deps. The lock drift stays ephemeral (only src/data and
+      # avatars are committed below).
       - name: Install dependencies
-        run: npm ci
+        run: npm install --no-audit --no-fund
 
       # Network-dependent syncs hit public GitHub datasets (reachable from CI).
       # continue-on-error keeps a transient upstream hiccup from blocking the
