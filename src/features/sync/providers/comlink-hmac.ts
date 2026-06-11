@@ -4,11 +4,16 @@ import crypto from "node:crypto";
  * Builds the HMAC-SHA256 request headers required by swgoh-comlink when
  * ACCESS_KEY + SECRET_KEY are set on the server.
  *
- * Signing spec (from comlink wiki):
- *   message  = [timestamp, METHOD, path, md5(body)].join("\n")
- *   signature = HMAC-SHA256(SECRET_KEY, message).hex
+ * Signing spec (matches the reference comlink clients):
+ *   reqTime   = current time in **milliseconds** (Date.now())
+ *   signature = HMAC-SHA256(SECRET_KEY, reqTime + METHOD + path + md5hex(body))
+ *               where the four parts are concatenated with **no separator**
+ *               (the reference does successive hmac.update() calls).
  *   headers   = { Authorization: "HMAC-SHA256 Credential=<key>,Signature=<sig>",
- *                 "X-Date": timestamp }
+ *                 "X-Date": reqTime }
+ *
+ * The server rejects (403) if reqTime drifts past HMAC_MAX/MIN_DRIFT (±30s by
+ * default), so the millisecond timestamp matters — seconds would be ~1000x off.
  */
 export function buildHmacHeaders(
   method: string,
@@ -17,15 +22,17 @@ export function buildHmacHeaders(
   accessKey: string,
   secretKey: string,
 ): Record<string, string> {
-  const timestamp = Math.floor(Date.now() / 1000).toString();
+  const reqTime = Date.now().toString();
   const bodyMd5 = crypto.createHash("md5").update(body).digest("hex");
-  const message = [timestamp, method.toUpperCase(), path, bodyMd5].join("\n");
   const signature = crypto
     .createHmac("sha256", secretKey)
-    .update(message)
+    .update(reqTime)
+    .update(method.toUpperCase())
+    .update(path)
+    .update(bodyMd5)
     .digest("hex");
   return {
     Authorization: `HMAC-SHA256 Credential=${accessKey},Signature=${signature}`,
-    "X-Date": timestamp,
+    "X-Date": reqTime,
   };
 }

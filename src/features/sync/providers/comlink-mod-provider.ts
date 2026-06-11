@@ -41,6 +41,22 @@ const SET_BY_ID: Record<number, ModSetId> = {
   8: "tenacity",
 };
 
+/**
+ * Mods needed to complete one set bonus. Used to fold a unit's 6 raw mod sets
+ * into the set-*bonus* loadout the wizard shows (e.g. 4×offense + 2×defense →
+ * ["offense", "defense"]), matching the baseline provider's representation.
+ */
+const SET_PIECES: Record<ModSetId, number> = {
+  health: 2,
+  offense: 4,
+  defense: 2,
+  speed: 4,
+  criticalChance: 2,
+  criticalDamage: 4,
+  potency: 2,
+  tenacity: 2,
+};
+
 /** Mod slot ids encoded in a comlink mod `definitionId`; only variable slots. */
 const SLOT_BY_ID: Record<number, ModSlotId> = {
   2: "arrow",
@@ -75,11 +91,14 @@ interface ComlinkUnitDef {
   combatType: number; // 1 = character
 }
 
-/** A leaderboard row; comlink shapes vary, so several id fields are tolerated. */
+/** A GAC leaderboard player entry (nested under leaderboard[].player[]). */
 interface LeaderboardPlayer {
-  playerId?: string;
-  allyCode?: string | number;
-  memberContestId?: string;
+  id?: string;
+  name?: string;
+}
+
+interface LeaderboardResponse {
+  leaderboard?: Array<{ player?: LeaderboardPlayer[] }>;
 }
 
 interface ComlinkMod {
@@ -150,11 +169,11 @@ export class ComlinkModProvider implements ModRecommendationProvider {
 
   async getRecommendations(): Promise<ModRecommendationMap> {
     const baseIdToSlug = await this.buildBaseIdToSlug();
-    const players = await this.fetchTopPlayerIds();
+    const playerIds = await this.fetchTopPlayerIds();
 
     const tallies = new Map<string, Tally>();
-    for (const player of players.slice(0, this.sample)) {
-      const roster = await this.fetchRoster(player);
+    for (const playerId of playerIds.slice(0, this.sample)) {
+      const roster = await this.fetchRoster(playerId);
       for (const unit of roster) this.tallyUnit(unit, baseIdToSlug, tallies);
     }
 
@@ -214,27 +233,40 @@ export class ComlinkModProvider implements ModRecommendationProvider {
     return map;
   }
 
-  /** Top players for the Kyber GAC league. Tolerant of comlink's leaderboard shape. */
-  private async fetchTopPlayerIds(): Promise<LeaderboardPlayer[]> {
-    // leaderboardType 6 = Grand Arena; league 100 = Kyber (top). Shapes differ
-    // across comlink versions, so we read whichever player array is present.
-    const payload = await this.post<Record<string, unknown>>("/getLeaderboard", {
-      payload: { leaderboardType: 6, league: 100, division: 25 },
-      enums: false,
-    });
-    for (const key of ["player", "players", "playerStatus", "leaderboard"]) {
-      const value = payload[key];
-      if (Array.isArray(value)) return value as LeaderboardPlayer[];
+  /**
+   * Unique player ids from the top of the Kyber GAC leaderboard. Players sit at
+   * `leaderboard[].player[].id` (each bracket holds ~50). We sweep the Kyber
+   * divisions (top-first) to gather a larger sample, deduping by id.
+   */
+  private async fetchTopPlayerIds(): Promise<string[]> {
+    // leaderboardType 6 = Grand Arena; league 100 = Kyber. Divisions run 25..5
+    // (top-first); each returns a bracket of ~50 players.
+    const divisions = [25, 20, 15, 10, 5];
+    const ids: string[] = [];
+    const seen = new Set<string>();
+    for (const division of divisions) {
+      const payload = await this.post<LeaderboardResponse>("/getLeaderboard", {
+        payload: { leaderboardType: 6, league: 100, division },
+        enums: false,
+      }).catch(() => ({}) as LeaderboardResponse);
+      for (const bracket of payload.leaderboard ?? []) {
+        for (const player of bracket.player ?? []) {
+          if (player.id && !seen.has(player.id)) {
+            seen.add(player.id);
+            ids.push(player.id);
+          }
+        }
+      }
     }
-    return [];
+    return ids;
   }
 
-  private async fetchRoster(player: LeaderboardPlayer): Promise<ComlinkRosterUnit[]> {
-    const payload = player.playerId
-      ? { payload: { playerId: player.playerId }, enums: false }
-      : { payload: { allyCode: String(player.allyCode ?? "") }, enums: false };
+  private async fetchRoster(playerId: string): Promise<ComlinkRosterUnit[]> {
     try {
-      const data = await this.post<ComlinkPlayer>("/player", payload);
+      const data = await this.post<ComlinkPlayer>("/player", {
+        payload: { playerId },
+        enums: false,
+      });
       return data.rosterUnit ?? [];
     } catch {
       // Rate-limit / missing player: skip, keep aggregating the rest.
@@ -261,10 +293,10 @@ export class ComlinkModProvider implements ModRecommendationProvider {
       })();
     tally.total += 1;
 
-    const setCounts: ModSetId[] = [];
+    const rawCounts = new Map<ModSetId, number>();
     for (const mod of mods) {
       const { set, slot } = decodeMod(mod.definitionId);
-      if (set) setCounts.push(set);
+      if (set) rawCounts.set(set, (rawCounts.get(set) ?? 0) + 1);
       const statId = mod.primaryStat?.stat?.unitStatId;
       const primary = statId != null ? PRIMARY_BY_STAT_ID[statId] : null;
       if (slot && primary) {
@@ -273,9 +305,18 @@ export class ComlinkModProvider implements ModRecommendationProvider {
       }
     }
 
+    // Fold the 6 raw mod sets into completed set bonuses (e.g. 4×offense +
+    // 2×defense → ["defense", "offense"]); incomplete sets contribute nothing.
+    const bonuses: ModSetId[] = [];
+    for (const [set, count] of rawCounts) {
+      for (let i = 0; i < Math.floor(count / SET_PIECES[set]); i++) {
+        bonuses.push(set);
+      }
+    }
+
     // A loadout is the multiset of set bonuses (order-independent), keyed sorted.
-    if (setCounts.length > 0) {
-      const sets = [...setCounts].sort();
+    if (bonuses.length > 0) {
+      const sets = bonuses.sort();
       const key = sets.join("+");
       const combo = tally.setCombos.get(key) ?? { sets, count: 0 };
       combo.count += 1;
