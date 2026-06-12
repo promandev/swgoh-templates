@@ -16,7 +16,7 @@ export default async function HomePage({ params }: PageProps) {
   return (
     <div className="flex min-h-dvh flex-col">
       <AppHeader />
-      <main className="mx-auto w-full max-w-[120rem] flex-1 px-4 py-6 sm:px-6 lg:px-8">
+      <main className="mx-auto w-full max-w-[120rem] flex-1 px-4 py-3 sm:px-6 lg:px-8">
         <SquadBuilderApp />
       </main>
       <AppFooter />

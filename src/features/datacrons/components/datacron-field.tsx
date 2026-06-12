@@ -70,13 +70,13 @@ export function DatacronField({
             variant="outline"
             aria-label={t("title")}
             className={cn(
-              "flex h-auto min-h-14 w-full items-start justify-start gap-2 p-2 text-left font-normal",
+              "flex h-auto min-h-10 w-full items-center justify-start gap-2 p-1.5 text-left font-normal",
               !hasContent && "border-dashed text-muted-foreground",
             )}
           />
         }
       >
-        <ScrollTextIcon className="mt-0.5 size-3.5 shrink-0 opacity-70" />
+        <ScrollTextIcon className="size-3.5 shrink-0 opacity-70" />
         {hasContent ? (
           <span className="flex min-w-0 flex-col gap-1">
             <span className="truncate text-xs font-medium">

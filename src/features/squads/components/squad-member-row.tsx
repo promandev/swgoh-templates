@@ -59,7 +59,7 @@ export function SquadMemberRow({
       exit={{ opacity: 0, y: -8 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
       role="row"
-      className="grid gap-3 rounded-2xl border border-border/60 bg-card/50 p-3 shadow-sm md:grid-cols-[minmax(180px,200px)_repeat(6,minmax(116px,1fr))_minmax(150px,180px)] md:items-stretch md:gap-2 md:rounded-none md:border-0 md:border-b md:border-border/40 md:bg-transparent md:p-2 md:shadow-none"
+      className="grid gap-3 rounded-2xl border border-border/60 bg-card/50 p-3 shadow-sm md:grid-cols-[minmax(180px,200px)_repeat(6,minmax(116px,1fr))_minmax(150px,180px)] md:items-stretch md:gap-2 md:rounded-none md:border-0 md:border-b md:border-border/40 md:bg-transparent md:px-2 md:py-1.5 md:shadow-none"
     >
       {/* Character */}
       <div className="flex flex-col gap-1.5 md:justify-center">
@@ -85,6 +85,19 @@ export function SquadMemberRow({
               }}
             />
           </div>
+          {member.characterId && hasRecommendation ? (
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              aria-label={tRecommendations("open")}
+              title={tRecommendations("open")}
+              className="shrink-0 text-muted-foreground hover:text-primary"
+              onClick={() => setWizardOpen(true)}
+            >
+              <SparklesIcon className="size-4" />
+            </Button>
+          ) : null}
           {member.characterId ? (
             <Button
               type="button"
@@ -102,19 +115,6 @@ export function SquadMemberRow({
             </Button>
           ) : null}
         </div>
-
-        {member.characterId && hasRecommendation ? (
-          <Button
-            type="button"
-            variant="outline"
-            size="sm"
-            className="h-7 gap-1.5 self-start border-dashed text-xs text-muted-foreground"
-            onClick={() => setWizardOpen(true)}
-          >
-            <SparklesIcon className="size-3.5" />
-            {tRecommendations("open")}
-          </Button>
-        ) : null}
 
         {member.characterId && character ? (
           <ModRecommendationWizard
@@ -163,19 +163,17 @@ export function SquadMemberRow({
       </div>
 
       {/* Sets + target stats — spans the full table width below the row */}
-      <div className="flex flex-col gap-3 sm:flex-row sm:gap-8 md:col-span-full md:mt-1 md:border-t md:border-border/30 md:pt-2.5">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:gap-4 md:col-span-full md:border-t md:border-border/30 md:pt-1">
         <SetSelector
           value={member.sets}
           onChange={(sets) => setMemberSets(squadId, index, sets)}
         />
-        <div className="sm:max-w-xs sm:flex-1">
-          <TargetStatsField
-            value={member.targetStats}
-            onChange={(targetStats) =>
-              setMemberTargetStats(squadId, index, targetStats)
-            }
-          />
-        </div>
+        <TargetStatsField
+          value={member.targetStats}
+          onChange={(targetStats) =>
+            setMemberTargetStats(squadId, index, targetStats)
+          }
+        />
       </div>
     </motion.div>
   );

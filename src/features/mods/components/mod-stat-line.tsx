@@ -5,6 +5,7 @@ import { XIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 import { isPercentStat } from "@/features/mods/constants/mod-rules";
 import type { StatId } from "@/types";
 import { StatSelect } from "./stat-select";
@@ -51,7 +52,7 @@ export function ModStatLine({
         </div>
       )}
 
-      <div className="relative w-20 shrink-0">
+      <div className="relative w-16 shrink-0">
         <Input
           type="number"
           inputMode="decimal"
@@ -69,10 +70,13 @@ export function ModStatLine({
             const parsed = Number.parseFloat(raw);
             if (!Number.isNaN(parsed)) onValueChange(parsed);
           }}
-          className="h-7 pr-5 text-right text-[0.8rem] tabular-nums"
+          className={cn(
+            "h-7 text-right text-[0.75rem] tabular-nums md:text-[0.75rem]",
+            suffix ? "pl-1.5 pr-4" : "px-1.5",
+          )}
         />
         {suffix ? (
-          <span className="pointer-events-none absolute inset-y-0 right-2 flex items-center text-xs text-muted-foreground">
+          <span className="pointer-events-none absolute inset-y-0 right-1.5 flex items-center text-xs text-muted-foreground">
             {suffix}
           </span>
         ) : null}

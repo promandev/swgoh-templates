@@ -46,8 +46,8 @@ export function SetSelector({
   }
 
   return (
-    <div className="flex min-w-0 flex-col gap-1.5">
-      <span className="text-[0.7rem] font-medium uppercase tracking-wide text-muted-foreground">
+    <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1.5">
+      <span className="shrink-0 text-[0.7rem] font-medium uppercase tracking-wide text-muted-foreground">
         {t("label")}
       </span>
       <div className="flex flex-wrap items-center gap-1.5">

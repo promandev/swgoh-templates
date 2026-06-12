@@ -41,39 +41,40 @@ export function TargetStatsField({
     value.length < MAX_TARGET_STATS && availableFor(-1).length > 0;
 
   return (
-    <div className="flex min-w-0 flex-col gap-1.5">
-      <span className="text-[0.7rem] font-medium uppercase tracking-wide text-muted-foreground">
+    <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1.5">
+      <span className="shrink-0 text-[0.7rem] font-medium uppercase tracking-wide text-muted-foreground">
         {t("label")}
       </span>
 
-      {value.length > 0 ? (
-        <div className="flex flex-col gap-1.5">
-          {value.map((line, index) => (
-            <ModStatLine
-              key={index}
-              stat={line.stat}
-              value={line.value}
-              options={availableFor(index)}
-              onStatChange={(stat) => update(index, { stat })}
-              onValueChange={(next) => update(index, { value: next })}
-              onRemove={() => onChange(value.filter((_, i) => i !== index))}
-            />
-          ))}
+      {value.map((line, index) => (
+        <div key={index} className="w-44 max-w-full">
+          <ModStatLine
+            stat={line.stat}
+            value={line.value}
+            options={availableFor(index)}
+            onStatChange={(stat) => update(index, { stat })}
+            onValueChange={(next) => update(index, { value: next })}
+            onRemove={() => onChange(value.filter((_, i) => i !== index))}
+          />
         </div>
-      ) : null}
+      ))}
 
       <Button
         type="button"
         variant="ghost"
-        size="sm"
+        size={value.length > 0 ? "icon-sm" : "sm"}
         disabled={!canAdd}
         onClick={() => onChange([...value, { stat: null, value: null }])}
-        className="justify-start text-muted-foreground"
+        aria-label={t("add")}
+        title={
+          value.length >= MAX_TARGET_STATS
+            ? t("maxReached", { max: MAX_TARGET_STATS })
+            : t("add")
+        }
+        className="h-7 justify-start text-muted-foreground"
       >
         <PlusIcon className="size-3.5" />
-        {value.length >= MAX_TARGET_STATS
-          ? t("maxReached", { max: MAX_TARGET_STATS })
-          : t("add")}
+        {value.length === 0 ? t("add") : null}
       </Button>
     </div>
   );

@@ -21,12 +21,12 @@ export function SquadTable({ squad }: { squad: Squad }) {
   const tSlots = useTranslations("Slots");
 
   return (
-    <div className="glass overflow-x-auto rounded-2xl p-2 sm:p-3">
+    <div className="glass overflow-x-auto rounded-2xl p-2">
       <div className="md:min-w-[60rem]">
         {/* Desktop column header */}
         <div
           role="row"
-          className={`hidden gap-2 border-b border-border/60 px-2 pb-2 text-xs font-medium text-muted-foreground md:grid ${GRID_COLUMNS}`}
+          className={`hidden gap-2 border-b border-border/60 px-2 pb-1.5 text-xs font-medium text-muted-foreground md:grid ${GRID_COLUMNS}`}
         >
           <span className="flex items-center">{t("columnCharacter")}</span>
           {MOD_SLOT_IDS.map((slot) => (
@@ -39,7 +39,7 @@ export function SquadTable({ squad }: { squad: Squad }) {
                   />
                 }
               >
-                <SlotIcon slot={slot} className="size-10 text-primary" />
+                <SlotIcon slot={slot} className="size-7 text-primary" />
                 {/* <span>{tSlots(`${slot}.name`)}</span> */}
               </TooltipTrigger>
               <TooltipContent>{tSlots(`${slot}.tooltip`)}</TooltipContent>

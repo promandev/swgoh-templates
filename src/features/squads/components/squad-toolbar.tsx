@@ -44,12 +44,9 @@ export function SquadToolbar({ squad }: { squad: Squad }) {
   }
 
   return (
-    <div className="glass flex flex-col gap-3 rounded-2xl p-3 sm:flex-row sm:items-end sm:justify-between">
-      <div className="flex flex-1 flex-col gap-1.5">
-        <Label
-          htmlFor={`squad-name-${squad.id}`}
-          className="text-xs text-muted-foreground"
-        >
+    <div className="glass flex flex-col gap-2 rounded-2xl p-2.5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-1 items-center gap-3">
+        <Label htmlFor={`squad-name-${squad.id}`} className="sr-only">
           {t("renamePlaceholder")}
         </Label>
         <Input
@@ -59,7 +56,7 @@ export function SquadToolbar({ squad }: { squad: Squad }) {
           onChange={(event) => renameSquad(squad.id, event.target.value)}
           className="h-9 max-w-sm text-base font-semibold"
         />
-        <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+        <p className="hidden shrink-0 items-center gap-1.5 text-xs text-muted-foreground sm:flex">
           <UsersIcon className="size-3.5" />
           {t("members", { count: squad.size })}
         </p>

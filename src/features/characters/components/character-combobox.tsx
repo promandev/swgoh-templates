@@ -62,13 +62,13 @@ export function CharacterCombobox({
             variant="outline"
             role="combobox"
             aria-expanded={open}
-            className="h-11 w-full justify-start gap-2.5 px-2 font-normal"
+            className="h-10 w-full justify-start gap-2 px-2 font-normal"
           />
         }
       >
         {selected ? (
           <>
-            <CharacterAvatar character={selected} className="size-9" />
+            <CharacterAvatar character={selected} className="size-8" />
             <span className="truncate text-sm font-medium">
               {selected.name}
             </span>

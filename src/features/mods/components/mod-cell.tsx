@@ -39,7 +39,7 @@ function StatChip({
   return (
     <span
       className={cn(
-        "inline-flex max-w-full items-center gap-1 rounded-md px-1.5 py-0.5 text-[0.7rem] leading-tight",
+        "inline-flex max-w-full items-center gap-1 rounded-md px-1 py-0 text-[0.65rem] leading-4",
         variant === "primary"
           ? "bg-primary/12 font-semibold text-primary ring-1 ring-primary/20"
           : "bg-muted text-muted-foreground",
@@ -97,14 +97,14 @@ export function ModCell({
             variant="outline"
             aria-label={`${slotName} — ${t("editorTitle", { slot: slotName })}`}
             className={cn(
-              "flex h-auto min-h-14 w-full flex-col items-start justify-start gap-1 p-2 text-left font-normal",
+              "flex h-auto min-h-10 w-full flex-col items-start justify-center gap-1 p-1.5 text-left font-normal",
               !hasContent && "border-dashed text-muted-foreground",
             )}
           />
         }
       >
         {hasContent ? (
-          <div className="flex w-full flex-col gap-1">
+          <div className="flex w-full flex-col gap-0.5">
             {config.primary.stat ? (
               <StatChip
                 variant="primary"
@@ -114,7 +114,7 @@ export function ModCell({
               />
             ) : null}
             {filledSecondaries.length > 0 ? (
-              <div className="flex flex-wrap gap-1">
+              <div className="flex flex-wrap gap-0.5">
                 {filledSecondaries.map((line, index) => (
                   <StatChip
                     key={`${line.stat}-${index}`}
@@ -129,7 +129,7 @@ export function ModCell({
           </div>
         ) : (
           <span className="flex w-full items-center gap-1.5 text-xs">
-            <SlotIcon slot={slot} className="size-6 text-primary/70" />
+            <SlotIcon slot={slot} className="size-5 text-primary/70" />
             {t("emptySummary")}
           </span>
         )}
