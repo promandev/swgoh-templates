@@ -578,355 +578,6 @@
     ]
   },
   {
-    "id": "23",
-    "name": "Cosmic Plunder",
-    "expiresAt": 1764144000000,
-    "abilities": [
-      {
-        "level": 3,
-        "focus": "Dark Side",
-        "text": "Whenever Dark Side allies start their turn, for each enemy with fewer than 4 debuffs, that ally gains 30% Potency until the end of the turn."
-      },
-      {
-        "level": 3,
-        "focus": "Light Side",
-        "text": "Light Side allies recover 2% Health whenever they critically hit an enemy."
-      },
-      {
-        "level": 6,
-        "focus": "Ewoks",
-        "text": "Whenever an Ewok ally attacks out of turn, each Ewok ally gains 2% Offense (stacking, max 100%) until the end of battle."
-      },
-      {
-        "level": 6,
-        "focus": "Inquisitorius",
-        "text": "Whenever an Inquisitorius ally inflicts a stack of Purge, they gain 5% Defense, Offense, and Tenacity (stacking) for 1 turn.\\n\\nWhenever a stack of Purge is consumed or dispelled on an enemy Expose them for 1 turn.\\n\\nWhenever an Inquisitorius ally attacks an enemy inflicted with a stack of Purge, a random other Inquisitorius ally assists, dealing 5% bonus damage per stack of Purge and then they inflict a stack of Purge (max 6) on target enemy, which can't be evaded."
-      },
-      {
-        "level": 6,
-        "focus": "Nightsister",
-        "text": "Whenever Nightsister allies are revived, they gain Protection Over Time (25%) for 2 turns and 25% Turn Meter and reduce their cooldowns by 1."
-      },
-      {
-        "level": 6,
-        "focus": "Resistance",
-        "text": "Whenever a debuff on an enemy expires, Resistance allies gain 2% Turn Meter, doubled if that debuff was dispelled."
-      },
-      {
-        "level": 9,
-        "focus": "Acolyte",
-        "text": "Whenever Nightsisteracolyte damages an enemy with a Special ability and the enemy doesn't have Armor Shred, inflict Armor Shred for the rest of battle. Whenever Nightsisteracolyte uses a Basic ability and damages an enemy with Armor Shred, inflict Expose for 2 turns on that enemy, which can't be resisted, and Nightsisteracolyte gains Protection Up (50%, stacking) for 2 turns."
-      },
-      {
-        "level": 9,
-        "focus": "Cheifcharpa",
-        "text": "The first time Chiefchirpa is defeated, revive all other defeated allies, other allies recover +100% Health and Protection, gain 100% Turn Meter and 100% Offense until the end of battle."
-      },
-      {
-        "level": 9,
-        "focus": "Ewok Scout",
-        "text": "Ewokscout deals 5% more damage per Relic Amplifier level on all allies present at the start of battle."
-      },
-      {
-        "level": 9,
-        "focus": "Grand Inquisitor",
-        "text": "Whenever Grandinquisitor inflicts a debuff, they recover 25% of their Max Health and Max Protection (limit once per turn)."
-      },
-      {
-        "level": 9,
-        "focus": "Jeditrainingrey",
-        "text": "Whenever Jeditrainingrey gains Foresight, they also gain +20% Turn Meter and Protection Up (20%)."
-      },
-      {
-        "level": 9,
-        "focus": "Logray",
-        "text": "Logray has +5% Max Health and Max Protection per Relic Amplifier level, and damage they receive is decreased by 15%."
-      },
-      {
-        "level": 9,
-        "focus": "Marrok",
-        "text": "Whenever Marrok deals damage to an enemy, remove 25% Turn Meter from that enemy."
-      },
-      {
-        "level": 9,
-        "focus": "Mother Talzin",
-        "text": "Whenever Mothertalzin uses a Basic Ability on their turn, other allies gain +25% Turn Meter."
-      },
-      {
-        "level": 9,
-        "focus": "Night Trooper",
-        "text": "At the start of battle, Night Trooper gains 75% Potency and 25 Speed until the end of the encounter.\\n\\nWhenever an enemy is inflicted with a stack of Blight they inflict themselves with another stack, which can't be dispelled, until the end of the encounter or until they fully recover their Health.\\n\\nWhenever an enemy that already had Blight is inflicted with another stack of Blight by an ally, inflict Blight on another random enemy that doesn't have it, which can't be dispelled, until the end of the encounter or until they fully recover their Health.\\n\\nWhenever Night Trooper uses Shambling Shot, they gain an additional 3 stacks of Blight until the end of the encounter.\\n\\nWhenever an ally or an enemy gains or is inflicted with Blight, Night Trooper recovers 20% Health and gains 25% Offense (stacking) for 2 turns."
-      },
-      {
-        "level": 9,
-        "focus": "Ninth Sister",
-        "text": "At the start of encounter, all Inquisitorius allies have +200% Max Health and are immune to Ability Block.\\n\\nNinth Sister deals 20% bonus True damage based on her Max Health with her Basic ability if the target enemy is inflicted with Purge.\\n\\nIf any enemy has 6 stacks of Purge when Ninth Sister would be defeated for the first time, she consumes all stacks of Purge from a random enemy with 6 stacks of Purge, recovers 100% Max Health and Max Protection, and removes 50% Turn Meter from all enemies."
-      },
-      {
-        "level": 9,
-        "focus": "Olddaka",
-        "text": "The first time Olddaka goes below 100% Health, recover 100% Health and Protection and gain 100% Turn Meter."
-      },
-      {
-        "level": 9,
-        "focus": "Paploo",
-        "text": "The first time Paploo is defeated, they are revived with 100% Health, gain Health Over Time (75%) for 2 turns, and take a bonus turn."
-      },
-      {
-        "level": 9,
-        "focus": "Princess Kneesaa",
-        "text": "Whenever Princesskneesaa critically hits an enemy, Princesskneesaa gains 10% Critical Damage, Defense Penetration, and Offense (stacking, max 200%) until the end of battle."
-      },
-      {
-        "level": 9,
-        "focus": "Resistance Pilot",
-        "text": "Resistancepilot gains 15% Turn Meter when other allies use a Special Ability on their turn."
-      },
-      {
-        "level": 9,
-        "focus": "Rose Tico",
-        "text": "Whenever Rose uses Dauntless Bravery, inflict Expose on the target enemy for 2 turns, which can't be resisted. Whenever Rose uses Shock Prod Strike, when the Stun expires inflict Deathmark for 1 turn. Whenever Rose uses a Basic ability on an enemy with Expose, dispel all buffs on the enemy and debuffs on herself, recover 100% Protection, and gain 5% Critical Damage (stacking, max 200%)."
-      },
-      {
-        "level": 9,
-        "focus": "Scavengerrey",
-        "text": "Scavengerrey deals +25% more damage per Relic Amplifier level on all allies."
-      },
-      {
-        "level": 9,
-        "focus": "Second Sister",
-        "text": "Whenever an enemy is inflicted with a debuff, Secondsister gains 5% Offense (stacking) until they are defeated."
-      },
-      {
-        "level": 9,
-        "focus": "Talia",
-        "text": "The first time Talia falls below 30% Health they dispel all debuffs on themself, recover 40% Health, and gain a bonus turn."
-      },
-      {
-        "level": 9,
-        "focus": "Third Sister",
-        "text": "Whenever Thirdsister uses an ability, they deal more damage (max 100%) equal to half their Potency percentage. This effect will only trigger if Thirdsister has more than 0% Potency."
-      },
-      {
-        "level": 9,
-        "focus": "Veteran Smuggler Chewbacca",
-        "text": "Whenever another ally uses an ability on their turn, Smugglerchewbacca assists (limit once per turn) dealing 50% more damage."
-      }
-    ],
-    "statPool": [
-      {
-        "level": 1,
-        "stat": "Critical Avoidance",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Critical Chance",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Critical Damage",
-        "value": "10–25%"
-      },
-      {
-        "level": 1,
-        "stat": "Health",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Health Steal",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Protection",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Tenacity",
-        "value": "10–25%"
-      },
-      {
-        "level": 2,
-        "stat": "Critical Avoidance",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Critical Chance",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Critical Damage",
-        "value": "10–25%"
-      },
-      {
-        "level": 2,
-        "stat": "Health",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Health Steal",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Protection",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Tenacity",
-        "value": "10–25%"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Avoidance",
-        "value": "10–15%"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Chance",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Damage",
-        "value": "25–35%"
-      },
-      {
-        "level": 4,
-        "stat": "Health",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Health Steal",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Protection",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Tenacity",
-        "value": "25–35%"
-      },
-      {
-        "level": 5,
-        "stat": "Critical Avoidance",
-        "value": "10–15%"
-      },
-      {
-        "level": 5,
-        "stat": "Critical Chance",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Critical Damage",
-        "value": "25–35%"
-      },
-      {
-        "level": 5,
-        "stat": "Health",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Health Steal",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Protection",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Tenacity",
-        "value": "25–35%"
-      },
-      {
-        "level": 7,
-        "stat": "Critical Avoidance",
-        "value": "15–25%"
-      },
-      {
-        "level": 7,
-        "stat": "Critical Chance",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Critical Damage",
-        "value": "35–45%"
-      },
-      {
-        "level": 7,
-        "stat": "Health",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Health Steal",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Protection",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Tenacity",
-        "value": "35–45%"
-      },
-      {
-        "level": 8,
-        "stat": "Critical Avoidance",
-        "value": "15–25%"
-      },
-      {
-        "level": 8,
-        "stat": "Critical Chance",
-        "value": "20–30%"
-      },
-      {
-        "level": 8,
-        "stat": "Critical Damage",
-        "value": "35–45%"
-      },
-      {
-        "level": 8,
-        "stat": "Health",
-        "value": "20–30%"
-      },
-      {
-        "level": 8,
-        "stat": "Health Steal",
-        "value": "20–30%"
-      },
-      {
-        "level": 8,
-        "stat": "Protection",
-        "value": "20–30%"
-      },
-      {
-        "level": 8,
-        "stat": "Tenacity",
-        "value": "35–45%"
-      }
-    ]
-  },
-  {
     "id": "29",
     "name": "Edict and Uprising",
     "expiresAt": 1783494000000,
@@ -1324,6 +975,285 @@
         "level": 9,
         "focus": "Zaalbar",
         "text": "At the start of his turn, Zaalbar gives Taunt for 1 turn to all Tank allies, and Tank allies are immune to Buff Immunity and Stun while he is active. Once per turn when Zaalbar inflicts Armor Shred on an enemy, he inflicts it on all other enemies until the end of the encounter."
+      }
+    ],
+    "statPool": [
+      {
+        "level": 1,
+        "stat": "Accuracy",
+        "value": "15–35%"
+      },
+      {
+        "level": 1,
+        "stat": "Critical Chance",
+        "value": "5–10%"
+      },
+      {
+        "level": 1,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 1,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Offense",
+        "value": "1–5%"
+      },
+      {
+        "level": 1,
+        "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Tenacity",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Accuracy",
+        "value": "15–35%"
+      },
+      {
+        "level": 2,
+        "stat": "Critical Chance",
+        "value": "5–10%"
+      },
+      {
+        "level": 2,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Offense",
+        "value": "1–5%"
+      },
+      {
+        "level": 2,
+        "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Tenacity",
+        "value": "10–25%"
+      },
+      {
+        "level": 4,
+        "stat": "Accuracy",
+        "value": "35–50%"
+      },
+      {
+        "level": 4,
+        "stat": "Critical Chance",
+        "value": "10–20%"
+      },
+      {
+        "level": 4,
+        "stat": "Critical Damage",
+        "value": "25–35%"
+      },
+      {
+        "level": 4,
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Offense",
+        "value": "5–10%"
+      },
+      {
+        "level": 4,
+        "stat": "Protection",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Tenacity",
+        "value": "25–35%"
+      },
+      {
+        "level": 5,
+        "stat": "Accuracy",
+        "value": "35–50%"
+      },
+      {
+        "level": 5,
+        "stat": "Critical Chance",
+        "value": "10–20%"
+      },
+      {
+        "level": 5,
+        "stat": "Critical Damage",
+        "value": "25–35%"
+      },
+      {
+        "level": 5,
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Offense",
+        "value": "5–10%"
+      },
+      {
+        "level": 5,
+        "stat": "Protection",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Tenacity",
+        "value": "25–35%"
+      },
+      {
+        "level": 7,
+        "stat": "Accuracy",
+        "value": "50–75%"
+      },
+      {
+        "level": 7,
+        "stat": "Critical Chance",
+        "value": "20–30%"
+      },
+      {
+        "level": 7,
+        "stat": "Critical Damage",
+        "value": "35–45%"
+      },
+      {
+        "level": 7,
+        "stat": "Health",
+        "value": "20–30"
+      },
+      {
+        "level": 7,
+        "stat": "Offense",
+        "value": "10–20%"
+      },
+      {
+        "level": 7,
+        "stat": "Protection",
+        "value": "20–30"
+      },
+      {
+        "level": 7,
+        "stat": "Tenacity",
+        "value": "35–45%"
+      },
+      {
+        "level": 8,
+        "stat": "Accuracy",
+        "value": "50–75%"
+      },
+      {
+        "level": 8,
+        "stat": "Critical Chance",
+        "value": "20–30%"
+      },
+      {
+        "level": 8,
+        "stat": "Critical Damage",
+        "value": "35–45%"
+      },
+      {
+        "level": 8,
+        "stat": "Health",
+        "value": "20–30"
+      },
+      {
+        "level": 8,
+        "stat": "Offense",
+        "value": "10–20%"
+      },
+      {
+        "level": 8,
+        "stat": "Protection",
+        "value": "20–30"
+      },
+      {
+        "level": 8,
+        "stat": "Tenacity",
+        "value": "35–45%"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "name": "Necessary Means",
+    "expiresAt": 1790838000000,
+    "abilities": [
+      {
+        "level": 3,
+        "focus": "Healer",
+        "text": "Whenever Healer allies target another ally with an ability during their turn, they both gain 5% Defense, Max Health, Max Protection, and Offense until the end of battle."
+      },
+      {
+        "level": 3,
+        "focus": "Tank",
+        "text": "At the start of battle, Tank allies gain Retribution for 3 turns, which can't be dispelled."
+      },
+      {
+        "level": 6,
+        "focus": "Attacker",
+        "text": "Whenever Attacker allies have full Health and Protection at the start of their turn, they deal +100% more Damage on their turn."
+      },
+      {
+        "level": 6,
+        "focus": "Support",
+        "text": "Whenever a Support ally defeats an enemy, they take a bonus turn."
+      },
+      {
+        "level": 9,
+        "focus": "Batcher",
+        "text": "Batcher is immune to Daze and Stun. Whenever Batcher damages an enemy, she removes 15% Turn Meter from them and gains that much Turn Meter.\\n\\nIf there are no Galactic Legends, enemies can't gain bonus Turn Meter.\\n\\nWhenever another Bad Batch ally is inflicted with Captive, reset the cooldowns of Batcher's abilities, she dispels all debuffs on her, and she takes a bonus turn."
+      },
+      {
+        "level": 9,
+        "focus": "Cobb Vanth",
+        "text": "At the start of battle, if all allies are Constable, Jawa, or Tusken, gain the following effects:\\n\\n- Constable Support allies are inflicted with Marked until all other allies have taken a turn.\\n\\n- The first time Cobb Vanth uses High Noons against each enemy, they gain the Outlaw tag.\\n\\n- Whenever Cobb uses High Noons against an enemy Outlaw, reduce the cooldown for High Noons by 3."
+      },
+      {
+        "level": 9,
+        "focus": "Jarjar",
+        "text": "Whenever Jar Jar Binks inflicts a debuff or is inflicted with a debuff, he gains 10% Turn Meter.\\n\\nWhenever a Gungan ally assists Jar Jar Binks, they Shock the target enemy for 1 turn if they are inflicted with Plasma Residue. Otherwise, apply a stack of Frustration for 1 turn. At the start of each other Gungan ally's turn, they inflict Accuracy Down and Evasion Down on the healthiest enemy for 1 turn.\\n\\nIf all allies are Gungan at the start of battle: whenever Jar Jar Binks evades an attack, a random enemy's cooldowns are increased by 1 and a random Gungan ally's cooldowns are decreased by 1."
+      },
+      {
+        "level": 9,
+        "focus": "Princess Kneesaa",
+        "text": "Whenever Princess Kneesaa attacks out of turn, she gains 10% Critical Damage and Offense (stacking, max 200%) until she is defeated. If there were no Galactic Legends at the start of battle, her out of turn attacks gain an additional 15% Critical Damage and Offense, they ignore Protection, and they deal an additional instance of True damage.\\n\\nWhenever Kneesaa uses a Special ability, the target enemy is inflicted with 1 stack of Damage Over Time for 1 turn."
+      },
+      {
+        "level": 9,
+        "focus": "Talia",
+        "text": "Whenever Nightsister allies use a Special ability on an enemy with any stacks of Plague, all other Nightsister allies assist, a random enemy is inflicted with 1 stack of Plague which can't be resisted, and the cooldown for Water of Life is reduced by 1.\\n\\nIf Mother Talzin is the ally in the Leader slot at the start of battle, at the start of each Nightsister ally's turn all Plagued enemies are Marked for 1 turn."
+      },
+      {
+        "level": 9,
+        "focus": "Tarfful",
+        "text": "If there are no Galactic Legends, Wookiee allies gain 1 stack of Bulwark for 1 turn each time they attack out of turn, are critically hit, Evade, or lose Taunt."
+      },
+      {
+        "level": 9,
+        "focus": "Tusken Shaman",
+        "text": "The first time a Tusken ally inflicts a debuff each turn, they gain 5 stacks of Heal Over Time and the target enemy is inflicted with 2 stacks of Damage Over Time for 2 turns.\\n\\nThe first time an ally loses any stacks of Momentum each turn, they gain 1 stack of Momentum for 3 turns, 2 stacks of Heal Over Time for 2 turns, trigger all allies' stacks of Heal Over Time, and trigger all enemies' stacks of Damage Over Time."
+      },
+      {
+        "level": 9,
+        "focus": "Ugnaught",
+        "text": "At the start of battle, if Hondo Ohnaka and Ezra Bridger are allies and there are no other allies, gain the following effects:\\n\\n- At the start of each turn, if Hondo Ohnaka has more stacks of Ransom than Ugnaught, Ugnaught and Ezra gain 2 stacks of Ransom (stacking, max 50) which can't be copied, dispelled, or prevented, and all allies gain 25% Defense and Offense (stacking) for the rest of battle. These increases persist through defeat.\\n\\n- Whenever Ezra Bridger assists, he gains Dramatic Entrance for 1 turn, the strongest ally who doesn't already have it gains Frenzy until the start of their next turn, and the weakest ally who doesn't already have it gains Tactical Genius for 1 turn.\\n\\n- Whenever Ugnaught uses his Basic ability, dispel all debuffs on all allies, then all allies assist a total of 6 times. Whenever Ugnaught uses a Special ability, dispel all enemy buffs and Fracture the target enemy until the start of Ugnaught's next turn or until Ugnaught is defeated.\\n\\n- At the start of battle, all allies gain 400% bonus Protection and Backup Plan for the rest of battle. Whenever an ally takes damage, all allies recover 30% Health.\\n\\n- At the start of battle, if Ugnaught is on Offense, allies gain 50% Evasion until the end of battle. If there are no Galactic Legends, they gain an additional 50% Evasion."
       }
     ],
     "statPool": [
