@@ -16,11 +16,6 @@
       },
       {
         "level": 6,
-        "focus": "Badbatch",
-        "text": "At the start of the encounter and at the end of their turn, Badbatch allies gain 1 stack of Retaliate for 3 turns, which can't be copied, dispelled, or prevented.\\n\\n[c][ffff33]Retaliate:[-][/c] When damaged by an attack, deal 20% of the damage received per stack to the attacker; this damage can't defeat enemies"
-      },
-      {
-        "level": 6,
         "focus": "Imperialremnant",
         "text": "Whenever Imperialremnant allies start their turn with at least 2 debuffs that can be dispelled, they have a 65% chance to dispel all debuffs on themselves."
       },
@@ -38,26 +33,6 @@
         "level": 9,
         "focus": "Dark Trooper Moff Gideon",
         "text": "At the start of battle, Dark Trooper Moff Gideon gains 15% Accuracy and 15% Potency for 2 turns.\\n\\nWhenever Dark Trooper Moff Gideon gains a stack of insight, he gains 20% Offense (max 100%, stacking) until the end of the encounter and 10% Turn Meter and he ignores taunt.\\n\\nWhenever Dark trooper Moff Gideon Stuns on an enemy, All Imperial Remnant allies gain 30% Critical Chance and 30% Critical Damage for 2 Turns \\n\\nWhenever Dark Trooper Moff Gideon uses a Special ability, he gains 1 Insight stack."
-      },
-      {
-        "level": 9,
-        "focus": "Echo",
-        "text": "Whenever Badbatchecho uses a Basic Ability on their turn, other allies gain +25% Turn Meter."
-      },
-      {
-        "level": 9,
-        "focus": "Hunter (Mercenary)",
-        "text": "At the start of the encounter, Hunter (Mercenary) gains 30 Speed and all other Mercenary allies gain 10 Speed for each Mercenary ally, till the end of the encounter. Hunter (Mercenary) is immune to Ability Block, Cooldown Increase, and Turn Meter reduction.\\n\\nIf all allies are Mercenaries, Marked enemies deal 50% less damage. Whenever a Marked enemy deals damage to a Mercenary ally, dispel all debuffs on that Mercenary ally and they recover 15% Protection. Whenever Hunter (Mercenary) inflicts Marked on an enemy, dispel it and inflict Marked on them for 3 turns, which can't be dispelled, evaded, or resisted, and call all Mercenary allies with Soldier of Fortune to assist. Whenever a Mercenary ally takes a turn, the cooldown of Hunter's This Will Hurt is reduced by 1."
-      },
-      {
-        "level": 9,
-        "focus": "Moff Gideon",
-        "text": "Whenever Moff Gideon is inflicted with a debuff or gains a buff, he gains a stack of Insight and Stealths for 1 turn. Whenever he gains 4 stacks of Insight, he gains 100% Turn Meter.\\nWhenever an Imperial Remnant ally is inflicted with a debuff, they recover 10% Health and Protection.\\n\\nWhenever an enemy is inflicted with Armor Shred, Blind all enemies for 1 turn, which can't be evaded or resisted.\\n\\nWhenever he uses Subversive Volley, he deals bonus Massive Damage to all enemies, which can't be evaded."
-      },
-      {
-        "level": 9,
-        "focus": "Night Trooper",
-        "text": "At the start of battle, Night Trooper gains 75% Potency and 25 Speed until the end of the encounter.\\n\\nWhenever an enemy is inflicted with a stack of Blight they inflict themselves with another stack, which can't be dispelled, until the end of the encounter or until they fully recover their Health.\\n\\nWhenever an enemy that already had Blight is inflicted with another stack of Blight by an ally, inflict Blight on another random enemy that doesn't have it, which can't be dispelled, until the end of the encounter or until they fully recover their Health.\\n\\nWhenever Night Trooper uses Shambling Shot, they gain an additional 3 stacks of Blight until the end of the encounter.\\n\\nWhenever an ally or an enemy gains or is inflicted with Blight, Night Trooper recovers 20% Health and gains 25% Offense (stacking) for 2 turns."
       },
       {
         "level": 9,
@@ -325,16 +300,6 @@
       },
       {
         "level": 9,
-        "focus": "BB-8",
-        "text": "Bb8 gains 15% Turn Meter when other allies use a Special Ability on their turn."
-      },
-      {
-        "level": 9,
-        "focus": "C3p0",
-        "text": "Whenever C3p0 uses a Basic Ability on their turn, other allies gain +25% Turn Meter."
-      },
-      {
-        "level": 9,
         "focus": "Chopper",
         "text": "Whenever a Phoenix ally takes damage, all Phoenix allies gain 30% Max Health (stacking) and 30% Offense for 1 turn. Chopper ignores Taunt. Whenever Chopper takes damage while Taunting, Chopper recovers 50% Protection and all Phoenix allies gain 30% Turn Meter until the end of 2 turns."
       },
@@ -352,11 +317,6 @@
         "level": 9,
         "focus": "IG-11",
         "text": "Whenever Ig11 inflicts a debuff, they recover 25% of their Max Health and Max Protection (limit once per turn)."
-      },
-      {
-        "level": 9,
-        "focus": "Threepio & Chewie",
-        "text": "Whenever C3pochewbacca is dealt Physical damage, reflect 20% of the damage dealt back onto the attacker, this damage can't defeat enemies."
       },
       {
         "level": 9,
@@ -591,16 +551,6 @@
         "level": 3,
         "focus": "Light Side",
         "text": "Whenever Light Side allies grant a buff to another ally, that other ally recovers 3% Health and Protection."
-      },
-      {
-        "level": 6,
-        "focus": "Inquisitorius",
-        "text": "Whenever an Inquisitorius ally inflicts a stack of Purge, they gain 5% Defense, Offense, and Tenacity (stacking) for 1 turn.\\n\\nWhenever a stack of Purge is consumed or dispelled on an enemy Expose them for 1 turn.\\n\\nWhenever an Inquisitorius ally attacks an enemy inflicted with a stack of Purge, a random other Inquisitorius ally assists, dealing 5% bonus damage per stack of Purge and then they inflict a stack of Purge (max 6) on target enemy, which can't be evaded."
-      },
-      {
-        "level": 6,
-        "focus": "Rebel",
-        "text": "Whenever a Rebel ally is critically hit, they gain 100% Critical Avoidance and 100% Critical Chance for 2 turns."
       },
       {
         "level": 9,
@@ -912,19 +862,9 @@
         "text": "Whenever Oldrepublic allies recover Protection, they gain 2% Max Protection (stacking, max 150%) until the end of battle."
       },
       {
-        "level": 6,
-        "focus": "Separatist",
-        "text": "Whenever a Separatist ally is critically hit, they gain 100% Critical Avoidance and 100% Critical Chance for 2 turns."
-      },
-      {
         "level": 9,
         "focus": "50R-T",
         "text": "50rt deals +25% more damage per Relic Amplifier level on all allies."
-      },
-      {
-        "level": 9,
-        "focus": "Admiral Trench",
-        "text": "Non-Droid Separatist allies start the encounter with Tactical Supremacy for 2 turns. Whenever Separatist allies gain a stack of Heal Over Time they gain 5% Critical Chance (stacking, max 200%) for the rest of the encounter. Whenever allies gain a stack Protection Over Time they gain 5% Defense (stacking, max 200%) for the rest of the encounter. Whenever Admiral Trench uses his Basic ability on his turn, call all allies with Riposte to assist. Whenever Trench Shocks an enemy, he gains Protection Up (25%) for 1 turn."
       },
       {
         "level": 9,
@@ -940,11 +880,6 @@
         "level": 9,
         "focus": "Carth Onasi",
         "text": "Carth Onasi has +100% Max Health, Max Protection, and Potency and he gains 15% Turn Meter whenever another character ends their turn. Whenever he uses his Basic ability, he attacks two more times.\\n\\nWhenever an Old Republic ally resists a debuff, they dispel all debuffs on themselves and gain 10% Tenacity (stacking) until the end of battle. Whenever an Old Republic ally is Dazed, they dispel it. When they dispel Daze, they gain 15% Turn Meter.\\n\\nWhenever Carth uses a Special ability, he triggers the damage of all Damage Over Time debuffs on enemies.\\n\\nWhenever an enemy is defeated, Carth gains 25% Offense (stacking) and Critical Damage (stacking) until the end of the battle, his cooldowns are reset, and he gains 100% Turn Meter."
-      },
-      {
-        "level": 9,
-        "focus": "Droideka",
-        "text": "Whenever Droideka critically hits an enemy, Droideka gains Damage Immunity for 1 turn, which can't be copied, 25% Turn Meter, and Blinds that enemy for 1 turn, which can't be evaded or resisted. If the enemy was Target Locked, Droideka also gains Protection Up (100%, stacking), Retribution, and Speed Up for 2 turns."
       },
       {
         "level": 9,
@@ -1197,18 +1132,8 @@
     "abilities": [
       {
         "level": 3,
-        "focus": "Healer",
-        "text": "Whenever Healer allies target another ally with an ability during their turn, they both gain 5% Defense, Max Health, Max Protection, and Offense until the end of battle."
-      },
-      {
-        "level": 3,
         "focus": "Tank",
         "text": "At the start of battle, Tank allies gain Retribution for 3 turns, which can't be dispelled."
-      },
-      {
-        "level": 6,
-        "focus": "Attacker",
-        "text": "Whenever Attacker allies have full Health and Protection at the start of their turn, they deal +100% more Damage on their turn."
       },
       {
         "level": 6,
@@ -1488,11 +1413,6 @@
         "level": 6,
         "focus": "Galacticrepublic",
         "text": "Whenever Galacticrepublic allies attack out of turn, they have a 25% chance to remove 10% Turn Meter from the target."
-      },
-      {
-        "level": 6,
-        "focus": "Sith",
-        "text": "Whenever Sith allies inflict Stagger or Stun on an enemy, they deal bonus damage equal to 35% of that enemy's Max Health."
       },
       {
         "level": 9,
@@ -1780,11 +1700,6 @@
       },
       {
         "level": 6,
-        "focus": "Support",
-        "text": "Whenever a Support ally deals damage to an enemy and no other enemy is Ability Blocked, inflict Ability Block for 1 turn on the enemy, which can't be resisted."
-      },
-      {
-        "level": 6,
         "focus": "Tank",
         "text": "Tank allies start the battle with Damage Immunity for 2 turns (can't be copied)."
       },
@@ -1792,16 +1707,6 @@
         "level": 9,
         "focus": "Aayla Secura",
         "text": "Whenever Aaylasecura attacks out turn, they gain a stack of Heal Over Time and Protection Over Time for 2 turns and they inflict target enemy with Protection Disruption for 1 turn."
-      },
-      {
-        "level": 9,
-        "focus": "Admiral Ackbar",
-        "text": "Whenever Admiralackbar uses a Basic Ability on their turn, other allies gain +25% Turn Meter."
-      },
-      {
-        "level": 9,
-        "focus": "Barrisoffee",
-        "text": "The first time Barrisoffee is defeated, revive all other defeated allies, other allies recover +100% Health and Protection, gain 100% Turn Meter and 100% Offense until the end of battle."
       },
       {
         "level": 9,
@@ -1820,11 +1725,6 @@
       },
       {
         "level": 9,
-        "focus": "Clonewarchewbacca",
-        "text": "Whenever Clonewarschewbacca uses a Basic Ability on their turn, other allies gain +25% Turn Meter."
-      },
-      {
-        "level": 9,
         "focus": "Count Dooku",
         "text": "Count Dooku has +200% Critical Chance and Critical Damage while he is inflicted with a debuff. Whenever a Separatist ally uses a Special ability on their turn, Count Dooku assists and dispels all buffs on the target enemy.\\n\\nAt the end of his turn, Count Dooku is inflicted with Disarm until the start of his next turn. Whenever Count Dooku takes damage during his turn, the weakest enemy is dealt 200% of that damage, which can't defeat them."
       },
@@ -1835,11 +1735,6 @@
       },
       {
         "level": 9,
-        "focus": "Darthvader",
-        "text": "At the start of battle, if there are no Galactic Legend allies, Darth Vader can't be defeated until all the other allies are defeated. Whenever an ally is defeated, Darth Vader dispels all debuffs on himself, resets all of his cooldowns, and takes a bonus turn.\\n\\nDuring his turn, Darth Vader has +50% Health Steal for each defeated ally."
-      },
-      {
-        "level": 9,
         "focus": "Luminara Unduli",
         "text": "Whenever an enemy attacks out of turn, all enemies are inflicted with Protection Disruption for 2 turns, which can't be dispelled, evaded, or resisted, and all allies gain a stack of Heal Over Time and Protection Over Time for 2 turns.\\n\\nAt the start of Luminara Unduli's turn, all allies with less than 50% Health gain 2 stacks for Heal Over Time for 2 turns."
       },
@@ -1847,11 +1742,6 @@
         "level": 9,
         "focus": "Olddaka",
         "text": "Whenever another ally is defeated, Olddaka takes a bonus turn and their cooldowns are reset."
-      },
-      {
-        "level": 9,
-        "focus": "Qui-Gon Jinn",
-        "text": "Whenever Quigonjinn damages an enemy with a Special ability and the enemy doesn't have Armor Shred, inflict Armor Shred for the rest of battle. Whenever Quigonjinn uses a Basic ability and damages an enemy with Armor Shred, inflict Expose for 2 turns on that enemy, which can't be resisted, and Quigonjinn gains Protection Up (50%, stacking) for 2 turns."
       },
       {
         "level": 9,
@@ -2129,11 +2019,6 @@
       },
       {
         "level": 9,
-        "focus": "Captainithano",
-        "text": "Whenever Ithano gains Foresight, they also gain +20% Turn Meter and Protection Up (20%)."
-      },
-      {
-        "level": 9,
         "focus": "Dash Rendar",
         "text": "Whenever Dashrendar critically hits an enemy, Dashrendar gains 10% Critical Damage, Defense Penetration, and Offense (stacking, max 200%) until the end of battle."
       },
@@ -2407,29 +2292,14 @@
         "text": "Whenever Dark Side allies inflict a debuff, they gain 2% Critical Chance (stacking) for 3 turns."
       },
       {
-        "level": 3,
-        "focus": "Light Side",
-        "text": "At the beginning of their turn, Light Side allies have +25% chance to dispel all Debuffs on themself."
-      },
-      {
         "level": 6,
         "focus": "Firstorder",
         "text": "If all allies are First Order at the start of battle, First Order allies gain Damage Immunity for 2 turns. Whenever a First Order ally is critically hit, all First Order allies gain 10% Critical Damage (stacking, max 50%) until the end of the encounter. Whenever a First Order ally attacks out of turn, all First Order allies gain 10% Offense (stacking, max 50%) until the end of the encounter."
       },
       {
         "level": 6,
-        "focus": "Pirates",
-        "text": "Whenever Pirates allies inflict Stagger or Stun on an enemy, they deal bonus damage equal to 35% of that enemy's Max Health."
-      },
-      {
-        "level": 6,
         "focus": "Ufu",
         "text": "Whenever a Dark Side or Light Side Unaligned Force User critically hits an enemy, dispel all debuffs on themself and gain 5% Turn Meter. Whenever a Dark Side or Light Side Unaligned Force User uses a Special ability against an enemy with at least 3 debuffs, reduce that enemy's Max Health by 5%. Whenever a Dark Side or Light Side Unaligned Force User uses a Special ability when they have at least 3 buffs that can be dispelled, gain 5% Max Health."
-      },
-      {
-        "level": 9,
-        "focus": "Ahsoka Tano (Fulcrum)",
-        "text": "Whenever Fulcrumahsoka gains Retribution, they also gain 50% Health Steal, 20% Defense, and 10 Speed for the rest of the encounter."
       },
       {
         "level": 9,
@@ -2448,16 +2318,6 @@
       },
       {
         "level": 9,
-        "focus": "Cere Junda",
-        "text": "Whenever Cerejunda uses a Basic Ability on their turn, other allies gain +25% Turn Meter."
-      },
-      {
-        "level": 9,
-        "focus": "Commander Luke Skywalker",
-        "text": "Whenever Commanderlukeskywalker damages an enemy with a Special ability and the enemy doesn't have Armor Shred, inflict Armor Shred for the rest of battle. Whenever Commanderlukeskywalker uses a Basic ability and damages an enemy with Armor Shred, inflict Expose for 2 turns on that enemy, which can't be resisted, and Commanderlukeskywalker gains Protection Up (50%, stacking) for 2 turns."
-      },
-      {
-        "level": 9,
         "focus": "Enfys Nest",
         "text": "Whenever Enfysnest Stuns an enemy, Enfysnest gains 10% Critical Damage (stacking, max 200%) and 5 Speed (stacking, max 50) until the end of the encounter."
       },
@@ -2470,11 +2330,6 @@
         "level": 9,
         "focus": "Foexecutioner",
         "text": "Firstorderexecutioner has +5% Max Health and Max Protection per Relic Amplifier level, and damage they receive is decreased by 15%."
-      },
-      {
-        "level": 9,
-        "focus": "General Hux",
-        "text": "Whenever another ally attacks during Generalhux's turn, Generalhux and that ally gain 25% Turn Meter."
       },
       {
         "level": 9,
@@ -2493,18 +2348,8 @@
       },
       {
         "level": 9,
-        "focus": "Quiggold",
-        "text": "Whenever Quiggold is dealt Physical damage, reflect 20% of the damage dealt back onto the attacker, this damage can't defeat enemies."
-      },
-      {
-        "level": 9,
         "focus": "Rey",
         "text": "The first time each turn Glrey gains Ultimate Charge, they gain an additional 6% Ultimate Charge."
-      },
-      {
-        "level": 9,
-        "focus": "Sana Starros",
-        "text": "Whenever Sanastarros uses a Basic ability, Sanastarros gains Protection Up (50%, stacking) for 2 turns and 50% Turn Meter. Whenever Sanastarros damages an enemy using a Special ability, inflict Fear for 1 turn on that enemy, which can't be resisted."
       },
       {
         "level": 9,
