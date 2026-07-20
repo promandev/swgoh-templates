@@ -15,11 +15,9 @@
     "avatar": "/assets/characters/4lom.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_BOUNTYHUNTER_DESC_V2",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLESUPPORT_DESC",
-      "CATEGORY_SCOUNDREL_DESC",
-      "CATEGORY_SPECIESDROID_DESC"
+      "Bounty Hunter",
+      "Droid",
+      "Scoundrel"
     ]
   },
   {
@@ -39,7 +37,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -81,17 +81,6 @@
     ]
   },
   {
-    "id": "ahsoka-tano",
-    "name": "Ahsoka Tano",
-    "avatar": "/assets/characters/ahsoka-tano.webp",
-    "alignment": "light",
-    "factions": [
-      "501st",
-      "Galactic Republic",
-      "Jedi"
-    ]
-  },
-  {
     "id": "glahsokatano",
     "name": "Ahsoka Tano",
     "avatar": "/assets/characters/glahsokatano.webp",
@@ -108,7 +97,19 @@
     "alignment": "light",
     "factions": [
       "Rebel",
+      "Spectre",
       "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "ahsoka-tano",
+    "name": "Ahsoka Tano (Snips)",
+    "avatar": "/assets/characters/ahsoka-tano.webp",
+    "alignment": "light",
+    "factions": [
+      "501st",
+      "Galactic Republic",
+      "Jedi"
     ]
   },
   {
@@ -148,11 +149,9 @@
     "avatar": "/assets/characters/asajjdarkdisciple.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_BOUNTYHUNTER_DESC_V2",
-      "CATEGORY_NIGHTSISTERS_DESC",
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+      "Bounty Hunter",
+      "Nightsister",
+      "Unaligned Force User"
     ]
   },
   {
@@ -162,6 +161,7 @@
     "alignment": "dark",
     "factions": [
       "Bounty Hunter",
+      "Mercenary",
       "Scoundrel"
     ]
   },
@@ -192,7 +192,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -221,7 +223,8 @@
     "avatar": "/assets/characters/batchers3.webp",
     "alignment": "light",
     "factions": [
-      "Bad Batch"
+      "Bad Batch",
+      "Order 66 Raid"
     ]
   },
   {
@@ -311,6 +314,7 @@
     "alignment": "dark",
     "factions": [
       "Bounty Hunter",
+      "Hutt Cartel",
       "Scoundrel"
     ]
   },
@@ -321,6 +325,7 @@
     "alignment": "dark",
     "factions": [
       "Bounty Hunter",
+      "Mercenary",
       "Scoundrel"
     ]
   },
@@ -371,10 +376,9 @@
     "avatar": "/assets/characters/brutus.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_PIRATE_DESC",
-      "CATEGORY_RAID_ORDER66_DESC",
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_SCOUNDREL_DESC"
+      "Order 66 Raid",
+      "Pirate",
+      "Scoundrel"
     ]
   },
   {
@@ -395,6 +399,7 @@
     "factions": [
       "Droid",
       "Galactic Republic",
+      "New Republic",
       "Rebel",
       "Resistance"
     ]
@@ -406,6 +411,8 @@
     "alignment": "dark",
     "factions": [
       "Bounty Hunter",
+      "Hutt Cartel",
+      "Mercenary",
       "Scoundrel"
     ]
   },
@@ -425,6 +432,7 @@
     "alignment": "dark",
     "factions": [
       "Mandalorian",
+      "Mercenary",
       "Old Republic",
       "Scoundrel"
     ]
@@ -435,11 +443,9 @@
     "avatar": "/assets/characters/carsonteva.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_CONSTABLE_DESC",
-      "CATEGORY_NEWREPUBLIC_DESC",
-      "CATEGORY_REBELS_DESC",
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_ROLELEADER_DESC"
+      "Constable",
+      "New Republic",
+      "Rebel"
     ]
   },
   {
@@ -448,6 +454,7 @@
     "avatar": "/assets/characters/captaindrogan.webp",
     "alignment": "light",
     "factions": [
+      "New Republic",
       "Rebel",
       "Rebel Fighter"
     ]
@@ -477,11 +484,9 @@
     "avatar": "/assets/characters/ithano.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_PIRATE_DESC",
-      "CATEGORY_RAID_ORDER66_DESC",
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_SCOUNDREL_DESC"
+      "Order 66 Raid",
+      "Pirate",
+      "Scoundrel"
     ]
   },
   {
@@ -501,8 +506,8 @@
     "factions": [
       "Clone Trooper",
       "Phoenix",
-      "Rebel Fighter",
-      "Rebels"
+      "Rebel",
+      "Rebel Fighter"
     ]
   },
   {
@@ -511,12 +516,10 @@
     "avatar": "/assets/characters/captainsilvo.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_PIRATE_DESC",
-      "CATEGORY_RAID_ORDER66_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLESUPPORT_DESC",
-      "CATEGORY_SCOUNDREL_DESC",
-      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+      "Order 66 Raid",
+      "Pirate",
+      "Scoundrel",
+      "Unaligned Force User"
     ]
   },
   {
@@ -534,6 +537,9 @@
     "avatar": "/assets/characters/cara-dune.webp",
     "alignment": "light",
     "factions": [
+      "Constable",
+      "Mercenary",
+      "New Republic",
       "Rebel",
       "Rebel Fighter",
       "Scoundrel"
@@ -565,10 +571,8 @@
     "avatar": "/assets/characters/cassianundercover.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_REBELFIGHTER_DESC",
-      "CATEGORY_REBELS_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLESUPPORT_DESC"
+      "Rebel",
+      "Rebel Fighter"
     ]
   },
   {
@@ -577,9 +581,9 @@
     "avatar": "/assets/characters/appo.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_CLONETROOPER_DESC",
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_ROLEATTACKER_DESC"
+      "Clone Trooper",
+      "Empire",
+      "Order 66 Raid"
     ]
   },
   {
@@ -610,7 +614,8 @@
     "factions": [
       "Rebel",
       "Scoundrel",
-      "Smuggler"
+      "Smuggler",
+      "Wookiee"
     ]
   },
   {
@@ -649,8 +654,10 @@
     "alignment": "light",
     "factions": [
       "Droid",
+      "New Republic",
       "Phoenix",
-      "Rebel"
+      "Rebel",
+      "Spectre"
     ]
   },
   {
@@ -659,9 +666,8 @@
     "avatar": "/assets/characters/cinta.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_REBELFIGHTER_DESC",
-      "CATEGORY_REBELS_DESC",
-      "CATEGORY_ROLEATTACKER_DESC"
+      "Rebel",
+      "Rebel Fighter"
     ]
   },
   {
@@ -681,7 +687,8 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Scoundrel"
+      "Scoundrel",
+      "Wookiee"
     ]
   },
   {
@@ -690,9 +697,7 @@
     "avatar": "/assets/characters/cobbvanth.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_CONSTABLE_DESC",
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_ROLELEADER_DESC"
+      "Constable"
     ]
   },
   {
@@ -711,8 +716,7 @@
     "avatar": "/assets/characters/bishop.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_NEWREPUBLIC_DESC",
-      "CATEGORY_ROLESUPPORT_DESC"
+      "New Republic"
     ]
   },
   {
@@ -742,6 +746,7 @@
     "avatar": "/assets/characters/coruscant-underworld-police.webp",
     "alignment": "light",
     "factions": [
+      "Constable",
       "Galactic Republic"
     ]
   },
@@ -761,8 +766,8 @@
     "avatar": "/assets/characters/crosshairs3.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_BADBATCH_DESC",
-      "CATEGORY_ROLEATTACKER_DESC"
+      "Bad Batch",
+      "Order 66 Raid"
     ]
   },
   {
@@ -804,9 +809,9 @@
     "avatar": "/assets/characters/operative.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_CLONETROOPER_DESC",
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_ROLESUPPORT_DESC"
+      "Clone Trooper",
+      "Empire",
+      "Order 66 Raid"
     ]
   },
   {
@@ -940,9 +945,8 @@
     "avatar": "/assets/characters/vaderduelsend.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_SITH_DESC"
+      "Empire",
+      "Sith"
     ]
   },
   {
@@ -951,6 +955,7 @@
     "avatar": "/assets/characters/dash-rendar.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
       "Scoundrel",
       "Smuggler"
     ]
@@ -991,9 +996,8 @@
     "avatar": "/assets/characters/dedrameero.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_IMPERIALSECURITYBUREAU",
-      "CATEGORY_ROLESUPPORT_DESC"
+      "Empire",
+      "ISB"
     ]
   },
   {
@@ -1003,6 +1007,7 @@
     "alignment": "dark",
     "factions": [
       "Bounty Hunter",
+      "Mercenary",
       "Scoundrel"
     ]
   },
@@ -1012,10 +1017,10 @@
     "avatar": "/assets/characters/depabillaba.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_GALACTICREPUBLIC_DESC",
-      "CATEGORY_JEDI_DESC",
-      "CATEGORY_JEDIVANGUARD_DESC",
-      "CATEGORY_ROLEATTACKER_DESC"
+      "Galactic Republic",
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1024,7 +1029,8 @@
     "avatar": "/assets/characters/director-krennic.webp",
     "alignment": "dark",
     "factions": [
-      "Empire"
+      "Empire",
+      "ISB"
     ]
   },
   {
@@ -1033,9 +1039,9 @@
     "avatar": "/assets/characters/disguisedclonetrooper.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_CLONETROOPER_DESC",
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_ROLESUPPORT_DESC"
+      "Clone Trooper",
+      "Empire",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1044,6 +1050,7 @@
     "avatar": "/assets/characters/doctor-aphra.webp",
     "alignment": "dark",
     "factions": [
+      "Mercenary",
       "Scoundrel"
     ]
   },
@@ -1075,7 +1082,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1096,6 +1105,8 @@
     "alignment": "dark",
     "factions": [
       "Bounty Hunter",
+      "Hutt Cartel",
+      "Mercenary",
       "Scoundrel"
     ]
   },
@@ -1115,6 +1126,8 @@
     "avatar": "/assets/characters/enfys-nest.webp",
     "alignment": "light",
     "factions": [
+      "Order 66 Raid",
+      "Pirate",
       "Scoundrel",
       "Smuggler"
     ]
@@ -1165,6 +1178,7 @@
     "alignment": "dark",
     "factions": [
       "Bounty Hunter",
+      "Mercenary",
       "Scoundrel"
     ]
   },
@@ -1239,6 +1253,7 @@
     "avatar": "/assets/characters/gamorrean-guard.webp",
     "alignment": "dark",
     "factions": [
+      "Hutt Cartel",
       "Scoundrel"
     ]
   },
@@ -1308,6 +1323,7 @@
     "avatar": "/assets/characters/generalsyndulla.webp",
     "alignment": "light",
     "factions": [
+      "New Republic",
       "Spectre"
     ]
   },
@@ -1387,7 +1403,8 @@
     "avatar": "/assets/characters/grand-moff-tarkin.webp",
     "alignment": "dark",
     "factions": [
-      "Empire"
+      "Empire",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1406,6 +1423,7 @@
     "alignment": "dark",
     "factions": [
       "Bounty Hunter",
+      "Hutt Cartel",
       "Scoundrel"
     ]
   },
@@ -1422,13 +1440,12 @@
   {
     "id": "gopherants",
     "name": "Grogu & Anzellans",
-    "avatar": "",
+    "avatar": "/assets/characters/gopherants.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_MANDALORIAN_DESC",
-      "CATEGORY_NEWREPUBLIC_DESC",
-      "CATEGORY_ROLEHEALER_DESC",
-      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+      "Mandalorian",
+      "New Republic",
+      "Unaligned Force User"
     ]
   },
   {
@@ -1455,6 +1472,7 @@
     "avatar": "/assets/characters/han-solo.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
       "Rebel",
       "Scoundrel",
       "Smuggler"
@@ -1493,8 +1511,11 @@
     "id": "hondo-ohnaka",
     "name": "Hondo Ohnaka",
     "avatar": "/assets/characters/hondo-ohnaka.webp",
-    "alignment": "dark",
+    "alignment": "neutral",
     "factions": [
+      "Mercenary",
+      "Order 66 Raid",
+      "Pirate",
       "Scoundrel",
       "Smuggler"
     ]
@@ -1536,9 +1557,9 @@
     "avatar": "/assets/characters/hunters3.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_BADBATCH_DESC",
-      "CATEGORY_MERCENARY_DESC",
-      "CATEGORY_ROLESUPPORT_DESC"
+      "Bad Batch",
+      "Mercenary",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1616,11 +1637,9 @@
     "avatar": "/assets/characters/ig90.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_BOUNTYHUNTER_DESC_V2",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLESUPPORT_DESC",
-      "CATEGORY_SCOUNDREL_DESC",
-      "CATEGORY_SPECIESDROID_DESC"
+      "Bounty Hunter",
+      "Droid",
+      "Scoundrel"
     ]
   },
   {
@@ -1630,7 +1649,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1640,7 +1661,8 @@
     "alignment": "dark",
     "factions": [
       "Droid",
-      "Empire"
+      "Empire",
+      "ISB"
     ]
   },
   {
@@ -1659,11 +1681,9 @@
     "avatar": "/assets/characters/inquisitorbarriss.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_INQUISITORIUS_DESC",
-      "CATEGORY_ROLEHEALER_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+      "Empire",
+      "Inquisitorius",
+      "Unaligned Force User"
     ]
   },
   {
@@ -1685,6 +1705,7 @@
     "factions": [
       "Bounty Hunter",
       "Mandalorian",
+      "Mercenary",
       "Scoundrel",
       "Separatist"
     ]
@@ -1732,7 +1753,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1751,7 +1774,8 @@
     "avatar": "/assets/characters/jediknightcal.webp",
     "alignment": "light",
     "factions": [
-      "Jedi"
+      "Jedi",
+      "Mercenary"
     ]
   },
   {
@@ -1761,7 +1785,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1808,11 +1834,10 @@
     "avatar": "/assets/characters/jedimastermacewindu.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_GALACTICREPUBLIC_DESC",
-      "CATEGORY_JEDI_DESC",
-      "CATEGORY_JEDIVANGUARD_DESC",
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_ROLELEADER_DESC"
+      "Galactic Republic",
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1821,10 +1846,10 @@
     "avatar": "/assets/characters/jocastanu.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_GALACTICREPUBLIC_DESC",
-      "CATEGORY_JEDI_DESC",
-      "CATEGORY_JEDIVANGUARD_DESC",
-      "CATEGORY_ROLEATTACKER_DESC"
+      "Galactic Republic",
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1888,7 +1913,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1908,7 +1935,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -1917,11 +1946,10 @@
     "avatar": "/assets/characters/kix.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_CLONETROOPER_DESC",
-      "CATEGORY_PIRATE_DESC",
-      "CATEGORY_RAID_ORDER66_DESC",
-      "CATEGORY_ROLEHEALER_DESC",
-      "CATEGORY_SCOUNDREL_DESC"
+      "Clone Trooper",
+      "Order 66 Raid",
+      "Pirate",
+      "Scoundrel"
     ]
   },
   {
@@ -1930,9 +1958,8 @@
     "avatar": "/assets/characters/kleya.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_REBELFIGHTER_DESC",
-      "CATEGORY_REBELS_DESC",
-      "CATEGORY_ROLEATTACKER_DESC"
+      "Rebel",
+      "Rebel Fighter"
     ]
   },
   {
@@ -1943,7 +1970,9 @@
     "factions": [
       "Bounty Hunter",
       "Hutt Cartel",
-      "Scoundrel"
+      "Mercenary",
+      "Scoundrel",
+      "Wookiee"
     ]
   },
   {
@@ -1961,10 +1990,9 @@
     "avatar": "/assets/characters/kxsecuritydroid.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_IMPERIALSECURITYBUREAU",
-      "CATEGORY_ROLETANK_DESC",
-      "CATEGORY_SPECIESDROID_DESC"
+      "Droid",
+      "Empire",
+      "ISB"
     ]
   },
   {
@@ -1974,6 +2002,8 @@
     "alignment": "light",
     "factions": [
       "Jedi",
+      "Mercenary",
+      "New Republic",
       "Rebel",
       "Rebel Fighter"
     ]
@@ -2005,6 +2035,7 @@
     "alignment": "light",
     "factions": [
       "Droid",
+      "Mercenary",
       "Scoundrel",
       "Smuggler"
     ]
@@ -2018,6 +2049,15 @@
       "Rebel",
       "Rebel Fighter",
       "Scoundrel"
+    ]
+  },
+  {
+    "id": "leiajeditraining",
+    "name": "Leia (Jedi Training)",
+    "avatar": "/assets/characters/leiajeditraining.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi"
     ]
   },
   {
@@ -2035,6 +2075,7 @@
     "avatar": "/assets/characters/lobot.webp",
     "alignment": "light",
     "factions": [
+      "Constable",
       "Rebel"
     ]
   },
@@ -2073,7 +2114,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -2082,8 +2125,8 @@
     "avatar": "/assets/characters/luthenrael.webp",
     "alignment": "light",
     "factions": [
-      "Rebel Fighter",
-      "Rebels"
+      "Rebel",
+      "Rebel Fighter"
     ]
   },
   {
@@ -2112,10 +2155,8 @@
     "avatar": "/assets/characters/majorpartagaz.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_IMPERIALSECURITYBUREAU",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLESUPPORT_DESC"
+      "Empire",
+      "ISB"
     ]
   },
   {
@@ -2165,8 +2206,7 @@
     "avatar": "/assets/characters/maulhatefueled.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+      "Unaligned Force User"
     ]
   },
   {
@@ -2175,13 +2215,11 @@
     "avatar": "/assets/characters/mazkanata.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_PIRATE_DESC",
-      "CATEGORY_RAID_ORDER66_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLESUPPORT_DESC",
-      "CATEGORY_SCOUNDREL_DESC",
-      "CATEGORY_SMUGGLER_DESC",
-      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+      "Order 66 Raid",
+      "Pirate",
+      "Scoundrel",
+      "Smuggler",
+      "Unaligned Force User"
     ]
   },
   {
@@ -2199,6 +2237,7 @@
     "avatar": "/assets/characters/mission-vao.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
       "Old Republic",
       "Scoundrel"
     ]
@@ -2230,6 +2269,7 @@
     "avatar": "/assets/characters/mon-mothma.webp",
     "alignment": "light",
     "factions": [
+      "New Republic",
       "Rebel"
     ]
   },
@@ -2353,7 +2393,8 @@
     "avatar": "/assets/characters/omegas3.webp",
     "alignment": "light",
     "factions": [
-      "Bad Batch"
+      "Bad Batch",
+      "Order 66 Raid"
     ]
   },
   {
@@ -2421,13 +2462,10 @@
     "avatar": "/assets/characters/glhondo.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_GALACTIC_LEGEND_DESC",
-      "CATEGORY_PIRATE_DESC",
-      "CATEGORY_RAID_ORDER66_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLESUPPORT_DESC",
-      "CATEGORY_SCOUNDREL_DESC",
-      "CATEGORY_SMUGGLER_DESC"
+      "Order 66 Raid",
+      "Pirate",
+      "Scoundrel",
+      "Smuggler"
     ]
   },
   {
@@ -2437,7 +2475,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -2483,6 +2523,7 @@
     "avatar": "/assets/characters/qira.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
       "Scoundrel",
       "Smuggler"
     ]
@@ -2503,7 +2544,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -2512,10 +2555,9 @@
     "avatar": "/assets/characters/quiggold.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_PIRATE_DESC",
-      "CATEGORY_RAID_ORDER66_DESC",
-      "CATEGORY_ROLETANK_DESC",
-      "CATEGORY_SCOUNDREL_DESC"
+      "Order 66 Raid",
+      "Pirate",
+      "Scoundrel"
     ]
   },
   {
@@ -2536,11 +2578,10 @@
     "avatar": "/assets/characters/r5d4.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_NEWREPUBLIC_DESC",
-      "CATEGORY_REBELFIGHTER_DESC",
-      "CATEGORY_REBELS_DESC",
-      "CATEGORY_ROLESUPPORT_DESC",
-      "CATEGORY_SPECIESDROID_DESC"
+      "Droid",
+      "New Republic",
+      "Rebel",
+      "Rebel Fighter"
     ]
   },
   {
@@ -2559,9 +2600,9 @@
     "avatar": "/assets/characters/scorch.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_CLONETROOPER_DESC",
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_ROLETANK_DESC"
+      "Clone Trooper",
+      "Empire",
+      "Order 66 Raid"
     ]
   },
   {
@@ -2664,9 +2705,7 @@
     "avatar": "/assets/characters/raccoon.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_HUTTCARTEL_DESC",
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_ROLELEADER_DESC"
+      "Hutt Cartel"
     ]
   },
   {
@@ -2695,6 +2734,9 @@
     "avatar": "/assets/characters/sana-starros.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
+      "Order 66 Raid",
+      "Pirate",
       "Scoundrel",
       "Smuggler"
     ]
@@ -2705,10 +2747,8 @@
     "avatar": "/assets/characters/sateleshan.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_JEDI_DESC",
-      "CATEGORY_OLDREPUBLIC_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLETANK_DESC"
+      "Jedi",
+      "Old Republic"
     ]
   },
   {
@@ -2781,7 +2821,9 @@
     "alignment": "light",
     "factions": [
       "Galactic Republic",
-      "Jedi"
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -2870,10 +2912,10 @@
     "avatar": "/assets/characters/sm33.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_PIRATE_DESC",
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_SCOUNDREL_DESC",
-      "CATEGORY_SPECIESDROID_DESC"
+      "Droid",
+      "Order 66 Raid",
+      "Pirate",
+      "Scoundrel"
     ]
   },
   {
@@ -2883,6 +2925,7 @@
     "alignment": "dark",
     "factions": [
       "Empire",
+      "Imperial Remnant",
       "Imperial Trooper"
     ]
   },
@@ -2892,11 +2935,9 @@
     "avatar": "/assets/characters/remnantsnowcommander.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_EMPIRE_DESC",
-      "CATEGORY_IMPERIALREMNANT_DESC",
-      "CATEGORY_IMPERIALTROOPER_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLETANK_DESC"
+      "Empire",
+      "Imperial Remnant",
+      "Imperial Trooper"
     ]
   },
   {
@@ -2945,9 +2986,7 @@
     "avatar": "/assets/characters/stormtrooperluke.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_REBELS_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLESUPPORT_DESC"
+      "Rebel"
     ]
   },
   {
@@ -3033,10 +3072,10 @@
     "avatar": "/assets/characters/vanguardtempleguard.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_GALACTICREPUBLIC_DESC",
-      "CATEGORY_JEDI_DESC",
-      "CATEGORY_JEDIVANGUARD_DESC",
-      "CATEGORY_ROLETANK_DESC"
+      "Galactic Republic",
+      "Jedi",
+      "Jedi Vanguard",
+      "Order 66 Raid"
     ]
   },
   {
@@ -3066,6 +3105,7 @@
     "alignment": "light",
     "factions": [
       "Mandalorian",
+      "Mercenary",
       "Scoundrel"
     ]
   },
@@ -3075,9 +3115,7 @@
     "avatar": "/assets/characters/stranger.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_ROLEATTACKER_DESC",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_SITH_DESC"
+      "Sith"
     ]
   },
   {
@@ -3098,7 +3136,8 @@
     "alignment": "light",
     "factions": [
       "Droid",
-      "Rebel"
+      "Rebel",
+      "Wookiee"
     ]
   },
   {
@@ -3107,7 +3146,8 @@
     "avatar": "/assets/characters/tie-fighter-pilot.webp",
     "alignment": "dark",
     "factions": [
-      "Empire"
+      "Empire",
+      "Imperial Remnant"
     ]
   },
   {
@@ -3168,8 +3208,10 @@
     "avatar": "/assets/characters/vandor-chewbacca.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
       "Scoundrel",
-      "Smuggler"
+      "Smuggler",
+      "Wookiee"
     ]
   },
   {
@@ -3178,10 +3220,9 @@
     "avatar": "/assets/characters/vane.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_PIRATE_DESC",
-      "CATEGORY_RAID_ORDER66_DESC",
-      "CATEGORY_ROLETANK_DESC",
-      "CATEGORY_SCOUNDREL_DESC"
+      "Order 66 Raid",
+      "Pirate",
+      "Scoundrel"
     ]
   },
   {
@@ -3190,9 +3231,8 @@
     "avatar": "/assets/characters/vel.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_REBELFIGHTER_DESC",
-      "CATEGORY_REBELS_DESC",
-      "CATEGORY_ROLESUPPORT_DESC"
+      "Rebel",
+      "Rebel Fighter"
     ]
   },
   {
@@ -3203,7 +3243,8 @@
     "factions": [
       "Resistance",
       "Scoundrel",
-      "Smuggler"
+      "Smuggler",
+      "Wookiee"
     ]
   },
   {
@@ -3212,6 +3253,7 @@
     "avatar": "/assets/characters/veteran-smuggler-han-solo.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
       "Resistance",
       "Scoundrel",
       "Smuggler"
@@ -3278,9 +3320,9 @@
     "avatar": "/assets/characters/wreckers3.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_BADBATCH_DESC",
-      "CATEGORY_MERCENARY_DESC",
-      "CATEGORY_ROLETANK_DESC"
+      "Bad Batch",
+      "Mercenary",
+      "Order 66 Raid"
     ]
   },
   {
@@ -3289,10 +3331,9 @@
     "avatar": "/assets/characters/yodachewbacca.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_GALACTICREPUBLIC_DESC",
-      "CATEGORY_JEDI_DESC",
-      "CATEGORY_ROLESUPPORT_DESC",
-      "CATEGORY_WOOKIEE_DESC"
+      "Galactic Republic",
+      "Jedi",
+      "Wookiee"
     ]
   },
   {
@@ -3301,6 +3342,7 @@
     "avatar": "/assets/characters/young-han-solo.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
       "Scoundrel",
       "Smuggler"
     ]
@@ -3311,6 +3353,7 @@
     "avatar": "/assets/characters/young-lando-calrissian.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
       "Scoundrel",
       "Smuggler"
     ]
@@ -3321,8 +3364,10 @@
     "avatar": "/assets/characters/zaalbar.webp",
     "alignment": "light",
     "factions": [
+      "Mercenary",
       "Old Republic",
-      "Scoundrel"
+      "Scoundrel",
+      "Wookiee"
     ]
   },
   {
@@ -3332,6 +3377,7 @@
     "alignment": "dark",
     "factions": [
       "Bounty Hunter",
+      "Mercenary",
       "Scoundrel"
     ]
   },
@@ -3341,8 +3387,7 @@
     "avatar": "/assets/characters/rangerzeb.webp",
     "alignment": "light",
     "factions": [
-      "CATEGORY_NEWREPUBLIC_DESC",
-      "CATEGORY_ROLETANK_DESC"
+      "New Republic"
     ]
   },
   {
@@ -3362,11 +3407,9 @@
     "avatar": "/assets/characters/zuckuss.webp",
     "alignment": "dark",
     "factions": [
-      "CATEGORY_BOUNTYHUNTER_DESC_V2",
-      "CATEGORY_ROLELEADER_DESC",
-      "CATEGORY_ROLETANK_DESC",
-      "CATEGORY_SCOUNDREL_DESC",
-      "CATEGORY_UNALIGNEDFORCEUSER_DESC"
+      "Bounty Hunter",
+      "Scoundrel",
+      "Unaligned Force User"
     ]
   }
 ]
