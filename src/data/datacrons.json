@@ -2282,6 +2282,290 @@
     ]
   },
   {
+    "id": "33",
+    "name": "Supremacy Directive",
+    "expiresAt": 1793257200000,
+    "abilities": [
+      {
+        "level": 3,
+        "focus": "Dark Side",
+        "text": "Dark Side allies have +100% Critical Chance while attacking out of turn."
+      },
+      {
+        "level": 3,
+        "focus": "Light Side",
+        "text": "At the start of the encounter, the weakest ally gains 20% Turn Meter for every Light Side ally."
+      },
+      {
+        "level": 6,
+        "focus": "Firstorder",
+        "text": "Whenever First Order allies are critically hit they gain 10% Critical Damage (stacking) until the end of the encounter."
+      },
+      {
+        "level": 6,
+        "focus": "Resistance",
+        "text": "The first time each Resistance ally falls below 50% Health, all Resistance allies reduce their cooldowns by 1 and gain 10% Turn Meter."
+      },
+      {
+        "level": 9,
+        "focus": "BB-8",
+        "text": "At the start of battle, if all other allies are Droids, all allies gain the Resistance tag until the end of battle. At the start of battle, Resistance allies gain Secret Intel for 2 turns. Whenever an ally gains Secret Intel, Resistance allies gain 10% Critical Chance (stacking, max 100%) and Critical Damage (stacking, max 100%) until the end of the encounter. The first time a Resistance ally falls below 50% Health, BB-8 resets the cooldown of Illuminated Destiny. Whenever BB-8 uses a Special ability, inflict Buff Immunity on a random enemy for 2 turns, which can't be resisted."
+      },
+      {
+        "level": 9,
+        "focus": "Captain Phasma",
+        "text": "Whenever Phasma deals damage to an enemy, remove 25% Turn Meter from that enemy."
+      },
+      {
+        "level": 9,
+        "focus": "Foexecutioner",
+        "text": "Whenever Firstorderexecutioner critically hits an enemy, Firstorderexecutioner gains 10% Critical Damage, Defense Penetration, and Offense (stacking, max 200%) until the end of battle."
+      },
+      {
+        "level": 9,
+        "focus": "Kylo Ren",
+        "text": "Whenever Kyloren attacks out of turn, they recover 20% Health and Protection and all other allies with Retribution assist."
+      },
+      {
+        "level": 9,
+        "focus": "Kylo Ren (Unmasked)",
+        "text": "Whenever Kylo Ren (Unmasked) takes damage while Taunting, he gains 10% Defense (stacking, max 100%) and Max Health (stacking, max 100%) until the end of the encounter, and First Order allies gain 10% Offense (stacking, max 100%) until the end of the encounter. Whenever Kylo Ren (Unmasked) attacks out of turn, he inflicts Offense Down on target enemy for 2 turns. Whenever Kylo Ren (Unmasked) Stuns an enemy, increase that enemy's cooldowns by 1 and First Order allies gain Offense Up for 2 turns."
+      },
+      {
+        "level": 9,
+        "focus": "Rey",
+        "text": "Heir to the Jedi deals 75% more damage for each other active ally."
+      },
+      {
+        "level": 9,
+        "focus": "Rey (Dark Side Vision)",
+        "text": "Whenever Rey (Dark Side Vision) inflicts Fear, reduce the cooldowns of First Order allies by 1. Whenever Rey (Dark Side Vision) uses Malevolent Lineage, if all enemies are Shocked, deal bonus damage equal to 20% of their Max Health to all enemies, which can't be evaded. While Rey (Dark Side Vision) is Untargetable, she gains 20% Offense and First Order allies gain 20% Critical Damage."
+      },
+      {
+        "level": 9,
+        "focus": "Reyscavenger",
+        "text": "Scavengerrey deals +25% more damage per Relic Amplifier level on all allies."
+      },
+      {
+        "level": 9,
+        "focus": "Veteranchewbacca",
+        "text": "Whenever an enemy is Stunned, Smugglerchewbacca takes a bonus turn."
+      }
+    ],
+    "statPool": [
+      {
+        "level": 1,
+        "stat": "Accuracy",
+        "value": "15–35%"
+      },
+      {
+        "level": 1,
+        "stat": "Critical Chance",
+        "value": "5–10%"
+      },
+      {
+        "level": 1,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 1,
+        "stat": "Defense",
+        "value": "25–50%"
+      },
+      {
+        "level": 1,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Tenacity",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Accuracy",
+        "value": "15–35%"
+      },
+      {
+        "level": 2,
+        "stat": "Critical Chance",
+        "value": "5–10%"
+      },
+      {
+        "level": 2,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Defense",
+        "value": "25–50%"
+      },
+      {
+        "level": 2,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Tenacity",
+        "value": "10–25%"
+      },
+      {
+        "level": 4,
+        "stat": "Accuracy",
+        "value": "35–50%"
+      },
+      {
+        "level": 4,
+        "stat": "Critical Chance",
+        "value": "10–20%"
+      },
+      {
+        "level": 4,
+        "stat": "Critical Damage",
+        "value": "25–35%"
+      },
+      {
+        "level": 4,
+        "stat": "Defense",
+        "value": "50–75%"
+      },
+      {
+        "level": 4,
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Protection",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Tenacity",
+        "value": "25–35%"
+      },
+      {
+        "level": 5,
+        "stat": "Accuracy",
+        "value": "35–50%"
+      },
+      {
+        "level": 5,
+        "stat": "Critical Chance",
+        "value": "10–20%"
+      },
+      {
+        "level": 5,
+        "stat": "Critical Damage",
+        "value": "25–35%"
+      },
+      {
+        "level": 5,
+        "stat": "Defense",
+        "value": "50–75%"
+      },
+      {
+        "level": 5,
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Protection",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Tenacity",
+        "value": "25–35%"
+      },
+      {
+        "level": 7,
+        "stat": "Accuracy",
+        "value": "50–75%"
+      },
+      {
+        "level": 7,
+        "stat": "Critical Chance",
+        "value": "20–30%"
+      },
+      {
+        "level": 7,
+        "stat": "Critical Damage",
+        "value": "35–45%"
+      },
+      {
+        "level": 7,
+        "stat": "Defense",
+        "value": "75–100%"
+      },
+      {
+        "level": 7,
+        "stat": "Health",
+        "value": "20–30"
+      },
+      {
+        "level": 7,
+        "stat": "Protection",
+        "value": "20–30"
+      },
+      {
+        "level": 7,
+        "stat": "Tenacity",
+        "value": "35–45%"
+      },
+      {
+        "level": 8,
+        "stat": "Accuracy",
+        "value": "50–75%"
+      },
+      {
+        "level": 8,
+        "stat": "Critical Chance",
+        "value": "20–30%"
+      },
+      {
+        "level": 8,
+        "stat": "Critical Damage",
+        "value": "35–45%"
+      },
+      {
+        "level": 8,
+        "stat": "Defense",
+        "value": "75–100%"
+      },
+      {
+        "level": 8,
+        "stat": "Health",
+        "value": "20–30"
+      },
+      {
+        "level": 8,
+        "stat": "Protection",
+        "value": "20–30"
+      },
+      {
+        "level": 8,
+        "stat": "Tenacity",
+        "value": "35–45%"
+      }
+    ]
+  },
+  {
     "id": "24",
     "name": "Whispers of Wealth",
     "expiresAt": 1768982400000,
