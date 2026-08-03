@@ -846,6 +846,16 @@
     ]
   },
   {
+    "id": "darthjarjar",
+    "name": "Darth Jar Jar",
+    "avatar": "/assets/characters/darthjarjar.webp",
+    "alignment": "dark",
+    "factions": [
+      "Gungan",
+      "Sith"
+    ]
+  },
+  {
     "id": "darth-malak",
     "name": "Darth Malak",
     "avatar": "/assets/characters/darth-malak.webp",
@@ -1747,6 +1757,17 @@
     ]
   },
   {
+    "id": "jaxxon",
+    "name": "Jaxxon",
+    "avatar": "/assets/characters/jaxxon.webp",
+    "alignment": "light",
+    "factions": [
+      "Mercenary",
+      "Scoundrel",
+      "Smuggler"
+    ]
+  },
+  {
     "id": "jedi-consular",
     "name": "Jedi Consular",
     "avatar": "/assets/characters/jedi-consular.webp",
@@ -2157,6 +2178,16 @@
     "factions": [
       "Empire",
       "ISB"
+    ]
+  },
+  {
+    "id": "marajadeskywalker",
+    "name": "Mara Jade Skywalker",
+    "avatar": "/assets/characters/marajadeskywalker.webp",
+    "alignment": "light",
+    "factions": [
+      "Jedi",
+      "New Republic"
     ]
   },
   {
@@ -2960,6 +2991,16 @@
     ]
   },
   {
+    "id": "lukestarkiller",
+    "name": "Starkiller (Luke Concept)",
+    "avatar": "/assets/characters/lukestarkiller.webp",
+    "alignment": "light",
+    "factions": [
+      "Rebel",
+      "Unaligned Force User"
+    ]
+  },
+  {
     "id": "stormtrooper",
     "name": "Stormtrooper",
     "avatar": "/assets/characters/stormtrooper.webp",
@@ -2967,6 +3008,16 @@
     "factions": [
       "Empire",
       "Imperial Remnant",
+      "Imperial Trooper"
+    ]
+  },
+  {
+    "id": "stormtrooperconcept",
+    "name": "Stormtrooper (Concept)",
+    "avatar": "/assets/characters/stormtrooperconcept.webp",
+    "alignment": "dark",
+    "factions": [
+      "Empire",
       "Imperial Trooper"
     ]
   },
@@ -3107,6 +3158,15 @@
       "Mandalorian",
       "Mercenary",
       "Scoundrel"
+    ]
+  },
+  {
+    "id": "theronin",
+    "name": "The Ronin",
+    "avatar": "/assets/characters/theronin.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
     ]
   },
   {
@@ -3323,6 +3383,15 @@
       "Bad Batch",
       "Mercenary",
       "Order 66 Raid"
+    ]
+  },
+  {
+    "id": "yodadsv",
+    "name": "Yoda (Dark Side Vision)",
+    "avatar": "/assets/characters/yodadsv.webp",
+    "alignment": "dark",
+    "factions": [
+      "Sith"
     ]
   },
   {
