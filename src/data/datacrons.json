@@ -2566,6 +2566,265 @@
     ]
   },
   {
+    "id": "34",
+    "name": "The Art of Command",
+    "expiresAt": 1795680000000,
+    "abilities": [
+      {
+        "level": 3,
+        "focus": "Dark Side",
+        "text": "Whenever Dark Side allies use a Basic ability, they gain Critical Chance Up, Critical Damage Up, and Offense Up for 2 turns."
+      },
+      {
+        "level": 3,
+        "focus": "Light Side",
+        "text": "Whenever Light Side allies use a Special ability, they gain Evasion Up, Health Steal Up, and Health Up  for 2 turns."
+      },
+      {
+        "level": 6,
+        "focus": "Empire",
+        "text": "Whenever an enemy loses Turn Meter, Empire allies gain Protection Up (stacking, 10%) for 2 turns.  Whenever an ally loses Protection Up they gain 10% Turn Meter."
+      },
+      {
+        "level": 6,
+        "focus": "Jedivanguard",
+        "text": "Whenever Jedivanguard allies grant a buff to another ally, that ally gains 10% Turn Meter (limit once per turn per ally)."
+      },
+      {
+        "level": 9,
+        "focus": "Barrisoffee",
+        "text": "The first time Barrisoffee goes below 100% Health, recover 100% Health and Protection and gain 100% Turn Meter."
+      },
+      {
+        "level": 9,
+        "focus": "Darthvader",
+        "text": "Whenever an ally takes a bonus turn, all allies recover 20% Health and Protection and Vader gains 20% Offense (stacking) until the end of battle."
+      },
+      {
+        "level": 9,
+        "focus": "Grand Admiral Thrawn",
+        "text": "At the start of Grand Admiral Thrawn's turn, inflict Damage Over Time on Empire allies for 2 turn, which can't be evaded or resisted. Whenever an Empire ally gains a debuff, they gain an additional 40% Turn Meter (once per turn) and 40% more damage until the end of the encounter. Whenever an Empire ally uses Maneuver, Empire allies reduce their cooldowns by 1 and gain Critical Hit Immunity, Defense Up, Potency Up, and Tenacity Up for 2 turns, and all enemies lose 15% Turn Meter."
+      },
+      {
+        "level": 9,
+        "focus": "Grand Moff Tarkin",
+        "text": "Whenever Grandmofftarkin uses an ability, they deal more damage (max 100%) equal to half their Potency percentage. This effect will only trigger if Grandmofftarkin has more than 0% Potency."
+      },
+      {
+        "level": 9,
+        "focus": "Iden Versio",
+        "text": "Whenever an Imperial Trooper ally uses an ability on an enemy with Vulnerable, they deal 40% more damage, reduce that enemy's Turn Meter by 30%, and gain 25% Turn Meter. Whenever an enemy with Vulnerable is defeated, Iden's cooldowns are reset. Whenever an Imperial Trooper ally gains We Adapt, Or Die, they gain 40% Critical Damage and Max Protection (stacking, max 200%) until the end of battle.\\n\\nWhenever an Imperial Trooper ally is defeated while having We Adapt, Or Die, Imperial Trooper allies gain Retribution for 2 turns. Whenever We Adapt, Or Die is dispelled from an Imperial Trooper ally, inflict Defense Down and Vulnerable on all enemies for 2 turns, which can't be evaded or resisted."
+      },
+      {
+        "level": 9,
+        "focus": "Jedi Knight Guardian",
+        "text": "While Jedi Knight Guardian is below 50% Health, she gains Critical Hit Immunity, Defense Up, and a stack Heal Over Time at the start of each of her turns. The first time she falls below 50% Health, Jedi and Unaligned Force User allies gain Protection Up (50%) for 2 turns. Whenever an enemy targets Jedi Knight Guardian with an ability, that enemy takes True damage equal to 40% of that enemy's Max Health. This damage can't defeat enemies."
+      },
+      {
+        "level": 9,
+        "focus": "Jocasta Nu",
+        "text": "Whenever an enemy takes a turn, Jocastanu takes a bonus turn. During this bonus turn, Jocastanu deals 100% more damage. This bonus turn can't trigger this effect on enemies."
+      },
+      {
+        "level": 9,
+        "focus": "Major Partagaz",
+        "text": "Whenever Major Partagaz inflicts a debuff on an enemy, ISB allies gain Advantage for 1 turn. Whenever an ISB ally uses an ability while they have Tactical Supremacy, ISB allies gain 5% Critical Damage (stacking, max 100%) until the end of the encounter. Whenever ISB allies increase their Rank, ISB allies gain 15% Offense (stacking, max 120%) until the end of the encounter."
+      },
+      {
+        "level": 9,
+        "focus": "Qui-Gon Jinn",
+        "text": "Whenever Quigonjinn evades an attack, they gain Critical Chance Up and Critical Damage Up for 2 turns and 50% Turn Meter."
+      },
+      {
+        "level": 9,
+        "focus": "Shaak Ti",
+        "text": "Whenever Shaakti attacks out of turn, they recover 20% Health and Protection and all other allies with Retribution assist."
+      }
+    ],
+    "statPool": [
+      {
+        "level": 1,
+        "stat": "Accuracy",
+        "value": "15–35%"
+      },
+      {
+        "level": 1,
+        "stat": "Critical Chance",
+        "value": "5–10%"
+      },
+      {
+        "level": 1,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 1,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Tenacity",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Accuracy",
+        "value": "15–35%"
+      },
+      {
+        "level": 2,
+        "stat": "Critical Chance",
+        "value": "5–10%"
+      },
+      {
+        "level": 2,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Tenacity",
+        "value": "10–25%"
+      },
+      {
+        "level": 4,
+        "stat": "Accuracy",
+        "value": "35–50%"
+      },
+      {
+        "level": 4,
+        "stat": "Critical Chance",
+        "value": "10–20%"
+      },
+      {
+        "level": 4,
+        "stat": "Critical Damage",
+        "value": "25–35%"
+      },
+      {
+        "level": 4,
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Protection",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Tenacity",
+        "value": "25–35%"
+      },
+      {
+        "level": 5,
+        "stat": "Accuracy",
+        "value": "35–50%"
+      },
+      {
+        "level": 5,
+        "stat": "Critical Chance",
+        "value": "10–20%"
+      },
+      {
+        "level": 5,
+        "stat": "Critical Damage",
+        "value": "25–35%"
+      },
+      {
+        "level": 5,
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Protection",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Tenacity",
+        "value": "25–35%"
+      },
+      {
+        "level": 7,
+        "stat": "Accuracy",
+        "value": "50–75%"
+      },
+      {
+        "level": 7,
+        "stat": "Critical Chance",
+        "value": "20–30%"
+      },
+      {
+        "level": 7,
+        "stat": "Critical Damage",
+        "value": "35–45%"
+      },
+      {
+        "level": 7,
+        "stat": "Health",
+        "value": "20–30"
+      },
+      {
+        "level": 7,
+        "stat": "Protection",
+        "value": "20–30"
+      },
+      {
+        "level": 7,
+        "stat": "Tenacity",
+        "value": "35–45%"
+      },
+      {
+        "level": 8,
+        "stat": "Accuracy",
+        "value": "50–75%"
+      },
+      {
+        "level": 8,
+        "stat": "Critical Chance",
+        "value": "20–30%"
+      },
+      {
+        "level": 8,
+        "stat": "Critical Damage",
+        "value": "35–45%"
+      },
+      {
+        "level": 8,
+        "stat": "Health",
+        "value": "20–30"
+      },
+      {
+        "level": 8,
+        "stat": "Protection",
+        "value": "20–30"
+      },
+      {
+        "level": 8,
+        "stat": "Tenacity",
+        "value": "35–45%"
+      }
+    ]
+  },
+  {
     "id": "24",
     "name": "Whispers of Wealth",
     "expiresAt": 1768982400000,
