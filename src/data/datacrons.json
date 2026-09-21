@@ -264,9 +264,9 @@
     ]
   },
   {
-    "id": "26",
-    "name": "Bounty Protocol",
-    "expiresAt": 1776236400000,
+    "id": "35",
+    "name": "Duty and Defiance",
+    "expiresAt": 1798099200000,
     "abilities": [
       {
         "level": 3,
@@ -274,211 +274,191 @@
         "text": "Whenever Dark Side allies start their turn with at least 2 buffs that can be dispelled, they gain 5% Offense (stacking) until the end of the encounter."
       },
       {
-        "level": 3,
-        "focus": "Light Side",
-        "text": "Whenever Light Side allies inflict a debuff on an enemy, they deal damage to that enemy equal to 2% of that enemy's Max Health."
-      },
-      {
         "level": 6,
-        "focus": "Bountyhunters",
-        "text": "Whenever a Bounty Hunter ally inflicts a debuff on an enemy, they gain 30% Offense (stacking, max 300%) until the end of battle. Whenever an enemy resists a debuff, Bounty Hunter allies gain Potency Up for 2 turns."
-      },
-      {
-        "level": 6,
-        "focus": "Droid",
-        "text": "At the start of each Droid ally's turn, inflict Target Lock for 1 turn, which can't be resisted, to a random enemy that does not have it. Whenever a Droid ally uses a Basic ability against an enemy with Target Lock, they recover 10% Protection and gain 5% Turn Meter."
+        "focus": "Clonetrooper",
+        "text": "Whenever a Clone Trooper ally uses a Basic ability, they recover 10% Protection, and all Clone Trooper allies gain 10% Critical Damage (stacking) until the end of battle.\\n\\nWhenever a Clone Trooper ally resists a debuff, they Stagger all enemies for 2 turns and gain 10% Turn Meter."
       },
       {
         "level": 9,
-        "focus": "4-LOM",
-        "text": "Whenever 4lom inflicts a debuff, they recover 25% of their Max Health and Max Protection (limit once per turn)."
+        "focus": "Captain Rex",
+        "text": "Whenever another Clone Trooper or Phoenix ally uses a special ability, Captain Rex's Master Marksman's damage is increased by 50% (stacking, max 250%) until the next time it is used. Clone Trooper and Phoenix allies inflict 2 stacks of Damage Over Time for 2 turns whenever they attack out of turn.\\n\\nThe first time each enemy loses all Protection or falls below 20% Health, Captain Rex gains a bonus turn and his cooldowns are reset."
       },
       {
         "level": 9,
-        "focus": "Aurra Sing",
-        "text": "Whenever Aurrasing Stuns an enemy, Aurrasing gains 10% Critical Damage (stacking, max 200%) and 5 Speed (stacking, max 50) until the end of the encounter."
+        "focus": "Crosshair (Scarred)",
+        "text": "Whenever Crosshair (Scarred) loses a stack of Shaken, he loses another stack of Shaken.\\n\\nWhenever Crosshair (Scarred) doesn't score a critical hit, he inflicts Buff Immunity on target enemy for 2 turns, which can't be evaded or resisted.\\n\\nWhenever Crosshair (Scarred) deals damage to an enemy, the weakest ally without Stealth recovers 10% Health and Protection."
       },
       {
         "level": 9,
-        "focus": "Chopper",
-        "text": "Whenever a Phoenix ally takes damage, all Phoenix allies gain 30% Max Health (stacking) and 30% Offense for 1 turn. Chopper ignores Taunt. Whenever Chopper takes damage while Taunting, Chopper recovers 50% Protection and all Phoenix allies gain 30% Turn Meter until the end of 2 turns."
+        "focus": "Darth Maul",
+        "text": "Whenever Mauls7 critically hits an enemy, Mauls7 gains 10% Critical Damage, Defense Penetration, and Offense (stacking, max 200%) until the end of battle."
       },
       {
         "level": 9,
-        "focus": "Fennec Shand",
-        "text": "The first time Fennecshand goes below 100% Health, recover 100% Health and Protection and gain 100% Turn Meter."
+        "focus": "Mara Jade, The Emperor's Hand",
+        "text": "At the start of any other non-Emperor Palpatine ally's turn, Mara Jade gains a stack of Loyal Hand. Whenever an ally with less than 100% Turn Meter gains bonus Turn Meter they gain 3% Critical Chance and Critical Damage (stacking) for 1 turn. Whenever an enemy is inflicted with Shock, they take damage equal to 10% of their Max Health."
       },
       {
         "level": 9,
-        "focus": "Huyang",
-        "text": "Whenever Huyang uses a Special ability: If General Syndulla, Padawan Sabine, and Ezra Bridger (Exile) are allies, they each gain +40% Offense, +40% Critical Damage, and +40% Defense Penetration for 2 turns, and they each assist. If Ahsoka Tano(GL) is in the Leader slot, she gains +25% Turn Meter and Offense Up for 2 turns. Whenever Huyang gains History of the Galaxy, all allies gain 15% Critical Chance (stacking, max 45%) and 20% Offense (stacking, max 60%) until the end of the battle."
+        "focus": "Shin Hati",
+        "text": "At the start of her turn, Shin Hati gains 2% Offense for each stack of Soldier of Fortune on her for 1 turn. Whenever another ally gains or loses a stack of Soldier of Fortune, Shin Hati gains 2 stacks of Soldier of Fortune and 10% Turn Meter.\\n\\nWhenever Shin Hati or another ally attacks out of turn, reduce the cooldown of Clean Escape by 1."
       },
       {
         "level": 9,
-        "focus": "IG-11",
-        "text": "Whenever Ig11 inflicts a debuff, they recover 25% of their Max Health and Max Protection (limit once per turn)."
+        "focus": "Starkiller",
+        "text": "Starkiller has +200% Critical Chance and Critical Damage while he is buffed. Whenever another ally uses a Special ability, Starkiller assists. Whenever Starkiller gains a stack of Force Energy, he gains an additional stack of Force Energy."
       },
       {
         "level": 9,
-        "focus": "Zuckuss",
-        "text": "Whenever Zuckuss uses a Special ability, all Bounty Hunter allies gain Protection Up for 2 turns. Zuckuss calls a random Bounty Hunter ally to assist. All allies gain Foresight for 2 turns."
+        "focus": "Taron Malicos",
+        "text": "Taron Malicos is immune to Fear and Shock. Whenever another Unaligned Force User ally is damaged or inflicted with a debuff, Taron Malicos gains 2 stacks of Edge of Madness and 10% Max Health (stacking, max 200%) until the end of battle.\\n\\nWhenever Taron Malicos gains a stack of Madness Manifested, he recovers 50% Health and Protection, and his cooldowns are reset."
       }
     ],
     "statPool": [
       {
         "level": 1,
         "stat": "Accuracy",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Armor Penetration",
-        "value": "35–50"
-      },
-      {
-        "level": 1,
-        "stat": "Critical Chance",
-        "value": "10–25%"
+        "value": "15–35%"
       },
       {
         "level": 1,
         "stat": "Critical Damage",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Health",
         "value": "10–25%"
       },
       {
         "level": 1,
-        "stat": "Health Steal",
-        "value": "5–10%"
+        "stat": "Defense",
+        "value": "25–50%"
+      },
+      {
+        "level": 1,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Offense",
+        "value": "1–5%"
       },
       {
         "level": 1,
         "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Tenacity",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Accuracy",
         "value": "15–35%"
       },
       {
         "level": 2,
-        "stat": "Accuracy",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Armor Penetration",
-        "value": "35–50"
-      },
-      {
-        "level": 2,
-        "stat": "Critical Chance",
+        "stat": "Critical Damage",
         "value": "10–25%"
       },
       {
         "level": 2,
-        "stat": "Critical Damage",
-        "value": "5–10%"
+        "stat": "Defense",
+        "value": "25–50%"
       },
       {
         "level": 2,
         "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Offense",
+        "value": "1–5%"
+      },
+      {
+        "level": 2,
+        "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Tenacity",
         "value": "10–25%"
       },
       {
-        "level": 2,
-        "stat": "Health Steal",
+        "level": 4,
+        "stat": "Accuracy",
+        "value": "35–50%"
+      },
+      {
+        "level": 4,
+        "stat": "Critical Damage",
+        "value": "25–35%"
+      },
+      {
+        "level": 4,
+        "stat": "Defense",
+        "value": "50–75%"
+      },
+      {
+        "level": 4,
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Offense",
         "value": "5–10%"
       },
       {
-        "level": 2,
+        "level": 4,
         "stat": "Protection",
-        "value": "15–35%"
+        "value": "10–20"
       },
       {
         "level": 4,
+        "stat": "Tenacity",
+        "value": "25–35%"
+      },
+      {
+        "level": 5,
         "stat": "Accuracy",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Armor Penetration",
-        "value": "50–70"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Chance",
-        "value": "25–35%"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Damage",
-        "value": "25–35%"
-      },
-      {
-        "level": 4,
-        "stat": "Health",
-        "value": "25–35%"
-      },
-      {
-        "level": 4,
-        "stat": "Health Steal",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Protection",
         "value": "35–50%"
       },
       {
         "level": 5,
-        "stat": "Accuracy",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Armor Penetration",
-        "value": "50–70"
-      },
-      {
-        "level": 5,
-        "stat": "Critical Chance",
-        "value": "25–35%"
-      },
-      {
-        "level": 5,
         "stat": "Critical Damage",
         "value": "25–35%"
       },
       {
         "level": 5,
-        "stat": "Health",
-        "value": "25–35%"
+        "stat": "Defense",
+        "value": "50–75%"
       },
       {
         "level": 5,
-        "stat": "Health Steal",
-        "value": "10–20%"
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Offense",
+        "value": "5–10%"
       },
       {
         "level": 5,
         "stat": "Protection",
-        "value": "35–50%"
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Tenacity",
+        "value": "25–35%"
       },
       {
         "level": 7,
         "stat": "Accuracy",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Armor Penetration",
-        "value": "70–100"
-      },
-      {
-        "level": 7,
-        "stat": "Critical Chance",
-        "value": "35–45%"
+        "value": "50–75%"
       },
       {
         "level": 7,
@@ -487,53 +467,63 @@
       },
       {
         "level": 7,
-        "stat": "Health",
-        "value": "35–45%"
+        "stat": "Defense",
+        "value": "75–100%"
       },
       {
         "level": 7,
-        "stat": "Health Steal",
-        "value": "20–30%"
+        "stat": "Health",
+        "value": "20–30"
+      },
+      {
+        "level": 7,
+        "stat": "Offense",
+        "value": "10–20%"
       },
       {
         "level": 7,
         "stat": "Protection",
+        "value": "20–30"
+      },
+      {
+        "level": 7,
+        "stat": "Tenacity",
+        "value": "35–45%"
+      },
+      {
+        "level": 8,
+        "stat": "Accuracy",
         "value": "50–75%"
       },
       {
         "level": 8,
-        "stat": "Accuracy",
-        "value": "20–30%"
-      },
-      {
-        "level": 8,
-        "stat": "Armor Penetration",
-        "value": "70–100"
-      },
-      {
-        "level": 8,
-        "stat": "Critical Chance",
-        "value": "35–45%"
-      },
-      {
-        "level": 8,
         "stat": "Critical Damage",
         "value": "35–45%"
       },
       {
         "level": 8,
-        "stat": "Health",
-        "value": "35–45%"
+        "stat": "Defense",
+        "value": "75–100%"
       },
       {
         "level": 8,
-        "stat": "Health Steal",
-        "value": "20–30%"
+        "stat": "Health",
+        "value": "20–30"
+      },
+      {
+        "level": 8,
+        "stat": "Offense",
+        "value": "10–20%"
       },
       {
         "level": 8,
         "stat": "Protection",
-        "value": "50–75%"
+        "value": "20–30"
+      },
+      {
+        "level": 8,
+        "stat": "Tenacity",
+        "value": "35–45%"
       }
     ]
   },
@@ -1674,320 +1664,6 @@
     ]
   },
   {
-    "id": "25",
-    "name": "Pillars of War",
-    "expiresAt": 1773817200000,
-    "abilities": [
-      {
-        "level": 3,
-        "focus": "Dark Side",
-        "text": "Whenever Dark Side allies inflict a debuff on an enemy, they deal damage to that enemy equal to 2% of that enemy's Max Health."
-      },
-      {
-        "level": 3,
-        "focus": "Light Side",
-        "text": "Whenever Light Side allies start their turn with at least 2 buffs that can be dispelled, they gain 5% Offense (stacking) until the end of the encounter."
-      },
-      {
-        "level": 6,
-        "focus": "Attacker",
-        "text": "Whenever a debuff on an enemy expires, Attacker allies gain 2% Offense, doubled if that debuff was dispelled, until the end of battle."
-      },
-      {
-        "level": 6,
-        "focus": "Healer",
-        "text": "At the end of their turn, Healer allies recover 50% Protection if they inflicted at least 5 debuffs that turn."
-      },
-      {
-        "level": 6,
-        "focus": "Tank",
-        "text": "Tank allies start the battle with Damage Immunity for 2 turns (can't be copied)."
-      },
-      {
-        "level": 9,
-        "focus": "Aayla Secura",
-        "text": "Whenever Aaylasecura attacks out turn, they gain a stack of Heal Over Time and Protection Over Time for 2 turns and they inflict target enemy with Protection Disruption for 1 turn."
-      },
-      {
-        "level": 9,
-        "focus": "Baze Malbus",
-        "text": "If Chirrut Îmwe is an ally, then whenever Baze Malbus or Chirrut Îmwe attacks out of turn, they gain 50% Critical Chance and equalize their Health and Protection.\\n\\nWhile attacking out of turn, if Baze Malbus or Chirrut Îmwe scores a critical hit, they both recover 10% Health and Protection. If Baze Malbus has less than 50% Health, whenever he takes damage, the weakest enemy is dealt 100% of that damage, which can't defeat them."
-      },
-      {
-        "level": 9,
-        "focus": "Biggs Darklighter",
-        "text": "At the start of battle, if Wedge Antilles is an ally, Biggs Darklighter gains Max 50% Health and Max Protection for the rest of the battle.\\n\\nWhenever Biggs Darklighter damages an enemy, inflict Defense Down and Vulnerable on the target enemy for 2 turns, which can't be resisted.\\n\\nWhenever Wedge Antilles assists, he deals 50% bonus damage with a 75% chance to attack a second time, dealing 100% bonus damage and a 50% chance to attack a third time, dealing 200% bonus damage.\\n\\nWhenever an ally attacks out of turn, Biggs Darklighter gains 5% Turn Meter."
-      },
-      {
-        "level": 9,
-        "focus": "Cad Bane",
-        "text": "Whenever another ally uses an ability on their turn, Cadbane assists (limit once per turn) dealing 50% more damage."
-      },
-      {
-        "level": 9,
-        "focus": "Count Dooku",
-        "text": "Count Dooku has +200% Critical Chance and Critical Damage while he is inflicted with a debuff. Whenever a Separatist ally uses a Special ability on their turn, Count Dooku assists and dispels all buffs on the target enemy.\\n\\nAt the end of his turn, Count Dooku is inflicted with Disarm until the start of his next turn. Whenever Count Dooku takes damage during his turn, the weakest enemy is dealt 200% of that damage, which can't defeat them."
-      },
-      {
-        "level": 9,
-        "focus": "CT-5555 \"Fives\"",
-        "text": "Whenever Ct5555 attacks out of turn, Ct5555 deals 150% bonus damage, inflicts Offense Down and Healing Immunity for 1 turn on all enemies, which can't be evaded or resisted.\\nWhenever Ct5555 loses Taunt, he removes 50% Turn Meter from all enemies and inflicts Blind on them for 2 turns, which can't be evaded or resisted."
-      },
-      {
-        "level": 9,
-        "focus": "Luminara Unduli",
-        "text": "Whenever an enemy attacks out of turn, all enemies are inflicted with Protection Disruption for 2 turns, which can't be dispelled, evaded, or resisted, and all allies gain a stack of Heal Over Time and Protection Over Time for 2 turns.\\n\\nAt the start of Luminara Unduli's turn, all allies with less than 50% Health gain 2 stacks for Heal Over Time for 2 turns."
-      },
-      {
-        "level": 9,
-        "focus": "Olddaka",
-        "text": "Whenever another ally is defeated, Olddaka takes a bonus turn and their cooldowns are reset."
-      },
-      {
-        "level": 9,
-        "focus": "Resistance Trooper",
-        "text": "Whenever Resistance Trooper uses his Basic ability on his turn, he Exposes the target enemy for 2 turns. Whenever Resistance Trooper attacks an Exposed enemy, all other allies gain 20% Turn Meter, Resistance Trooper has a 50% chance to attack again and Expose a random enemy for 1 turn.\\n\\nWhenever Resistance Trooper falls below 50% for the first time, he gains Damage Immunity and Health Steal Up for 2 turns and all other allies gain Evasion Up for 2 turns."
-      },
-      {
-        "level": 9,
-        "focus": "Royal Guard",
-        "text": "Whenever Royalguard loses Taunt, remove 50% Turn Meter from all enemies."
-      },
-      {
-        "level": 9,
-        "focus": "Shoretrooper",
-        "text": "At the start of the battle, if all allies are Empire or Imperial Trooper, all allies gain 50% Health Steal, Max Health, and Max Protection. Shoretrooper gains Defense Up and Taunt for 2 turns.\\n\\nWhenever Shoretrooper loses Taunt, he recovers 20% Health and Protection."
-      },
-      {
-        "level": 9,
-        "focus": "Sun Fac",
-        "text": "Sun Fac has +100% counter chance and is immune to Daze and Stun.\\n\\nWhenever Sun Fac attacks out of turn, he dispels all debuffs on himself, Sun Fac deals bonus True damage equal to 15% of their Max Health to the enemy.\\n\\nFor each debuff dispelled this way, Geonosian allies gain 5% Defense, Max Health, and Max Protection until the end of battle."
-      },
-      {
-        "level": 9,
-        "focus": "Talia",
-        "text": "The first time Talia falls below 30% Health they dispel all debuffs on themself, recover 40% Health, and gain a bonus turn."
-      },
-      {
-        "level": 9,
-        "focus": "Ugnaught",
-        "text": "At the Start of the Battle, Uganught has +30% Evasion.\\n\\nAt the start of each encounter, inflict Breach and Health Down for 2 turns on all enemies, which can't be evaded or resisted. For each Droid enemy, Ugnaught has 20% counter Chance, Critical Chance, Defense, Health Steal, Max Health, and Max Protection.\\n\\nAt the start of his turn, Ugnaught dispels all debuffs on himself and resets all of his cooldowns.\\n\\nWhenever Ugnaught evades an attack, all enemies lose 10% Max Protection, which can't be resisted, doubled for Droids.\\n\\nWhenever he damages a stunned enemy, he inflicts 2 stacks of Damage Over Time for 2 turns. Whenever he damages an enemy with more than 5 buffs, dispel all the buffs from target enemy, and all enemies are inflicted with 2 stacks of Damage Over Time, doubled against Droid enemies."
-      }
-    ],
-    "statPool": [
-      {
-        "level": 1,
-        "stat": "Accuracy",
-        "value": "15–35%"
-      },
-      {
-        "level": 1,
-        "stat": "Critical Chance",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Critical Damage",
-        "value": "10–25%"
-      },
-      {
-        "level": 1,
-        "stat": "Defense Penetration",
-        "value": "35–50"
-      },
-      {
-        "level": 1,
-        "stat": "Health",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Protection",
-        "value": "5–10"
-      },
-      {
-        "level": 1,
-        "stat": "Tenacity",
-        "value": "10–25%"
-      },
-      {
-        "level": 2,
-        "stat": "Accuracy",
-        "value": "15–35%"
-      },
-      {
-        "level": 2,
-        "stat": "Critical Chance",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Critical Damage",
-        "value": "10–25%"
-      },
-      {
-        "level": 2,
-        "stat": "Defense Penetration",
-        "value": "35–50"
-      },
-      {
-        "level": 2,
-        "stat": "Health",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Protection",
-        "value": "5–10"
-      },
-      {
-        "level": 2,
-        "stat": "Tenacity",
-        "value": "10–25%"
-      },
-      {
-        "level": 4,
-        "stat": "Accuracy",
-        "value": "35–50%"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Chance",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Damage",
-        "value": "25–35%"
-      },
-      {
-        "level": 4,
-        "stat": "Defense Penetration",
-        "value": "50–70"
-      },
-      {
-        "level": 4,
-        "stat": "Health",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Protection",
-        "value": "10–20"
-      },
-      {
-        "level": 4,
-        "stat": "Tenacity",
-        "value": "25–35%"
-      },
-      {
-        "level": 5,
-        "stat": "Accuracy",
-        "value": "35–50%"
-      },
-      {
-        "level": 5,
-        "stat": "Critical Chance",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Critical Damage",
-        "value": "25–35%"
-      },
-      {
-        "level": 5,
-        "stat": "Defense Penetration",
-        "value": "50–70"
-      },
-      {
-        "level": 5,
-        "stat": "Health",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Protection",
-        "value": "10–20"
-      },
-      {
-        "level": 5,
-        "stat": "Tenacity",
-        "value": "25–35%"
-      },
-      {
-        "level": 7,
-        "stat": "Accuracy",
-        "value": "50–75%"
-      },
-      {
-        "level": 7,
-        "stat": "Critical Chance",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Critical Damage",
-        "value": "35–45%"
-      },
-      {
-        "level": 7,
-        "stat": "Defense Penetration",
-        "value": "70–100"
-      },
-      {
-        "level": 7,
-        "stat": "Health",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Protection",
-        "value": "20–30"
-      },
-      {
-        "level": 7,
-        "stat": "Tenacity",
-        "value": "35–45%"
-      },
-      {
-        "level": 8,
-        "stat": "Accuracy",
-        "value": "50–75%"
-      },
-      {
-        "level": 8,
-        "stat": "Critical Chance",
-        "value": "20–30%"
-      },
-      {
-        "level": 8,
-        "stat": "Critical Damage",
-        "value": "35–45%"
-      },
-      {
-        "level": 8,
-        "stat": "Defense Penetration",
-        "value": "70–100"
-      },
-      {
-        "level": 8,
-        "stat": "Health",
-        "value": "20–30%"
-      },
-      {
-        "level": 8,
-        "stat": "Protection",
-        "value": "20–30"
-      },
-      {
-        "level": 8,
-        "stat": "Tenacity",
-        "value": "35–45%"
-      }
-    ]
-  },
-  {
     "id": "28",
     "name": "Power for Hire",
     "expiresAt": 1781074800000,
@@ -2816,305 +2492,6 @@
         "level": 8,
         "stat": "Protection",
         "value": "20–30"
-      },
-      {
-        "level": 8,
-        "stat": "Tenacity",
-        "value": "35–45%"
-      }
-    ]
-  },
-  {
-    "id": "24",
-    "name": "Whispers of Wealth",
-    "expiresAt": 1768982400000,
-    "abilities": [
-      {
-        "level": 3,
-        "focus": "Dark Side",
-        "text": "Whenever Dark Side allies inflict a debuff, they gain 2% Critical Chance (stacking) for 3 turns."
-      },
-      {
-        "level": 6,
-        "focus": "Firstorder",
-        "text": "If all allies are First Order at the start of battle, First Order allies gain Damage Immunity for 2 turns. Whenever a First Order ally is critically hit, all First Order allies gain 10% Critical Damage (stacking, max 50%) until the end of the encounter. Whenever a First Order ally attacks out of turn, all First Order allies gain 10% Offense (stacking, max 50%) until the end of the encounter."
-      },
-      {
-        "level": 6,
-        "focus": "Ufu",
-        "text": "Whenever a Dark Side or Light Side Unaligned Force User critically hits an enemy, dispel all debuffs on themself and gain 5% Turn Meter. Whenever a Dark Side or Light Side Unaligned Force User uses a Special ability against an enemy with at least 3 debuffs, reduce that enemy's Max Health by 5%. Whenever a Dark Side or Light Side Unaligned Force User uses a Special ability when they have at least 3 buffs that can be dispelled, gain 5% Max Health."
-      },
-      {
-        "level": 9,
-        "focus": "Ben Solo",
-        "text": "Whenever Bensolo deals damage to an enemy, remove 25% Turn Meter from that enemy."
-      },
-      {
-        "level": 9,
-        "focus": "Brutus",
-        "text": "Whenever another ally recovers Protection, Brutus gains Foresight for 1 turn."
-      },
-      {
-        "level": 9,
-        "focus": "Captain Silvo",
-        "text": "Whenever Captain Silvo removes Turn Meter from an enemy, he recovers 20% Health and Protection, and resets the cooldown of a random Pirate ally."
-      },
-      {
-        "level": 9,
-        "focus": "Enfys Nest",
-        "text": "Whenever Enfysnest Stuns an enemy, Enfysnest gains 10% Critical Damage (stacking, max 200%) and 5 Speed (stacking, max 50) until the end of the encounter."
-      },
-      {
-        "level": 9,
-        "focus": "Firstorder",
-        "text": "The first time Firstordertrooper is defeated, they are revived with 100% Health, gain Protection Over Time (75%) for 2 turns, and take a bonus turn."
-      },
-      {
-        "level": 9,
-        "focus": "Foexecutioner",
-        "text": "Firstorderexecutioner has +5% Max Health and Max Protection per Relic Amplifier level, and damage they receive is decreased by 15%."
-      },
-      {
-        "level": 9,
-        "focus": "Hondo Ohnaka",
-        "text": "Whenever Hondo Ohnaka uses a Basic ability, he gains 9 additional stacks of Ransom, Protection Up (100%, stacking) for 2 turns, and reduces his cooldowns by 1."
-      },
-      {
-        "level": 9,
-        "focus": "Kylo Ren",
-        "text": "Whenever another ally uses an ability on their turn, Kyloren assists (limit once per turn) dealing 50% more damage."
-      },
-      {
-        "level": 9,
-        "focus": "Kylo Ren (Unmasked)",
-        "text": "At the start of Kylorenunmasked's turn, dispel all debuffs on them. They recover 5% Health for each debuff dispelled this way."
-      },
-      {
-        "level": 9,
-        "focus": "Rey",
-        "text": "The first time each turn Glrey gains Ultimate Charge, they gain an additional 6% Ultimate Charge."
-      },
-      {
-        "level": 9,
-        "focus": "Supreme Leader Kylo Ren",
-        "text": "Whenever Supreme Leader Kylo Ren has 100 or more stacks of Siphon, he ignores Stealth and Taunt during his turn. For every 20 stacks of Siphon he has, First Order allies gain 10% Defense and 10% Health Steal (stacking, max 200%) until the end of the encounter."
-      },
-      {
-        "level": 9,
-        "focus": "TIE Fighter Pilot",
-        "text": "First Order SF TIE Pilot has +100% Potency. While allied Supreme Leader Kylo Ren is active, First Order SF TIE Pilot can't be defeated. While First Order allies have Advantage, they ignore Taunt.\\n\\nWhenever the ally in the Leader slot or First Order SF TIE Pilot is damaged while they have Advantage, Stun that enemy for 1 turn, which can't be resisted. Whenever an enemy is Stunned, First Order SF TIE Pilot's abilities gain 5% bonus damage (stacking, max 200%), he and the ally in the Leader slot gain 10% Max Health  until the end of the encounter, and if the ally in the Leader slot is Supreme Leader Kylo Ren, he gains 5% Ultimate Charge. Whenever a Stunned enemy is defeated, they can't be revived, the ally in the Leader slot gains a bonus turn, and the allied Leader and First Order SF TIE Pilot recover 100% Health and Protection."
-      },
-      {
-        "level": 9,
-        "focus": "Visas Marr",
-        "text": "Whenever Visasmarr attacks out of turn, they recover 20% Health and Protection and all other allies with Retribution assist."
-      }
-    ],
-    "statPool": [
-      {
-        "level": 1,
-        "stat": "Accuracy",
-        "value": "15–35%"
-      },
-      {
-        "level": 1,
-        "stat": "Armor Penetration",
-        "value": "35–50"
-      },
-      {
-        "level": 1,
-        "stat": "Critical Damage",
-        "value": "10–25%"
-      },
-      {
-        "level": 1,
-        "stat": "Health",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Offense",
-        "value": "1–5%"
-      },
-      {
-        "level": 1,
-        "stat": "Protection",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Tenacity",
-        "value": "10–25%"
-      },
-      {
-        "level": 2,
-        "stat": "Accuracy",
-        "value": "15–35%"
-      },
-      {
-        "level": 2,
-        "stat": "Armor Penetration",
-        "value": "35–50"
-      },
-      {
-        "level": 2,
-        "stat": "Critical Damage",
-        "value": "10–25%"
-      },
-      {
-        "level": 2,
-        "stat": "Health",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Offense",
-        "value": "1–5%"
-      },
-      {
-        "level": 2,
-        "stat": "Protection",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Tenacity",
-        "value": "10–25%"
-      },
-      {
-        "level": 4,
-        "stat": "Accuracy",
-        "value": "35–50%"
-      },
-      {
-        "level": 4,
-        "stat": "Armor Penetration",
-        "value": "50–70"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Damage",
-        "value": "25–35%"
-      },
-      {
-        "level": 4,
-        "stat": "Health",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Offense",
-        "value": "5–10%"
-      },
-      {
-        "level": 4,
-        "stat": "Protection",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Tenacity",
-        "value": "25–35%"
-      },
-      {
-        "level": 5,
-        "stat": "Accuracy",
-        "value": "35–50%"
-      },
-      {
-        "level": 5,
-        "stat": "Armor Penetration",
-        "value": "50–70"
-      },
-      {
-        "level": 5,
-        "stat": "Critical Damage",
-        "value": "25–35%"
-      },
-      {
-        "level": 5,
-        "stat": "Health",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Offense",
-        "value": "5–10%"
-      },
-      {
-        "level": 5,
-        "stat": "Protection",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Tenacity",
-        "value": "25–35%"
-      },
-      {
-        "level": 7,
-        "stat": "Accuracy",
-        "value": "50–70%"
-      },
-      {
-        "level": 7,
-        "stat": "Armor Penetration",
-        "value": "70–100"
-      },
-      {
-        "level": 7,
-        "stat": "Critical Damage",
-        "value": "35–45%"
-      },
-      {
-        "level": 7,
-        "stat": "Health",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Offense",
-        "value": "10–20%"
-      },
-      {
-        "level": 7,
-        "stat": "Protection",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Tenacity",
-        "value": "35–45%"
-      },
-      {
-        "level": 8,
-        "stat": "Accuracy",
-        "value": "50–70%"
-      },
-      {
-        "level": 8,
-        "stat": "Armor Penetration",
-        "value": "70–100"
-      },
-      {
-        "level": 8,
-        "stat": "Critical Damage",
-        "value": "35–45%"
-      },
-      {
-        "level": 8,
-        "stat": "Health",
-        "value": "20–30%"
-      },
-      {
-        "level": 8,
-        "stat": "Offense",
-        "value": "10–20%"
-      },
-      {
-        "level": 8,
-        "stat": "Protection",
-        "value": "20–30%"
       },
       {
         "level": 8,
