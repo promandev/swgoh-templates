@@ -1121,6 +1121,18 @@
     ]
   },
   {
+    "id": "emboandkeibu",
+    "name": "Embo & Keibu",
+    "avatar": "/assets/characters/emboandkeibu.webp",
+    "alignment": "dark",
+    "factions": [
+      "Bounty Hunter",
+      "Hutt Cartel",
+      "Mercenary",
+      "Scoundrel"
+    ]
+  },
+  {
     "id": "emperor-palpatine",
     "name": "Emperor Palpatine",
     "avatar": "/assets/characters/emperor-palpatine.webp",
