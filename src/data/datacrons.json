@@ -2499,5 +2499,244 @@
         "value": "35–45%"
       }
     ]
+  },
+  {
+    "id": "36",
+    "name": "The Legend Codex",
+    "expiresAt": 1800432000000,
+    "abilities": [
+      {
+        "level": 3,
+        "focus": "Dark Side",
+        "text": "Whenever Dark Side allies resist a debuff, they recover 10% Health and Protection."
+      },
+      {
+        "level": 3,
+        "focus": "Light Side",
+        "text": "Whenever Light Side allies are evaded by an enemy, that ally gains Accuracy Up for 2 turns, and they inflict Evasion Down for 2 turns on that enemy, which can't be evaded."
+      },
+      {
+        "level": 6,
+        "focus": "Jedi",
+        "text": "At the start of battle, Jedi allies gain Retribution for 3 turns, which can't be dispelled."
+      },
+      {
+        "level": 9,
+        "focus": "Boba Fett, Scion of Jango",
+        "text": "When Boba Fett, Scion of Jango, gains a stack of Momentum during his turn, Fennec Shand gains Tenacity Up for 2 turns, and all allies with Disciple gain 10% Turn Meter (once per turn). Whenever an ally with Disciple uses a Special ability, Boba Fett, Scion of Jango assists dealing 10% more damage.\\n\\nAt the start of Boba Fett, Scion of Jango's turn, all Bounty Hunter allies gain 1% Defense per stack of Momentum until the end of his next turn."
+      },
+      {
+        "level": 9,
+        "focus": "Bossk",
+        "text": "Whenever Bossk is dealt damage, reflect 50% of the damage dealt back onto the attacker as True damage, which can't be evaded. This damage can't defeat enemies."
+      },
+      {
+        "level": 9,
+        "focus": "General Kenobi",
+        "text": "Whenever another ally recovers Protection, Generalkenobi gains Foresight for 1 turn."
+      },
+      {
+        "level": 9,
+        "focus": "IG-90",
+        "text": "While the Hacked Commando Droid is active, it has +50% Defense and Max Health.\\n\\nWhenever Hacked Commando Droid Taunts, it gains Defense Up for 2 turns, and allies recover 10% Health and Protection. Whenever the Hacked Commando Droid is defeated, IG-90 Taunts for 1 turn and gains 25% Defense (stacking) until the end of battle, and the cooldown of Doctor Aphra's Dangerous Tech is reduced by 1."
+      },
+      {
+        "level": 9,
+        "focus": "Jedi Knight Revan",
+        "text": "Whenever another ally uses an ability on their turn, Jediknightrevan assists (limit once per turn) dealing 50% more damage."
+      },
+      {
+        "level": 9,
+        "focus": "Juhani",
+        "text": "Whenever a Redeemed ally gains bonus Turn Meter, they gain 5 Speed (stacking, max 50) until the end of battle.\\n\\nIf another ally with Redeemed takes damage while Juhani is Taunting, the ally in the Leader slot takes a bonus turn, dealing 50% more damage during that turn."
+      },
+      {
+        "level": 9,
+        "focus": "Krrsantan",
+        "text": "Whenever Krrsantan attacks out of turn, Krrsantan deals 150% bonus damage, inflicts Offense Down and Healing Immunity for 1 turn on all enemies, which can't be evaded or resisted.\\nWhenever Krrsantan loses Taunt, he removes 50% Turn Meter from all enemies and inflicts Blind on them for 2 turns, which can't be evaded or resisted."
+      }
+    ],
+    "statPool": [
+      {
+        "level": 1,
+        "stat": "Armor Penetration",
+        "value": "35–50"
+      },
+      {
+        "level": 1,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 1,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Offense",
+        "value": "1–5"
+      },
+      {
+        "level": 1,
+        "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Tenacity",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Armor Penetration",
+        "value": "35–50"
+      },
+      {
+        "level": 2,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Offense",
+        "value": "1–5"
+      },
+      {
+        "level": 2,
+        "stat": "Protection",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Tenacity",
+        "value": "10–25%"
+      },
+      {
+        "level": 4,
+        "stat": "Armor Penetration",
+        "value": "50–70"
+      },
+      {
+        "level": 4,
+        "stat": "Critical Damage",
+        "value": "25–35%"
+      },
+      {
+        "level": 4,
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Offense",
+        "value": "5–10"
+      },
+      {
+        "level": 4,
+        "stat": "Protection",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Tenacity",
+        "value": "25–35%"
+      },
+      {
+        "level": 5,
+        "stat": "Armor Penetration",
+        "value": "50–70"
+      },
+      {
+        "level": 5,
+        "stat": "Critical Damage",
+        "value": "25–35%"
+      },
+      {
+        "level": 5,
+        "stat": "Health",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Offense",
+        "value": "5–10"
+      },
+      {
+        "level": 5,
+        "stat": "Protection",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Tenacity",
+        "value": "25–35%"
+      },
+      {
+        "level": 7,
+        "stat": "Armor Penetration",
+        "value": "70–100"
+      },
+      {
+        "level": 7,
+        "stat": "Critical Damage",
+        "value": "35–45%"
+      },
+      {
+        "level": 7,
+        "stat": "Health",
+        "value": "20–35"
+      },
+      {
+        "level": 7,
+        "stat": "Offense",
+        "value": "10–20"
+      },
+      {
+        "level": 7,
+        "stat": "Protection",
+        "value": "20–35"
+      },
+      {
+        "level": 7,
+        "stat": "Tenacity",
+        "value": "35–45%"
+      },
+      {
+        "level": 8,
+        "stat": "Armor Penetration",
+        "value": "70–100"
+      },
+      {
+        "level": 8,
+        "stat": "Critical Damage",
+        "value": "35–45%"
+      },
+      {
+        "level": 8,
+        "stat": "Health",
+        "value": "20–35"
+      },
+      {
+        "level": 8,
+        "stat": "Offense",
+        "value": "10–20"
+      },
+      {
+        "level": 8,
+        "stat": "Protection",
+        "value": "20–35"
+      },
+      {
+        "level": 8,
+        "stat": "Tenacity",
+        "value": "35–45%"
+      }
+    ]
   }
 ]
