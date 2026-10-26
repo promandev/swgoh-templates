@@ -43,6 +43,16 @@
     ]
   },
   {
+    "id": "adelphiranger",
+    "name": "Adelphi Ranger",
+    "avatar": "/assets/characters/adelphiranger.webp",
+    "alignment": "light",
+    "factions": [
+      "New Republic",
+      "Rebel"
+    ]
+  },
+  {
     "id": "admiral-ackbar",
     "name": "Admiral Ackbar",
     "avatar": "/assets/characters/admiral-ackbar.webp",
@@ -2263,6 +2273,17 @@
       "Scoundrel",
       "Smuggler",
       "Unaligned Force User"
+    ]
+  },
+  {
+    "id": "b1mercdroid",
+    "name": "Mercenary Guard Droid (B1)",
+    "avatar": "/assets/characters/b1mercdroid.webp",
+    "alignment": "dark",
+    "factions": [
+      "Droid",
+      "Hutt Cartel",
+      "Mercenary"
     ]
   },
   {
