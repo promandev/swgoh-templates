@@ -1,269 +1,5 @@
 [
   {
-    "id": "27",
-    "name": "Armor and Instinct",
-    "expiresAt": 1778655600000,
-    "abilities": [
-      {
-        "level": 3,
-        "focus": "Dark Side",
-        "text": "Whenever Dark Side allies inflict a debuff, they gain 2% Critical Chance (stacking) for 3 turns."
-      },
-      {
-        "level": 3,
-        "focus": "Light Side",
-        "text": "Whenever Light Side allies are damaged by percent Health damage effects, they recover 2% Health."
-      },
-      {
-        "level": 6,
-        "focus": "Imperialremnant",
-        "text": "Whenever Imperialremnant allies start their turn with at least 2 debuffs that can be dispelled, they have a 65% chance to dispel all debuffs on themselves."
-      },
-      {
-        "level": 9,
-        "focus": "Crosshair (Scarred)",
-        "text": "Whenever Crosshair (Scarred) loses a stack of Shaken, he loses another stack of Shaken.\\n\\nWhenever Crosshair (Scarred) doesn't score a critical hit, he inflicts Buff Immunity on target enemy for 2 turns, which can't be evaded or resisted.\\n\\nWhenever Crosshair (Scarred) deals damage to an enemy, the weakest ally without Stealth recovers 10% Health and Protection."
-      },
-      {
-        "level": 9,
-        "focus": "Dark Trooper",
-        "text": "Whenever Darktrooper Stuns an enemy, Darktrooper gains 10% Critical Damage (stacking, max 200%) and 5 Speed (stacking, max 50) until the end of the encounter."
-      },
-      {
-        "level": 9,
-        "focus": "Dark Trooper Moff Gideon",
-        "text": "At the start of battle, Dark Trooper Moff Gideon gains 15% Accuracy and 15% Potency for 2 turns.\\n\\nWhenever Dark Trooper Moff Gideon gains a stack of insight, he gains 20% Offense (max 100%, stacking) until the end of the encounter and 10% Turn Meter and he ignores taunt.\\n\\nWhenever Dark trooper Moff Gideon Stuns on an enemy, All Imperial Remnant allies gain 30% Critical Chance and 30% Critical Damage for 2 Turns \\n\\nWhenever Dark Trooper Moff Gideon uses a Special ability, he gains 1 Insight stack."
-      },
-      {
-        "level": 9,
-        "focus": "Omega (Fugitive)",
-        "text": "At the start of Omegas3's turn, dispel all debuffs on them. They recover 5% Health for each debuff dispelled this way."
-      },
-      {
-        "level": 9,
-        "focus": "Scout Trooper",
-        "text": "Whenever Scouttrooper V3 inflicts a debuff, they recover 25% of their Max Health and Max Protection (limit once per turn)."
-      },
-      {
-        "level": 9,
-        "focus": "Wrecker",
-        "text": "Whenever Badbatchwrecker loses Taunt, remove 50% Turn Meter from all enemies."
-      }
-    ],
-    "statPool": [
-      {
-        "level": 1,
-        "stat": "Accuracy",
-        "value": "15–35%"
-      },
-      {
-        "level": 1,
-        "stat": "Critical Chance",
-        "value": "35–50%"
-      },
-      {
-        "level": 1,
-        "stat": "Critical Damage",
-        "value": "10–25%"
-      },
-      {
-        "level": 1,
-        "stat": "Defense Penetration",
-        "value": "5–10"
-      },
-      {
-        "level": 1,
-        "stat": "Health",
-        "value": "5–10%"
-      },
-      {
-        "level": 1,
-        "stat": "Protection",
-        "value": "5–10"
-      },
-      {
-        "level": 1,
-        "stat": "Tenacity",
-        "value": "10–25%"
-      },
-      {
-        "level": 2,
-        "stat": "Accuracy",
-        "value": "15–35%"
-      },
-      {
-        "level": 2,
-        "stat": "Critical Chance",
-        "value": "35–50%"
-      },
-      {
-        "level": 2,
-        "stat": "Critical Damage",
-        "value": "10–25%"
-      },
-      {
-        "level": 2,
-        "stat": "Defense Penetration",
-        "value": "5–10"
-      },
-      {
-        "level": 2,
-        "stat": "Health",
-        "value": "5–10%"
-      },
-      {
-        "level": 2,
-        "stat": "Protection",
-        "value": "5–10"
-      },
-      {
-        "level": 2,
-        "stat": "Tenacity",
-        "value": "10–25%"
-      },
-      {
-        "level": 4,
-        "stat": "Accuracy",
-        "value": "35–50%"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Chance",
-        "value": "50–70%"
-      },
-      {
-        "level": 4,
-        "stat": "Critical Damage",
-        "value": "25–35%"
-      },
-      {
-        "level": 4,
-        "stat": "Defense Penetration",
-        "value": "10–20"
-      },
-      {
-        "level": 4,
-        "stat": "Health",
-        "value": "10–20%"
-      },
-      {
-        "level": 4,
-        "stat": "Protection",
-        "value": "10–20"
-      },
-      {
-        "level": 4,
-        "stat": "Tenacity",
-        "value": "25–35%"
-      },
-      {
-        "level": 5,
-        "stat": "Accuracy",
-        "value": "35–50%"
-      },
-      {
-        "level": 5,
-        "stat": "Critical Chance",
-        "value": "50–70%"
-      },
-      {
-        "level": 5,
-        "stat": "Critical Damage",
-        "value": "25–35%"
-      },
-      {
-        "level": 5,
-        "stat": "Defense Penetration",
-        "value": "10–20"
-      },
-      {
-        "level": 5,
-        "stat": "Health",
-        "value": "10–20%"
-      },
-      {
-        "level": 5,
-        "stat": "Protection",
-        "value": "10–20"
-      },
-      {
-        "level": 5,
-        "stat": "Tenacity",
-        "value": "25–35%"
-      },
-      {
-        "level": 7,
-        "stat": "Accuracy",
-        "value": "50–75%"
-      },
-      {
-        "level": 7,
-        "stat": "Critical Chance",
-        "value": "70–100%"
-      },
-      {
-        "level": 7,
-        "stat": "Critical Damage",
-        "value": "35–45%"
-      },
-      {
-        "level": 7,
-        "stat": "Defense Penetration",
-        "value": "20–30"
-      },
-      {
-        "level": 7,
-        "stat": "Health",
-        "value": "20–30%"
-      },
-      {
-        "level": 7,
-        "stat": "Protection",
-        "value": "20–30"
-      },
-      {
-        "level": 7,
-        "stat": "Tenacity",
-        "value": "35–45%"
-      },
-      {
-        "level": 8,
-        "stat": "Accuracy",
-        "value": "50–75%"
-      },
-      {
-        "level": 8,
-        "stat": "Critical Chance",
-        "value": "70–100%"
-      },
-      {
-        "level": 8,
-        "stat": "Critical Damage",
-        "value": "35–45%"
-      },
-      {
-        "level": 8,
-        "stat": "Defense Penetration",
-        "value": "20–30"
-      },
-      {
-        "level": 8,
-        "stat": "Health",
-        "value": "20–30%"
-      },
-      {
-        "level": 8,
-        "stat": "Protection",
-        "value": "20–30"
-      },
-      {
-        "level": 8,
-        "stat": "Tenacity",
-        "value": "35–45%"
-      }
-    ]
-  },
-  {
     "id": "35",
     "name": "Duty and Defiance",
     "expiresAt": 1798099200000,
@@ -1112,6 +848,260 @@
         "level": 8,
         "stat": "Tenacity",
         "value": "35–45%"
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "name": "Forge and Foundry",
+    "expiresAt": 1802937600000,
+    "abilities": [
+      {
+        "level": 3,
+        "focus": "Dark Side",
+        "text": "Whenever Dark Side allies critically hit enemies more than 4 times during their turn, they gain 5% Critical Damage (stacking) until the end of battle."
+      },
+      {
+        "level": 3,
+        "focus": "Light Side",
+        "text": "Whenever Light Side allies resist a debuff they recover 2% Health and Protection."
+      },
+      {
+        "level": 6,
+        "focus": "Droid",
+        "text": "Whenever a Droid damages an enemy with a Basic ability, inflict Target Lock for 2 turns. If the enemy was already Target Locked, inflict Breach and Buff Immunity for 2 turns. These effects can't be resisted."
+      },
+      {
+        "level": 9,
+        "focus": "0-0-0",
+        "text": "Whenever Triplezero inflicts a debuff on an enemy, there is 50% chance to dispel all buffs on that enemy."
+      },
+      {
+        "level": 9,
+        "focus": "4-LOM",
+        "text": "At the start of each encounter, inflict all enemies with a stack of Corrupted Translation for 2 turns. If an enemy is defeated while they have 3 stacks of the Corrupted Translation, they can't be revived, and reset the cooldowns of all Bounty Hunter allies.\\n\\nWhenever 4-LOM uses Relative Mercy, each assisting ally deals 10% more damage for each stack of Corrupted Translation on the target enemy.\\n\\nWhenever Corrupted Translation expires on an enemy, inflict 2 stacks of Damage Over Time on them for 2 turns, and all Bounty Hunter allies gain 20% Turn Meter."
+      },
+      {
+        "level": 9,
+        "focus": "B1 Battle Droid",
+        "text": "Whenever B1 Battle Droid uses their Basic ability, they gain 10 stacks of Droid Battalion, doubled if target was Target Locked, and all other Separatist allies recover 0.5% Health and 0.5% Protection for each stack of Droid Battalion.\\n\\nWhile B1 Battle Droid has less than 100 stacks of Droid Battalion, they have 100% counter chance."
+      },
+      {
+        "level": 9,
+        "focus": "Grogu & Anzellans",
+        "text": "Whenever Gopherants applies 10 buffs on a turn, inflict all enemies with Expose for 2 turns, which can't be evaded or resisted."
+      },
+      {
+        "level": 9,
+        "focus": "KX Security Droid",
+        "text": "Whenever KX Security Droid takes damage from an enemy while Taunting, all ISB allies gain 20% Offense (stacking, max 200%) until the end of battle.\\n\\nWhenever KX Security Droid attacks out of turn, he Taunts for 1 turn and calls all other ISB allies to assist."
+      },
+      {
+        "level": 9,
+        "focus": "Mandalorebokatan",
+        "text": "Whenever another ally is damaged by an enemy, deal damage equal to 50% of their Defense to the attacker as True damage, which can't be evaded. This damage can't defeat enemies.\\n\\nWhenever a Light Side Mandalorian ally begins a turn or attacks out of turn, all Light Side Mandalorian allies gain 1 stack of Ancestral Resolve (max 100) until the end of the encounter, which can't be copied, dispelled, or prevented."
+      },
+      {
+        "level": 9,
+        "focus": "Padawan Sabine Wren",
+        "text": "At the start of battle, Padawan Sabine Wren gains 20 stacks of Force Connection, doubled if the ally in the Leader slot is Ahsoka Tano.\\n\\nWhenever Padawan Sabine Wren scores a critical hit, she gains 2 stacks of Force Connection."
+      },
+      {
+        "level": 9,
+        "focus": "Sabine Wren",
+        "text": "Sabine Wren is immune to Ability Block and Cooldown Increase.\\n\\nWhenever Sabine Wren inflicts Armor Shred or Staggers an enemy, she Stealths for 2 turns, and all Phoenix allies gain 10% Offense (stacking, max 100%) until the end of battle."
+      },
+      {
+        "level": 9,
+        "focus": "SM-33",
+        "text": "SM-33 can ignore Taunt to target a debuffed enemy. SM-33's attacks deal 5% more damage for each buff he has and 5% more damage for each debuff the enemy has.\\n\\nIf the ally in the Leader slot is Pirate King Hondo Ohnaka, whenever SM-33 Staggers an enemy, all allies have their cooldowns reduced by 1."
+      },
+      {
+        "level": 9,
+        "focus": "The Armorer",
+        "text": "At the start of battle, The Armorer gains 25 Speed. Whenever The Armorer grants Beskar Armor to an ally, she gains Stealth for 2 turns, which can't be copied, dispelled, or prevented.\\n\\nWhenever an ally with Beskar Armor uses an ability, The Armorer recovers 30% Health and Protection.\\n\\nWhenever The Armorer is Dazed or Stunned, she dispels it, resets her cooldowns, and gains a bonus turn."
+      }
+    ],
+    "statPool": [
+      {
+        "level": 1,
+        "stat": "Accuracy",
+        "value": "15–35%"
+      },
+      {
+        "level": 1,
+        "stat": "Armor Penetration",
+        "value": "35–50"
+      },
+      {
+        "level": 1,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 1,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 1,
+        "stat": "Offense",
+        "value": "1–5"
+      },
+      {
+        "level": 1,
+        "stat": "Resistance Penetration",
+        "value": "35–50"
+      },
+      {
+        "level": 2,
+        "stat": "Accuracy",
+        "value": "15–35%"
+      },
+      {
+        "level": 2,
+        "stat": "Armor Penetration",
+        "value": "35–50"
+      },
+      {
+        "level": 2,
+        "stat": "Critical Damage",
+        "value": "10–25%"
+      },
+      {
+        "level": 2,
+        "stat": "Health",
+        "value": "5–10"
+      },
+      {
+        "level": 2,
+        "stat": "Offense",
+        "value": "1–5"
+      },
+      {
+        "level": 2,
+        "stat": "Resistance Penetration",
+        "value": "35–50"
+      },
+      {
+        "level": 4,
+        "stat": "Accuracy",
+        "value": "35–50%"
+      },
+      {
+        "level": 4,
+        "stat": "Armor Penetration",
+        "value": "25–35"
+      },
+      {
+        "level": 4,
+        "stat": "Critical Damage",
+        "value": "5–10%"
+      },
+      {
+        "level": 4,
+        "stat": "Health",
+        "value": "50–70"
+      },
+      {
+        "level": 4,
+        "stat": "Offense",
+        "value": "10–20"
+      },
+      {
+        "level": 4,
+        "stat": "Resistance Penetration",
+        "value": "50–70"
+      },
+      {
+        "level": 5,
+        "stat": "Accuracy",
+        "value": "35–50%"
+      },
+      {
+        "level": 5,
+        "stat": "Armor Penetration",
+        "value": "25–35"
+      },
+      {
+        "level": 5,
+        "stat": "Critical Damage",
+        "value": "5–10%"
+      },
+      {
+        "level": 5,
+        "stat": "Health",
+        "value": "50–70"
+      },
+      {
+        "level": 5,
+        "stat": "Offense",
+        "value": "10–20"
+      },
+      {
+        "level": 5,
+        "stat": "Resistance Penetration",
+        "value": "50–70"
+      },
+      {
+        "level": 7,
+        "stat": "Accuracy",
+        "value": "50–75%"
+      },
+      {
+        "level": 7,
+        "stat": "Armor Penetration",
+        "value": "35–45"
+      },
+      {
+        "level": 7,
+        "stat": "Critical Damage",
+        "value": "10–20%"
+      },
+      {
+        "level": 7,
+        "stat": "Health",
+        "value": "70–100"
+      },
+      {
+        "level": 7,
+        "stat": "Offense",
+        "value": "20–30"
+      },
+      {
+        "level": 7,
+        "stat": "Resistance Penetration",
+        "value": "70–100"
+      },
+      {
+        "level": 8,
+        "stat": "Accuracy",
+        "value": "50–75%"
+      },
+      {
+        "level": 8,
+        "stat": "Armor Penetration",
+        "value": "35–45"
+      },
+      {
+        "level": 8,
+        "stat": "Critical Damage",
+        "value": "10–20%"
+      },
+      {
+        "level": 8,
+        "stat": "Health",
+        "value": "70–100"
+      },
+      {
+        "level": 8,
+        "stat": "Offense",
+        "value": "20–30"
+      },
+      {
+        "level": 8,
+        "stat": "Resistance Penetration",
+        "value": "70–100"
       }
     ]
   },
@@ -2503,7 +2493,7 @@
   {
     "id": "36",
     "name": "The Legend Codex",
-    "expiresAt": 1800432000000,
+    "expiresAt": 1800518400000,
     "abilities": [
       {
         "level": 3,
